@@ -2,8 +2,6 @@
 Library         SeleniumLibrary
 Library         JSONLibrary
 Resource        ../Resource/Keywords/LoginPageKw.robot
-#Suite Setup     Open Login Page
-# Suite Teardown  Close All Browsers
 
 *** Variables ***
 ${JSON_FILE}    ./Test Data/JsonData.json
