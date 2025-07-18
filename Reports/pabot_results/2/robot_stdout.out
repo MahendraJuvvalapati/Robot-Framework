@@ -1,0 +1,44 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.DataFromJson                                                           
+==============================================================================
+Login Test with JSON Data                                             {'testdata': [{'userName': 'Admin', 'Password': 'admin123', 'Message': 'Dashboard'}, {'userName': 'User1', 'Password': 'Pass123', 'Message': 'Invalid credentials'}, {'userName': 'Adminn', 'Password': 'Pass123', 'Message': 'Invalid credentials'}]}
+{'userName': 'Adminn', 'Password': 'Pass123', 'Message': 'Invalid credentials'}
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\DELL\PycharmProjects\Robot Training\tests\DataFromJson.robot:12
+    T:  Login Test with JSON Data    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\DELL\PycharmProjects\Robot Training\tests\DataFromJson.robot:16
+      ${case}    IN    @{data['testdata']}    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\DELL\PycharmProjects\Robot Training\tests\DataFromJson.robot:16
+      ${case} = {'userName': 'Admin', 'Password': 'admin123', 'Message': 'Dashboard'}    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\DELL\PycharmProjects\Robot Training\tests\DataFromJson.robot:18
+      Login    ${case['userName']}    ${case['Password']}    ${case['Message']}
+      |  ${case['userName']} = <Unable to define variable value>
+      |  ${case['Password']} = <Unable to define variable value>
+      |  ${case['Message']} = <Unable to define variable value>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\DELL\PycharmProjects\Robot Training\Resource\Keywords\LoginPageKw.robot:29
+      Input User    ${user}
+      |  ${user} = <Unable to define variable value>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\DELL\PycharmProjects\Robot Training\Resource\Keywords\LoginPageKw.robot:13
+      Input Text    ${USERNAME_FIELD}    ${username}
+      |  ${USERNAME_FIELD} = name=username (str)
+      |  ${username} = Admin (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'name=username' not found.
+------------------------------------------------------------------------------
+Suites.DataFromJson                                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\DELL\PycharmProjects\Robot Training\reports\pabot_results\2\output.xml

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T11:01:59.216833" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\tests">
+<suite id="s1-s1" name="RestApi" source="D:\Automation practice\Robot Training\tests\RestApi">
+<suite id="s1-s1-s1" name="FirstApi" source="D:\Automation practice\Robot Training\tests\RestApi\FirstApi.robot">
+<test id="s1-s1-s1-t1" name="First test On Rest API" line="10">
+<kw name="Create Session" owner="RequestsLibrary">
+<var>${Session}</var>
+<arg>ses</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="FAIL" start="2025-07-18T11:02:01.074378" elapsed="0.000498">Execution terminated by signal</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Created Session:${Session}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-18T11:02:01.075326" elapsed="0.000121"/>
+</kw>
+<kw name="Session Exists" owner="RequestsLibrary">
+<var>${is_exist}</var>
+<arg>ses</arg>
+<doc>Return True if the session has been already created</doc>
+<status status="NOT RUN" start="2025-07-18T11:02:01.075656" elapsed="0.000094"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${is_exist}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="NOT RUN" start="2025-07-18T11:02:01.075952" elapsed="0.000093"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${is_exist}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-18T11:02:01.076235" elapsed="0.000088"/>
+</kw>
+<status status="FAIL" start="2025-07-18T11:02:01.072687" elapsed="0.003933">Execution terminated by signal</status>
+</test>
+<status status="FAIL" start="2025-07-18T11:01:59.462785" elapsed="1.615033"/>
+</suite>
+<status status="FAIL" start="2025-07-18T11:01:59.458011" elapsed="1.621131"/>
+</suite>
+<status status="FAIL" start="2025-07-18T11:01:59.399752" elapsed="1.680424"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="RestApi" id="s1-s1" pass="0" fail="1" skip="0">Tests.RestApi</stat>
+<stat name="FirstApi" id="s1-s1-s1" pass="0" fail="1" skip="0">Tests.RestApi.FirstApi</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,44 @@
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9b0c]
+	(No symbol) [0x0x7ff7098308bf]
+	(No symbol) [0x0x7ff709868792]
+	(No symbol) [0x0x7ff709863293]
+	(No symbol) [0x0x7ff709862359]
+	(No symbol) [0x0x7ff7097b4b05]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	(No symbol) [0x0x7ff7097b3b00]
+	GetHandleVerifier [0x0x7ff709e2bd88+4260984]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9b0c]
+	(No symbol) [0x0x7ff7098308bf]
+	(No symbol) [0x0x7ff709868792]
+	(No symbol) [0x0x7ff709863293]
+	(No symbol) [0x0x7ff709862359]
+	(No symbol) [0x0x7ff7097b4b05]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	(No symbol) [0x0x7ff7097b3b00]
+	GetHandleVerifier [0x0x7ff709e2bd88+4260984]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+
+Second signal will force exit.
+[ WARN ] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/ed286ab55c7e36c177a74a6155dad093
+[ WARN ] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DA08188D60>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ed286ab55c7e36c177a74a6155dad093
+[ WARN ] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DA08188E90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ed286ab55c7e36c177a74a6155dad093

@@ -1,0 +1,28 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.DataFromExcel                                                           
+==============================================================================
+Login Test Using Excel Data ${userName} and ${Password}                 
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Automation practice\Robot Training\tests\DataFromExcel.robot:21
+    T:  Login Test Using Excel Data ${userName} and ${Password}    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Automation practice\Robot Training\tests\DataFromExcel.robot:23
+      Test Data    ${userName}    ${Password}    ${Message}
+      |  ${userName} = <Unable to define variable value>
+      |  ${Password} = <Unable to define variable value>
+      |  ${Message} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${userName}' not found. Did you mean:
+    ${USERNAME_FIELD}
+------------------------------------------------------------------------------
+Tests.DataFromExcel                                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\Automation practice\Robot Training\results\pabot_results\4\output.xml

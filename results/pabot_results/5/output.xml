@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T11:01:30.117034" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\tests">
+<suite id="s1-s1" name="DataFromJson" source="D:\Automation practice\Robot Training\tests\DataFromJson.robot">
+<test id="s1-s1-t1" name="Login Test with JSON Data" line="12">
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2025-07-18T11:01:33.963089" level="INFO">${data} = {'testdata': [{'userName': 'Admin', 'Password': 'admin123', 'Message': 'Dashboard'}, {'userName': 'User1', 'Password': 'Pass123', 'Message': 'Invalid credentials'}, {'userName': 'Adminn', 'Password': ...</msg>
+<var>${data}</var>
+<arg>${JSON_FILE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2025-07-18T11:01:33.959799" elapsed="0.003427"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T11:01:33.964224" elapsed="0.001929"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${data['testdata'][2]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T11:01:33.966782" elapsed="0.002002"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Open Login Page" owner="LoginPageKw">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T11:01:33.972341" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-07-18T11:01:40.578505" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-07-18T11:01:40.579561" level="FAIL">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9cda]
+	(No symbol) [0x0x7ff709828909]
+	(No symbol) [0x0x7ff7098229e5]
+	(No symbol) [0x0x7ff7098762ce]
+	(No symbol) [0x0x7ff709875a60]
+	(No symbol) [0x0x7ff7098686a3]
+	(No symbol) [0x0x7ff709831791]
+	(No symbol) [0x0x7ff709832523]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	GetHandleVerifier [0x0x7ff709a372d4+113092]
+	GetHandleVerifier [0x0x7ff709a37489+113529]
+	GetHandleVerifier [0x0x7ff709a1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-07-18T11:01:33.971893" elapsed="6.632538">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9cda]
+	(No symbol) [0x0x7ff709828909]
+	(No symbol) [0x0x7ff7098229e5]
+	(No symbol) [0x0x7ff7098762ce]
+	(No symbol) [0x0x7ff709875a60]
+	(No symbol) [0x0x7ff7098686a3]
+	(No symbol) [0x0x7ff709831791]
+	(No symbol) [0x0x7ff709832523]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	GetHandleVerifier [0x0x7ff709a372d4+113092]
+	GetHandleVerifier [0x0x7ff709a37489+113529]
+	GetHandleVerifier [0x0x7ff709a1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-07-18T11:01:40.605668" elapsed="0.000346"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-07-18T11:01:40.606706" elapsed="0.000269"/>
+</kw>
+<status status="FAIL" start="2025-07-18T11:01:33.971289" elapsed="6.636450">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9cda]
+	(No symbol) [0x0x7ff709828909]
+	(No symbol) [0x0x7ff7098229e5]
+	(No symbol) [0x0x7ff7098762ce]
+	(No symbol) [0x0x7ff709875a60]
+	(No symbol) [0x0x7ff7098686a3]
+	(No symbol) [0x0x7ff709831791]
+	(No symbol) [0x0x7ff709832523]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	GetHandleVerifier [0x0x7ff709a372d4+113092]
+	GetHandleVerifier [0x0x7ff709a37489+113529]
+	GetHandleVerifier [0x0x7ff709a1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+</status>
+</kw>
+<kw name="Login" owner="LoginPageKw">
+<arg>${case['userName']}</arg>
+<arg>${case['Password']}</arg>
+<arg>${case['Message']}</arg>
+<status status="NOT RUN" start="2025-07-18T11:01:40.608691" elapsed="0.000449"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-07-18T11:01:40.609761" elapsed="0.000261"/>
+</kw>
+<var name="${case}">{'userName': 'Admin', 'Password': 'admin123', 'Message': 'Dashboard'}</var>
+<status status="FAIL" start="2025-07-18T11:01:33.970855" elapsed="6.639581">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9cda]
+	(No symbol) [0x0x7ff709828909]
+	(No symbol) [0x0x7ff7098229e5]
+	(No symbol) [0x0x7ff7098762ce]
+	(No symbol) [0x0x7ff709875a60]
+	(No symbol) [0x0x7ff7098686a3]
+	(No symbol) [0x0x7ff709831791]
+	(No symbol) [0x0x7ff709832523]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	GetHandleVerifier [0x0x7ff709a372d4+113092]
+	GetHandleVerifier [0x0x7ff709a37489+113529]
+	GetHandleVerifier [0x0x7ff709a1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+</status>
+</iter>
+<var>${case}</var>
+<value>@{data['testdata']}</value>
+<status status="FAIL" start="2025-07-18T11:01:33.969074" elapsed="6.641920">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9cda]
+	(No symbol) [0x0x7ff709828909]
+	(No symbol) [0x0x7ff7098229e5]
+	(No symbol) [0x0x7ff7098762ce]
+	(No symbol) [0x0x7ff709875a60]
+	(No symbol) [0x0x7ff7098686a3]
+	(No symbol) [0x0x7ff709831791]
+	(No symbol) [0x0x7ff709832523]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	GetHandleVerifier [0x0x7ff709a372d4+113092]
+	GetHandleVerifier [0x0x7ff709a37489+113529]
+	GetHandleVerifier [0x0x7ff709a1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+</status>
+</for>
+<status status="FAIL" start="2025-07-18T11:01:33.955648" elapsed="6.657016">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9cda]
+	(No symbol) [0x0x7ff709828909]
+	(No symbol) [0x0x7ff7098229e5]
+	(No symbol) [0x0x7ff7098762ce]
+	(No symbol) [0x0x7ff709875a60]
+	(No symbol) [0x0x7ff7098686a3]
+	(No symbol) [0x0x7ff709831791]
+	(No symbol) [0x0x7ff709832523]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	GetHandleVerifier [0x0x7ff709a372d4+113092]
+	GetHandleVerifier [0x0x7ff709a37489+113529]
+	GetHandleVerifier [0x0x7ff709a1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+</status>
+</test>
+<status status="FAIL" start="2025-07-18T11:01:30.161581" elapsed="10.452684"/>
+</suite>
+<status status="FAIL" start="2025-07-18T11:01:30.139370" elapsed="10.476650"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="DataFromJson" id="s1-s1" pass="0" fail="1" skip="0">Tests.DataFromJson</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

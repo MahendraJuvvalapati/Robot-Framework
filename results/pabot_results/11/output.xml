@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T11:01:53.893145" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\tests">
+<suite id="s1-s1" name="Practice" source="D:\Automation practice\Robot Training\tests\Practice.robot">
+<test id="s1-s1-t1" name="Practicing" line="6">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Hello</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T11:01:56.316564" elapsed="0.000882"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>message</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T11:01:56.317956" elapsed="0.000676"/>
+</kw>
+<status status="PASS" start="2025-07-18T11:01:56.311185" elapsed="0.007954"/>
+</test>
+<status status="PASS" start="2025-07-18T11:01:53.952671" elapsed="2.367817"/>
+</suite>
+<status status="PASS" start="2025-07-18T11:01:53.925416" elapsed="2.402718"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Practice" id="s1-s1" pass="1" fail="0" skip="0">Tests.Practice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

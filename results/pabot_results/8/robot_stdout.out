@@ -1,0 +1,24 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Headless                                                                
+==============================================================================
+Run Tests under Headless Browser                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Automation practice\Robot Training\tests\Headless.robot:7
+    T:  Run Tests under Headless Browser    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Automation practice\Robot Training\tests\Headless.robot:16
+      Sleep    5s
+______________________________________________________________________________
+| FAIL |
+Execution terminated by signal
+------------------------------------------------------------------------------
+Tests.Headless                                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\Automation practice\Robot Training\results\pabot_results\8\output.xml

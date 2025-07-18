@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.4 on win32)" generated="2025-03-03T14:18:23.379178" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Practice" source="C:\Users\DELL\PycharmProjects\Robot Training\tests\Practice.robot">
+<test id="s1-s1-t1" name="Practicing" line="6">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Hello</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-03T14:18:27.873310" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>message</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-03T14:18:27.874308" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:18:27.869322" elapsed="0.005983"/>
+</test>
+<status status="PASS" start="2025-03-03T14:18:23.654297" elapsed="4.239505"/>
+</suite>
+<status status="PASS" start="2025-03-03T14:18:23.581258" elapsed="4.315528"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Practice">Suites.Practice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

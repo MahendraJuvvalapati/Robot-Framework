@@ -1,0 +1,25 @@
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9cda]
+	(No symbol) [0x0x7ff7097d5f35]
+	(No symbol) [0x0x7ff7097faabe]
+	(No symbol) [0x0x7ff70986feb5]
+	(No symbol) [0x0x7ff709890432]
+	(No symbol) [0x0x7ff7098686a3]
+	(No symbol) [0x0x7ff709831791]
+	(No symbol) [0x0x7ff709832523]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	GetHandleVerifier [0x0x7ff709a372d4+113092]
+	GetHandleVerifier [0x0x7ff709a37489+113529]
+	GetHandleVerifier [0x0x7ff709a1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.4 on win32)" generated="2025-03-03T14:18:23.268654" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Tags" source="C:\Users\DELL\PycharmProjects\Robot Training\tests\Tags.robot">
+<test id="s1-s1-t1" name="checking Tags keyword" line="7">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Inside Smoke ${TEST_TAGS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-03T14:18:25.469424" elapsed="0.001032"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2025-03-03T14:18:25.467431" elapsed="0.003025"/>
+</test>
+<test id="s1-s1-t2" name="checking default Tags" line="12">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Inside Default ${TEST_TAGS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-03T14:18:25.472416" elapsed="0.000000"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2025-03-03T14:18:25.471419" elapsed="0.001995"/>
+</test>
+<test id="s1-s1-t3" name="checking set Tags" line="16">
+<kw name="Set Tags" owner="BuiltIn">
+<msg time="2025-03-03T14:18:25.513307" level="INFO">Set tag 'regression'.</msg>
+<arg>regression</arg>
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<status status="PASS" start="2025-03-03T14:18:25.513307" elapsed="0.000998"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Inside Set tag ${TEST_TAGS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-03T14:18:25.515301" elapsed="0.002112"/>
+</kw>
+<tag>regression</tag>
+<tag>sanity</tag>
+<status status="PASS" start="2025-03-03T14:18:25.473819" elapsed="0.044475"/>
+</test>
+<status status="PASS" start="2025-03-03T14:18:23.650299" elapsed="1.868993"/>
+</suite>
+<status status="PASS" start="2025-03-03T14:18:23.595221" elapsed="1.925069"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="2" fail="0" skip="0">sanity</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Tags">Suites.Tags</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

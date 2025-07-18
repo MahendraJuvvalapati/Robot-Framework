@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Headless                                                               
+==============================================================================
+Run Tests under Headless Browser                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\DELL\PycharmProjects\Robot Training\tests\Headless.robot:7
+    T:  Run Tests under Headless Browser    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\DELL\PycharmProjects\Robot Training\tests\Headless.robot:15
+      Double Click Element    class=YmvwI
+______________________________________________________________________________
+| FAIL |
+Element with locator 'class=YmvwI' not found.
+------------------------------------------------------------------------------
+Suites.Headless                                                       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\DELL\PycharmProjects\Robot Training\reports\pabot_results\5\output.xml

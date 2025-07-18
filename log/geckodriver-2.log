@@ -1,0 +1,14 @@
+1731996468762	geckodriver	INFO	Listening on 127.0.0.1:49861
+1731996472034	mozrunner::runner	INFO	Running command: "C:\\Users\\DELL\\.cache\\selenium\\firefox\\win64\\132.0.2\\firefox.exe" "--marionette" "--remote-debugging ... 62" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofile4qxAAd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731996476932	Marionette	INFO	Marionette enabled
+1731996477511	Marionette	INFO	Listening on port 49878
+WebDriver BiDi listening on ws://127.0.0.1:49862
+Read port: 49878
+1731996477898	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49862/devtools/browser/6ec67938-b5f6-478d-b003-8734ae34ff5c
+1731996499578	Marionette	INFO	Stopped listening on port 49878
+Dynamically enable window occlusion 1
+console.error: (new Error("Data is not ready.", "resource://gre/modules/JSONFile.sys.mjs", 172))

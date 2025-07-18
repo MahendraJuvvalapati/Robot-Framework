@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.4 on win32)" generated="2025-03-03T14:18:22.469769" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Assertions" source="C:\Users\DELL\PycharmProjects\Robot Training\tests\Assertions.robot">
+<test id="s1-s1-t1" name="Checking Assertions" line="5">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-03-03T14:18:24.878026" level="INFO">${isValid} = True</msg>
+<var>${isValid}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-03-03T14:18:24.877028" elapsed="0.000998"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${isValid}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-03-03T14:18:24.878026" elapsed="0.000997"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${isValid}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-03T14:18:24.879023" elapsed="0.000998"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-03-03T14:18:24.882015" level="INFO">${isValid} = False</msg>
+<var>${isValid}</var>
+<arg>${isValid}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-03-03T14:18:24.880021" elapsed="0.001994"/>
+</kw>
+<kw name="Should Not Be True" owner="BuiltIn">
+<arg>${isValid}</arg>
+<doc>Fails if the given condition is true.</doc>
+<status status="PASS" start="2025-03-03T14:18:24.883012" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${isValid}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-03T14:18:24.884009" elapsed="0.000310"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:18:24.874036" elapsed="0.010971"/>
+</test>
+<status status="PASS" start="2025-03-03T14:18:22.729655" elapsed="2.156571"/>
+</suite>
+<status status="PASS" start="2025-03-03T14:18:22.647043" elapsed="2.240956"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assertions">Suites.Assertions</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

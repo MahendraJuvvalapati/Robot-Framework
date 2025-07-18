@@ -1,0 +1,30 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.RestApi                                                                 
+==============================================================================
+Tests.RestApi.FirstApi                                                        
+==============================================================================
+First test On Rest API                                                  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Automation practice\Robot Training\tests\RestApi\FirstApi.robot:10
+    T:  First test On Rest API    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Automation practice\Robot Training\tests\RestApi\FirstApi.robot:11
+      Create Session    ses    ${url}
+      |  ${url} = https://jsonplaceholder.typicode.com (str)
+______________________________________________________________________________
+| FAIL |
+Execution terminated by signal
+------------------------------------------------------------------------------
+Tests.RestApi.FirstApi                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.RestApi                                                         | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\Automation practice\Robot Training\results\pabot_results\12\output.xml

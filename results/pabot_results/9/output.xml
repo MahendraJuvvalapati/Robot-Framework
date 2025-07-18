@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T11:01:43.584001" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\tests">
+<suite id="s1-s1" name="Iframes" source="D:\Automation practice\Robot Training\tests\Iframes.robot">
+<test id="s1-s1-t1" name="Handling iframes" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T11:01:45.062509" level="INFO">Opening browser 'chrome' to base url 'https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst'.</msg>
+<msg time="2025-07-18T11:01:50.231980" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9cda]
+	(No symbol) [0x0x7ff7097d5f35]
+	(No symbol) [0x0x7ff7097faabe]
+	(No symbol) [0x0x7ff70986feb5]
+	(No symbol) [0x0x7ff709890432]
+	(No symbol) [0x0x7ff7098686a3]
+	(No symbol) [0x0x7ff709831791]
+	(No symbol) [0x0x7ff709832523]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	GetHandleVerifier [0x0x7ff709a372d4+113092]
+	GetHandleVerifier [0x0x7ff709a37489+113529]
+	GetHandleVerifier [0x0x7ff709a1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+</msg>
+<msg time="2025-07-18T11:01:50.233006" level="FAIL">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=138.0.7204.102)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9b0c]
+	(No symbol) [0x0x7ff7097d727b]
+	(No symbol) [0x0x7ff7097d613e]
+	(No symbol) [0x0x7ff7097faabe]
+	(No symbol) [0x0x7ff7097f9e05]
+	(No symbol) [0x0x7ff709890e5c]
+	(No symbol) [0x0x7ff7098686a3]
+	(No symbol) [0x0x7ff709831791]
+	(No symbol) [0x0x7ff709832523]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	GetHandleVerifier [0x0x7ff709a372d4+113092]
+	GetHandleVerifier [0x0x7ff709a37489+113529]
+	GetHandleVerifier [0x0x7ff709a1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+</msg>
+<arg>https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-07-18T11:01:45.061390" elapsed="5.184779">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=138.0.7204.102)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9b0c]
+	(No symbol) [0x0x7ff7097d727b]
+	(No symbol) [0x0x7ff7097d613e]
+	(No symbol) [0x0x7ff7097faabe]
+	(No symbol) [0x0x7ff7097f9e05]
+	(No symbol) [0x0x7ff709890e5c]
+	(No symbol) [0x0x7ff7098686a3]
+	(No symbol) [0x0x7ff709831791]
+	(No symbol) [0x0x7ff709832523]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	GetHandleVerifier [0x0x7ff709a372d4+113092]
+	GetHandleVerifier [0x0x7ff709a37489+113529]
+	GetHandleVerifier [0x0x7ff709a1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-07-18T11:01:50.246852" elapsed="0.000213"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<arg>id=iframeResult</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="NOT RUN" start="2025-07-18T11:01:50.247558" elapsed="0.000197"/>
+</kw>
+<kw name="Current Frame Should Contain" owner="SeleniumLibrary">
+<arg>My First JavaScript</arg>
+<doc>Verifies that the current frame contains ``text``.</doc>
+<status status="NOT RUN" start="2025-07-18T11:01:50.248136" elapsed="0.000171"/>
+</kw>
+<kw name="Current Frame Should Not Contain" owner="SeleniumLibrary">
+<arg>text</arg>
+<doc>Verifies that the current frame does not contain ``text``.</doc>
+<status status="NOT RUN" start="2025-07-18T11:01:50.248677" elapsed="0.000160"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button[type='button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-07-18T11:01:50.249174" elapsed="0.000153"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-07-18T11:01:50.249890" elapsed="0.000169"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" start="2025-07-18T11:01:50.250377" elapsed="0.000174"/>
+</kw>
+<kw name="Frame Should Contain" owner="SeleniumLibrary">
+<arg>id=iframeResult</arg>
+<arg>My First JavaScript</arg>
+<doc>Verifies that frame identified by ``locator`` contains ``text``.</doc>
+<status status="NOT RUN" start="2025-07-18T11:01:50.250845" elapsed="0.000145"/>
+</kw>
+<status status="FAIL" start="2025-07-18T11:01:45.057591" elapsed="5.194054">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=138.0.7204.102)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9b0c]
+	(No symbol) [0x0x7ff7097d727b]
+	(No symbol) [0x0x7ff7097d613e]
+	(No symbol) [0x0x7ff7097faabe]
+	(No symbol) [0x0x7ff7097f9e05]
+	(No symbol) [0x0x7ff709890e5c]
+	(No symbol) [0x0x7ff7098686a3]
+	(No symbol) [0x0x7ff709831791]
+	(No symbol) [0x0x7ff709832523]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	GetHandleVerifier [0x0x7ff709a372d4+113092]
+	GetHandleVerifier [0x0x7ff709a37489+113529]
+	GetHandleVerifier [0x0x7ff709a1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+</status>
+</test>
+<status status="FAIL" start="2025-07-18T11:01:43.678617" elapsed="6.574711"/>
+</suite>
+<status status="FAIL" start="2025-07-18T11:01:43.638777" elapsed="6.617431"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="Iframes" id="s1-s1" pass="0" fail="1" skip="0">Tests.Iframes</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-18T11:01:50.231980" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff709a2e925+77845]
+	GetHandleVerifier [0x0x7ff709a2e980+77936]
+	(No symbol) [0x0x7ff7097e9cda]
+	(No symbol) [0x0x7ff7097d5f35]
+	(No symbol) [0x0x7ff7097faabe]
+	(No symbol) [0x0x7ff70986feb5]
+	(No symbol) [0x0x7ff709890432]
+	(No symbol) [0x0x7ff7098686a3]
+	(No symbol) [0x0x7ff709831791]
+	(No symbol) [0x0x7ff709832523]
+	GetHandleVerifier [0x0x7ff709d0683d+3059501]
+	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
+	GetHandleVerifier [0x0x7ff709d203f0+3164896]
+	GetHandleVerifier [0x0x7ff709a48c2e+185118]
+	GetHandleVerifier [0x0x7ff709a5053f+216111]
+	GetHandleVerifier [0x0x7ff709a372d4+113092]
+	GetHandleVerifier [0x0x7ff709a37489+113529]
+	GetHandleVerifier [0x0x7ff709a1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
+	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
+</msg>
+</errors>
+</robot>

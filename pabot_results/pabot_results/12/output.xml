@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T11:13:53.125099" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\tests">
+<suite id="s1-s1" name="RestApi" source="D:\Automation practice\Robot Training\tests\RestApi">
+<suite id="s1-s1-s1" name="FirstApi" source="D:\Automation practice\Robot Training\tests\RestApi\FirstApi.robot">
+<test id="s1-s1-s1-t1" name="First test On Rest API" line="10">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-07-18T11:13:55.305943" level="INFO">Creating Session using : alias=ses, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-07-18T11:13:55.306557" level="INFO">${Session} = &lt;requests.sessions.Session object at 0x0000017CF7822120&gt;</msg>
+<var>${Session}</var>
+<arg>ses</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-07-18T11:13:55.305283" elapsed="0.001379"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Created Session:${Session}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T11:13:55.307109" elapsed="0.000633"/>
+</kw>
+<kw name="Session Exists" owner="RequestsLibrary">
+<msg time="2025-07-18T11:13:55.308565" level="INFO">${is_exist} = True</msg>
+<var>${is_exist}</var>
+<arg>ses</arg>
+<doc>Return True if the session has been already created</doc>
+<status status="PASS" start="2025-07-18T11:13:55.308085" elapsed="0.000567"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${is_exist}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-07-18T11:13:55.308925" elapsed="0.000555"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${is_exist}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T11:13:55.309794" elapsed="0.000586"/>
+</kw>
+<status status="PASS" start="2025-07-18T11:13:55.303384" elapsed="0.007472"/>
+</test>
+<status status="PASS" start="2025-07-18T11:13:53.654657" elapsed="1.657598"/>
+</suite>
+<status status="PASS" start="2025-07-18T11:13:53.651135" elapsed="1.662311"/>
+</suite>
+<status status="PASS" start="2025-07-18T11:13:53.552472" elapsed="1.761668"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="RestApi" id="s1-s1" pass="1" fail="0" skip="0">Tests.RestApi</stat>
+<stat name="FirstApi" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.RestApi.FirstApi</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

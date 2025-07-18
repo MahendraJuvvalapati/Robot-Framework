@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T11:01:29.894840" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\tests">
+<suite id="s1-s1" name="DataFromExcel" source="D:\Automation practice\Robot Training\tests\DataFromExcel.robot">
+<test id="s1-s1-t1" name="Login Test Using Excel Data ${userName} and ${Password}" line="21">
+<kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T11:01:30.239524" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T11:01:30.239038" elapsed="6.530700"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T11:01:36.770453" elapsed="0.076189"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T11:01:39.848371" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T11:01:36.847227" elapsed="3.001410"/>
+</kw>
+<status status="PASS" start="2025-07-18T11:01:30.237609" elapsed="9.611494"/>
+</kw>
+<kw name="Test Data">
+<msg time="2025-07-18T11:01:39.851989" level="FAIL">Variable '${userName}' not found. Did you mean:
+    ${USERNAME_FIELD}</msg>
+<arg>${userName}</arg>
+<arg>${Password}</arg>
+<arg>${Message}</arg>
+<status status="FAIL" start="2025-07-18T11:01:39.849653" elapsed="0.002491">Variable '${userName}' not found. Did you mean:
+    ${USERNAME_FIELD}</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T11:01:39.870892" elapsed="2.114520"/>
+</kw>
+<status status="FAIL" start="2025-07-18T11:01:30.235316" elapsed="11.750304">Variable '${userName}' not found. Did you mean:
+    ${USERNAME_FIELD}</status>
+</test>
+<status status="FAIL" start="2025-07-18T11:01:29.928372" elapsed="12.058329"/>
+</suite>
+<status status="FAIL" start="2025-07-18T11:01:29.913130" elapsed="12.074356"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="DataFromExcel" id="s1-s1" pass="0" fail="1" skip="0">Tests.DataFromExcel</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-18T11:01:30.226622" level="ERROR">[ DataDriver ] Error in robot file:
+  File "D:\Automation practice\Robot Training\tests\DataFromExcel.robot", line 0</msg>
+<msg time="2025-07-18T11:01:30.226862" level="ERROR">In source file:
+  File "D:\Automation practice\Robot Training\tests\..\Test Data\ExcelData.xlsx", line 0</msg>
+<msg time="2025-07-18T11:01:30.232828" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ImportError: Requirements (pandas, openpyxl) for XLSX support are not installed.
+    Use 'pip install -U robotframework-datadriver[XLS]' to install XLSX support.</msg>
+</errors>
+</robot>

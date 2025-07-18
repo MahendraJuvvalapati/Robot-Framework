@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.4 on win32)" generated="2025-03-03T14:18:28.203888" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Variables" source="C:\Users\DELL\PycharmProjects\Robot Training\tests\Variables.robot">
+<test id="s1-s1-t1" name="Accesing Variables" line="18">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Scalar}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-03T14:18:29.110472" elapsed="0.000945"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${lists}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-03T14:18:29.112414" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${dict}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-03T14:18:29.113412" elapsed="0.001994"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${env_var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-03T14:18:29.116405" elapsed="0.000996"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${env_var1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-03T14:18:29.117401" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:18:29.108425" elapsed="0.009973"/>
+</test>
+<status status="PASS" start="2025-03-03T14:18:28.438697" elapsed="0.681697"/>
+</suite>
+<status status="PASS" start="2025-03-03T14:18:28.351159" elapsed="0.770232"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Variables">Suites.Variables</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

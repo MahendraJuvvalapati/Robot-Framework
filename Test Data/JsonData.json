@@ -1,0 +1,19 @@
+{
+    "testdata": [
+        {
+            "userName": "Admin",
+            "Password": "admin123",
+            "Message": "Dashboard"
+        },
+        {
+            "userName": "User1",
+            "Password": "Pass123",
+            "Message": "Invalid credentials"
+        },
+        {
+            "userName": "Adminn",
+            "Password": "Pass123",
+            "Message": "Invalid credentials"
+        }
+    ]
+}
