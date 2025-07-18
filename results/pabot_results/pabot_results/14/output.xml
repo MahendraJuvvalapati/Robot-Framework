@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:06:04.501262" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
+<suite id="s1-s1" name="RestApi" source="D:\Automation practice\Robot Training\Tests\RestApi">
+<suite id="s1-s1-s1" name="POST Request" source="D:\Automation practice\Robot Training\Tests\RestApi\POST_Request.robot">
+<test id="s1-s1-s1-t1" name="Create New Post" line="10">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-07-18T18:06:05.661980" level="INFO">Creating Session using : alias=MySession, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>MySession</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-07-18T18:06:05.661412" elapsed="0.001010"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-07-18T18:06:06.408042" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/posts 
+ path_url=/posts 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '107', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=userId=5&amp;id=101&amp;title=Checking+Post+Requests&amp;body=This+is+for+Checking+the+functionality+of+the+Post+method 
+ </msg>
+<msg time="2025-07-18T18:06:06.408323" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/posts 
+ status=201, reason=Created 
+ headers={'Date': 'Fri, 18 Jul 2025 12:36:05 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '140', 'Connection': 'keep-alive', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Expose-Headers': 'Location', 'Cache-Control': 'no-cache', 'Etag': 'W/"8c-tMi9cORye6Wep6D5jCv4hU4A2s8"', 'Expires': '-1', 'Location': 'https://jsonplaceholder.typicode.com/posts/101', 'Nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'Pragma': 'no-cache', 'Report-To': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=g9RzfodirXLozv8h14p4U5yj1D7%2B14Py8NDERqhk2WY%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1752842165"}],"max_age":3600}', 'Reporting-Endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=g9RzfodirXLozv8h14p4U5yj1D7%2B14Py8NDERqhk2WY%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1752842165"', 'Server': 'cloudflare', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Via': '2.0 heroku-router', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1752842226', 'Cf-Cache-Status': 'DYNAMIC', 'CF-RAY': '961205cccdeb7f2b-MAA', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={
+  "userId": "5",
+  "id": 101,
+  "title": "Checking Post Requests",
+  "body": "This is for Checking the functionality of the Post method"
+} 
+ </msg>
+<msg time="2025-07-18T18:06:06.408652" level="INFO">C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-07-18T18:06:06.409097" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>MySession</arg>
+<arg>${endpoint}</arg>
+<arg>data=${Dic_values}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.662812" elapsed="0.746403"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response :${response}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.409625" elapsed="0.000675"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>201</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.410621" elapsed="0.000673"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-07-18T18:06:06.412487" level="INFO">${status_code} = 201</msg>
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.411538" elapsed="0.001009"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Status Code :${status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.412740" elapsed="0.000433"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>201</arg>
+<arg>${status_code}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.413371" elapsed="0.000353"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-07-18T18:06:06.414908" level="INFO">${body} = {
+  "userId": "5",
+  "id": 101,
+  "title": "Checking Post Requests",
+  "body": "This is for Checking the functionality of the Post method"
+}</msg>
+<var>${body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.413907" elapsed="0.001110"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${body}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.415389" elapsed="0.000926"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-18T18:06:06.417411" level="INFO">${res_body} = {'userId': '5', 'id': 101, 'title': 'Checking Post Requests', 'body': 'This is for Checking the functionality of the Post method'}</msg>
+<var>${res_body}</var>
+<arg>${body}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.416689" elapsed="0.000821"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${res_body}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.417816" elapsed="0.000507"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Title is ${res_body}[title]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.418568" elapsed="0.000446"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>id: ${res_body}[id]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.419319" elapsed="0.000449"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2025-07-18T18:06:06.420295" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${res_body}[id]</arg>
+<arg>101</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.420000" elapsed="0.000416"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:05.659577" elapsed="0.761108"/>
+</test>
+<status status="PASS" start="2025-07-18T18:06:04.592892" elapsed="1.828603"/>
+</suite>
+<status status="PASS" start="2025-07-18T18:06:04.590226" elapsed="1.832488"/>
+</suite>
+<status status="PASS" start="2025-07-18T18:06:04.549543" elapsed="1.874193"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="RestApi" id="s1-s1" pass="1" fail="0" skip="0">Tests.RestApi</stat>
+<stat name="POST Request" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.RestApi.POST Request</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

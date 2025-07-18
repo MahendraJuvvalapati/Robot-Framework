@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:05:23.403004" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
+<suite id="s1-s1" name="FirstTest" source="D:\Automation practice\Robot Training\Tests\FirstTest.robot">
+<test id="s1-s1-t1" name="Verify Example Page Title" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:23.682601" level="INFO">Opening browser 'Chrome' to base url 'https://example.com'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:23.682285" elapsed="2.251261"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:28.935127" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:25.933963" elapsed="3.001647"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:28.960914" level="INFO">Page title is 'Example Domain'.</msg>
+<arg>Example Domain</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-07-18T18:05:28.936336" elapsed="0.025037"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:31.964967" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:28.963100" elapsed="3.002017"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:31.965339" elapsed="2.146946"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:23.681374" elapsed="10.431708"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:23.435777" elapsed="10.678560"/>
+</suite>
+<status status="PASS" start="2025-07-18T18:05:23.420573" elapsed="10.695151"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="FirstTest" id="s1-s1" pass="1" fail="0" skip="0">Tests.FirstTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:05:15.664957" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
+<suite id="s1-s1" name="Add To cart" source="D:\Automation practice\Robot Training\Tests\Add To cart.robot">
+<test id="s1-s1-t1" name="Adding Items to cart" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:16.002726" level="INFO">Opening browser 'chrome' to base url 'https://dineshvelhal.github.io/testautomation-playground/login.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.002386" elapsed="2.272534"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:18.275925" level="INFO">Typing text 'admin' into text field 'xpath=//input[@id='user']'.</msg>
+<arg>xpath=//input[@id='user']</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:18.275294" elapsed="0.129130"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:18.405244" level="INFO">Typing text 'admin' into text field 'xpath=//input[@id='password']'.</msg>
+<arg>xpath=//input[@id='password']</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:18.404811" elapsed="0.074715"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:18.480335" level="INFO">Clicking button 'xpath=//button[@id='login']'.</msg>
+<arg>xpath=//button[@id='login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:18.479975" elapsed="1.015195"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:19.495947" level="INFO">Clicking element 'xpath=//input[@id='rad_small']'.</msg>
+<arg>xpath=//input[@id='rad_small']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:19.495478" elapsed="0.295870"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:19.792037" level="INFO">Selecting options from selection list 'xpath=//select[@id='select_flavor']' by label Veggie Delight.</msg>
+<arg>xpath=//select[@id='select_flavor']</arg>
+<arg>Veggie Delight</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-07-18T18:05:19.791684" elapsed="0.184360"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:19.976777" level="INFO">Clicking element 'id=rad_barbeque'.</msg>
+<arg>id=rad_barbeque</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:19.976330" elapsed="0.074571"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:20.051504" level="INFO">Clicking element 'id=green_olive'.</msg>
+<arg>id=green_olive</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.051154" elapsed="0.071052"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:20.122741" level="INFO">Clicking element 'id=tomoto'.</msg>
+<arg>id=tomoto</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.122422" elapsed="0.132407"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:20.256148" level="INFO">Typing text '5' into text field 'id=quantity'.</msg>
+<arg>id=quantity</arg>
+<arg>5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.255690" elapsed="0.080832"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:20.337832" level="INFO">Clicking button 'id=submit_button'.</msg>
+<arg>id=submit_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.337313" elapsed="0.117578"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Pizza added to the cart!</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.455068" elapsed="0.016129"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.471423" elapsed="2.162854"/>
+</kw>
+<doc>Addding items to cart...</doc>
+<status status="PASS" start="2025-07-18T18:05:16.001339" elapsed="6.633214"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:15.704475" elapsed="6.930557"/>
+</suite>
+<status status="PASS" start="2025-07-18T18:05:15.687095" elapsed="6.951396"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Add To cart" id="s1-s1" pass="1" fail="0" skip="0">Tests.Add To cart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

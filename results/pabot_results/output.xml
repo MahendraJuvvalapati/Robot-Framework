@@ -1,0 +1,2353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:06:59.206035" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
+<suite id="s1-s1" name="Add To cart" source="D:\Automation practice\Robot Training\Tests\Add To cart.robot">
+<test id="s1-s1-t1" name="Adding Items to cart" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:16.002726" level="INFO">Opening browser 'chrome' to base url 'https://dineshvelhal.github.io/testautomation-playground/login.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.002386" elapsed="2.272534"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:18.275925" level="INFO">Typing text 'admin' into text field 'xpath=//input[@id='user']'.</msg>
+<arg>xpath=//input[@id='user']</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:18.275294" elapsed="0.129130"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:18.405244" level="INFO">Typing text 'admin' into text field 'xpath=//input[@id='password']'.</msg>
+<arg>xpath=//input[@id='password']</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:18.404811" elapsed="0.074715"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:18.480335" level="INFO">Clicking button 'xpath=//button[@id='login']'.</msg>
+<arg>xpath=//button[@id='login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:18.479975" elapsed="1.015195"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:19.495947" level="INFO">Clicking element 'xpath=//input[@id='rad_small']'.</msg>
+<arg>xpath=//input[@id='rad_small']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:19.495478" elapsed="0.295870"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:19.792037" level="INFO">Selecting options from selection list 'xpath=//select[@id='select_flavor']' by label Veggie Delight.</msg>
+<arg>xpath=//select[@id='select_flavor']</arg>
+<arg>Veggie Delight</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-07-18T18:05:19.791684" elapsed="0.184360"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:19.976777" level="INFO">Clicking element 'id=rad_barbeque'.</msg>
+<arg>id=rad_barbeque</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:19.976330" elapsed="0.074571"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:20.051504" level="INFO">Clicking element 'id=green_olive'.</msg>
+<arg>id=green_olive</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.051154" elapsed="0.071052"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:20.122741" level="INFO">Clicking element 'id=tomoto'.</msg>
+<arg>id=tomoto</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.122422" elapsed="0.132407"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:20.256148" level="INFO">Typing text '5' into text field 'id=quantity'.</msg>
+<arg>id=quantity</arg>
+<arg>5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.255690" elapsed="0.080832"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:20.337832" level="INFO">Clicking button 'id=submit_button'.</msg>
+<arg>id=submit_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.337313" elapsed="0.117578"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Pizza added to the cart!</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.455068" elapsed="0.016129"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.471423" elapsed="2.162854"/>
+</kw>
+<doc>Addding items to cart...</doc>
+<status status="PASS" start="2025-07-18T18:05:16.001339" elapsed="6.633214"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:15.704000" elapsed="6.633000"/>
+</suite>
+<suite id="s1-s2" name="Assertions" source="D:\Automation practice\Robot Training\Tests\Assertions.robot">
+<test id="s1-s2-t1" name="Checking Assertions" line="5">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-07-18T18:05:16.000788" level="INFO">${isValid} = True</msg>
+<var>${isValid}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.000444" elapsed="0.000393"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${isValid}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.001015" elapsed="0.000216"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${isValid}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.001376" elapsed="0.000244"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-07-18T18:05:16.001996" level="INFO">${isValid} = False</msg>
+<var>${isValid}</var>
+<arg>${isValid}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.001763" elapsed="0.000271"/>
+</kw>
+<kw name="Should Not Be True" owner="BuiltIn">
+<arg>${isValid}</arg>
+<doc>Fails if the given condition is true.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.002163" elapsed="0.000191"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${isValid}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.002480" elapsed="0.000223"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:15.999356" elapsed="0.003505"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:15.723394" elapsed="0.279949"/>
+</suite>
+<suite id="s1-s3" name="CustomLib" source="D:\Automation practice\Robot Training\Tests\CustomLib.robot">
+<test id="s1-s3-t1" name="Adding two Nums" line="5">
+<kw name="Add Two Nums" owner="CustomLibrary">
+<msg time="2025-07-18T18:05:15.705709" level="INFO">${output} = 1020</msg>
+<var>${output}</var>
+<arg>10</arg>
+<arg>20</arg>
+<status status="PASS" start="2025-07-18T18:05:15.705343" elapsed="0.000429"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${output}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:15.706023" elapsed="0.000335"/>
+</kw>
+<kw name="Add Nums" owner="CustomLibrary">
+<msg time="2025-07-18T18:05:15.706804" level="INFO">${output} = 60</msg>
+<var>${output}</var>
+<arg>10</arg>
+<arg>20</arg>
+<arg>30</arg>
+<status status="PASS" start="2025-07-18T18:05:15.706538" elapsed="0.000317"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${output}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:15.707029" elapsed="0.000312"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:15.704251" elapsed="0.003308"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:15.700144" elapsed="0.008086"/>
+</suite>
+<suite id="s1-s4" name="DataFromCsv" source="D:\Automation practice\Robot Training\Tests\DataFromCsv.robot">
+<test id="s1-s4-t1" name="Login Tests Using CSV Admin and admin123" line="19">
+<kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:16.053483" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.052857" elapsed="2.681634"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:05:18.734905" elapsed="2.143114"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:23.879013" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.878320" elapsed="3.000945"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:16.051045" elapsed="7.828456"/>
+</kw>
+<kw name="Test Data">
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:23.882760" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:23.882127" elapsed="0.118467"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:05:23.881567" elapsed="0.119327"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:24.004707" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:24.004044" elapsed="0.081730"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:05:24.001525" elapsed="0.084367"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:24.086652" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:24.086394" elapsed="0.072226"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:24.086045" elapsed="0.072763"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:26.160290" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:24.159522" elapsed="2.000971"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:26.193630" level="INFO">Current page contains text 'Dashboard'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:05:26.160740" elapsed="0.033048"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:05:24.159041" elapsed="2.034960"/>
+</kw>
+<arg>${userName}</arg>
+<arg>${Password}</arg>
+<arg>${Message}</arg>
+<status status="PASS" start="2025-07-18T18:05:23.880701" elapsed="2.313439"/>
+</kw>
+<arg>userName=Admin</arg>
+<arg>Password=admin123</arg>
+<arg>Message=Dashboard</arg>
+<status status="PASS" start="2025-07-18T18:05:23.879861" elapsed="2.314453"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:26.194768" elapsed="2.237521"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:16.049496" elapsed="12.383505"/>
+</test>
+<test id="s1-s4-t2" name="Login Tests Using CSV admin123 and admin123" line="19">
+<kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:28.441379" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:28.440393" elapsed="4.264308"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:05:32.705058" elapsed="0.183606"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:35.889831" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:32.888955" elapsed="3.001071"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:28.439030" elapsed="7.451154"/>
+</kw>
+<kw name="Test Data">
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:35.893052" level="INFO">Typing text 'admin123' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.892528" elapsed="0.138112"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:05:35.891815" elapsed="0.139070"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:36.032567" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:36.031996" elapsed="0.125463"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:05:36.031247" elapsed="0.126463"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:36.159125" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:36.158749" elapsed="0.146482"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:36.158054" elapsed="0.147386"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:38.307063" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:36.306329" elapsed="2.000948"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:38.335366" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:05:38.307652" elapsed="0.027852"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:05:36.305810" elapsed="2.029900"/>
+</kw>
+<arg>${userName}</arg>
+<arg>${Password}</arg>
+<arg>${Message}</arg>
+<status status="PASS" start="2025-07-18T18:05:35.891040" elapsed="2.444786"/>
+</kw>
+<arg>userName=admin123</arg>
+<arg>Password=admin123</arg>
+<arg>Message=Invalid credentials</arg>
+<status status="PASS" start="2025-07-18T18:05:35.890461" elapsed="2.445483"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:38.336480" elapsed="2.284992"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:28.434426" elapsed="12.187297"/>
+</test>
+<test id="s1-s4-t3" name="Login Tests Using CSV admin12 and admin123" line="19">
+<kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:40.626080" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:40.625577" elapsed="2.140681"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:05:42.766756" elapsed="3.001243"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:48.771632" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:45.768528" elapsed="3.003263"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:40.624962" elapsed="8.146982"/>
+</kw>
+<kw name="Test Data">
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:48.774440" level="INFO">Typing text 'admin12' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:48.774039" elapsed="0.215565"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:05:48.773465" elapsed="0.216411"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:48.992410" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:48.991068" elapsed="0.181702"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:05:48.990276" elapsed="0.182748"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:49.174524" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:49.174105" elapsed="1.192004"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:49.173399" elapsed="1.192988"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:52.368682" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:50.367747" elapsed="2.001076"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:52.385279" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:05:52.369027" elapsed="0.016367"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:05:50.366825" elapsed="2.018688"/>
+</kw>
+<arg>${userName}</arg>
+<arg>${Password}</arg>
+<arg>${Message}</arg>
+<status status="PASS" start="2025-07-18T18:05:48.772824" elapsed="3.612766"/>
+</kw>
+<arg>userName=admin12</arg>
+<arg>Password=admin123</arg>
+<arg>Message=Invalid credentials</arg>
+<status status="PASS" start="2025-07-18T18:05:48.772195" elapsed="3.613472"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:52.385911" elapsed="2.359224"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:40.623055" elapsed="14.122467"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:15.717588" elapsed="39.029954"/>
+</suite>
+<suite id="s1-s5" name="DataFromExcel" source="D:\Automation practice\Robot Training\Tests\DataFromExcel.robot">
+<test id="s1-s5-t1" name="Login Test Using Excel Data Admin and admin123" line="21">
+<kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:18.406863" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:18.406508" elapsed="4.245227"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:05:22.652183" elapsed="0.035379"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:25.689046" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:22.688117" elapsed="3.001126"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:18.405615" elapsed="7.283791"/>
+</kw>
+<kw name="Test Data">
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:25.691674" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:25.691092" elapsed="0.216072"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:05:25.690727" elapsed="0.216652"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:25.909117" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:25.908239" elapsed="0.197104"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:05:25.907651" elapsed="0.197953"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:26.106797" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:26.106340" elapsed="1.222205"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:26.105859" elapsed="1.223017"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:29.333024" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:27.330613" elapsed="2.002708"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:29.364987" level="INFO">Current page contains text 'Dashboard'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:05:29.333667" elapsed="0.031473"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:05:27.329187" elapsed="2.036135"/>
+</kw>
+<arg>${userName}</arg>
+<arg>${Password}</arg>
+<arg>${Message}</arg>
+<status status="PASS" start="2025-07-18T18:05:25.690283" elapsed="3.675179"/>
+</kw>
+<arg>userName=Admin</arg>
+<arg>Password=admin123</arg>
+<arg>Message=Dashboard</arg>
+<status status="PASS" start="2025-07-18T18:05:25.689702" elapsed="3.675886"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:29.365971" elapsed="2.310689"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:18.403229" elapsed="13.273644"/>
+</test>
+<test id="s1-s5-t2" name="Login Test Using Excel Data AdminUser and admin123" line="21">
+<kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:31.679729" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:31.679444" elapsed="4.510402"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:05:36.190298" elapsed="0.046282"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:39.239464" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:36.237630" elapsed="3.003238"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:31.679024" elapsed="7.563347"/>
+</kw>
+<kw name="Test Data">
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:39.250517" level="INFO">Typing text 'AdminUser' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:39.249698" elapsed="0.230112"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:05:39.248960" elapsed="0.231104"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:39.481794" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:39.481254" elapsed="0.151071"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:05:39.480457" elapsed="0.152157"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:39.634117" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:39.633693" elapsed="0.155288"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:39.633028" elapsed="0.156252"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:41.800111" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:39.790294" elapsed="2.010091"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:41.866865" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:05:41.800848" elapsed="0.066293"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:05:39.789625" elapsed="2.077757"/>
+</kw>
+<arg>${userName}</arg>
+<arg>${Password}</arg>
+<arg>${Message}</arg>
+<status status="PASS" start="2025-07-18T18:05:39.247863" elapsed="2.619748"/>
+</kw>
+<arg>userName=AdminUser</arg>
+<arg>Password=admin123</arg>
+<arg>Message=Invalid credentials</arg>
+<status status="PASS" start="2025-07-18T18:05:39.243914" elapsed="2.623963"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:41.868653" elapsed="2.304590"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:31.677393" elapsed="12.496004"/>
+</test>
+<test id="s1-s5-t3" name="Login Test Using Excel Data Admin123 and Admin123" line="21">
+<kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:44.177156" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:44.176543" elapsed="4.701295"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:05:48.878234" elapsed="0.055672"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:51.935180" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:48.934266" elapsed="3.001038"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:44.175757" elapsed="7.759687"/>
+</kw>
+<kw name="Test Data">
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:51.937164" level="INFO">Typing text 'Admin123' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:51.936898" elapsed="0.094674"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:05:51.936571" elapsed="0.095138"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:52.032658" level="INFO">Typing text 'Admin123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:52.032329" elapsed="0.095970"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:05:52.031925" elapsed="0.096572"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:52.129428" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:52.129149" elapsed="0.777630"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:52.128733" elapsed="0.778189"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:54.908754" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:52.907795" elapsed="2.001123"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:54.927777" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:05:54.909189" elapsed="0.018717"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:05:52.907111" elapsed="2.020951"/>
+</kw>
+<arg>${userName}</arg>
+<arg>${Password}</arg>
+<arg>${Message}</arg>
+<status status="PASS" start="2025-07-18T18:05:51.936156" elapsed="2.992008"/>
+</kw>
+<arg>userName=Admin123</arg>
+<arg>Password=Admin123</arg>
+<arg>Message=Invalid credentials</arg>
+<status status="PASS" start="2025-07-18T18:05:51.935660" elapsed="2.992603"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:54.928570" elapsed="2.326879"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:44.174087" elapsed="13.081522"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:16.368438" elapsed="40.887836"/>
+</suite>
+<suite id="s1-s6" name="DataFromJson" source="D:\Automation practice\Robot Training\Tests\DataFromJson.robot">
+<test id="s1-s6-t1" name="Login Test with JSON Data" line="10">
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2025-07-18T18:05:17.921330" level="INFO">${data} = {'testdata': [{'userName': 'Admin', 'Password': 'admin123', 'Message': 'Dashboard'}, {'userName': 'User1', 'Password': 'Pass123', 'Message': 'Invalid credentials'}, {'userName': 'Adminn', 'Password': ...</msg>
+<var>${data}</var>
+<arg>${JSON_FILE}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2025-07-18T18:05:17.920630" elapsed="0.000842"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:17.921875" elapsed="0.000635"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${data['testdata'][2]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:17.922785" elapsed="0.000948"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Open Login Page" owner="LoginPageKw">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:17.926405" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:17.926037" elapsed="2.218390"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:05:20.144752" elapsed="2.479137"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:25.624939" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:22.624156" elapsed="3.000924"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:17.925563" elapsed="7.699684"/>
+</kw>
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:25.628875" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:25.628035" elapsed="0.119703"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:05:25.627572" elapsed="0.120384"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:25.749363" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:25.748896" elapsed="0.223121"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:05:25.748259" elapsed="0.223973"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:25.973385" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:25.972967" elapsed="0.152946"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:25.972484" elapsed="0.153681"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:28.128167" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:26.127150" elapsed="2.001783"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:28.236152" level="INFO">Current page contains text 'Dashboard'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:05:28.130318" elapsed="0.106002"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:05:26.126491" elapsed="2.110005"/>
+</kw>
+<arg>${case['userName']}</arg>
+<arg>${case['Password']}</arg>
+<arg>${case['Message']}</arg>
+<status status="PASS" start="2025-07-18T18:05:25.625533" elapsed="2.611060"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:28.236808" elapsed="2.300836"/>
+</kw>
+<var name="${case}">{'userName': 'Admin', 'Password': 'admin123', 'Message': 'Dashboard'}</var>
+<status status="PASS" start="2025-07-18T18:05:17.925253" elapsed="12.612578"/>
+</iter>
+<iter>
+<kw name="Open Login Page" owner="LoginPageKw">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:30.539329" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:30.538971" elapsed="4.095561"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:05:34.634822" elapsed="0.046680"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:37.685791" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:34.681813" elapsed="3.004219"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:30.538586" elapsed="7.147691"/>
+</kw>
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:37.697722" level="INFO">Typing text 'User1' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:37.695820" elapsed="0.279917"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:05:37.693998" elapsed="0.282180"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:37.978317" level="INFO">Typing text 'Pass123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:37.977728" elapsed="0.150924"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:05:37.976753" elapsed="0.152137"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:38.130256" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:38.129763" elapsed="0.120919"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:38.129159" elapsed="0.121793"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:40.253028" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:38.252165" elapsed="2.001123"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:40.274208" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:05:40.253689" elapsed="0.020656"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:05:38.251343" elapsed="2.023127"/>
+</kw>
+<arg>${case['userName']}</arg>
+<arg>${case['Password']}</arg>
+<arg>${case['Message']}</arg>
+<status status="PASS" start="2025-07-18T18:05:37.686733" elapsed="2.587821"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:40.274741" elapsed="2.161404"/>
+</kw>
+<var name="${case}">{'userName': 'User1', 'Password': 'Pass123', 'Message': 'Invalid credentials'}</var>
+<status status="PASS" start="2025-07-18T18:05:30.538254" elapsed="11.898090"/>
+</iter>
+<iter>
+<kw name="Open Login Page" owner="LoginPageKw">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:42.438221" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:42.437761" elapsed="4.465527"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:05:46.903720" elapsed="0.047491"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:49.952509" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:46.951522" elapsed="3.001252"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:42.437104" elapsed="7.516641"/>
+</kw>
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:49.960741" level="INFO">Typing text 'Adminn' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:49.959912" elapsed="0.482059"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:05:49.958963" elapsed="0.483383"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:50.444686" level="INFO">Typing text 'Pass123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:50.443776" elapsed="0.269268"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:05:50.442781" elapsed="0.270650"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:50.715482" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:50.714845" elapsed="0.868514"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:50.713931" elapsed="0.869555"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:53.584745" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:51.584028" elapsed="2.000859"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:53.601626" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:05:53.585124" elapsed="0.016654"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:05:51.583666" elapsed="2.018260"/>
+</kw>
+<arg>${case['userName']}</arg>
+<arg>${case['Password']}</arg>
+<arg>${case['Message']}</arg>
+<status status="PASS" start="2025-07-18T18:05:49.954336" elapsed="3.647712"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:53.602230" elapsed="2.197887"/>
+</kw>
+<var name="${case}">{'userName': 'Adminn', 'Password': 'Pass123', 'Message': 'Invalid credentials'}</var>
+<status status="PASS" start="2025-07-18T18:05:42.436712" elapsed="13.363598"/>
+</iter>
+<var>${case}</var>
+<value>@{data['testdata']}</value>
+<status status="PASS" start="2025-07-18T18:05:17.923885" elapsed="37.876588"/>
+</for>
+<status status="PASS" start="2025-07-18T18:05:17.919525" elapsed="37.881347"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:16.601253" elapsed="39.200578"/>
+</suite>
+<suite id="s1-s7" name="FirstTest" source="D:\Automation practice\Robot Training\Tests\FirstTest.robot">
+<test id="s1-s7-t1" name="Verify Example Page Title" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:23.682601" level="INFO">Opening browser 'Chrome' to base url 'https://example.com'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:23.682285" elapsed="2.251261"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:28.935127" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:25.933963" elapsed="3.001647"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:28.960914" level="INFO">Page title is 'Example Domain'.</msg>
+<arg>Example Domain</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-07-18T18:05:28.936336" elapsed="0.025037"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:31.964967" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:28.963100" elapsed="3.002017"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:31.965339" elapsed="2.146946"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:23.681374" elapsed="10.431708"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:23.435777" elapsed="10.678560"/>
+</suite>
+<suite id="s1-s8" name="ForLoop" source="D:\Automation practice\Robot Training\Tests\ForLoop.robot">
+<test id="s1-s8-t1" name="For_Loop" line="12">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.202781" elapsed="0.000278"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-07-18T18:05:35.202064" elapsed="0.001088"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.203449" elapsed="0.000288"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-07-18T18:05:35.203294" elapsed="0.000512"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.204047" elapsed="0.000199"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2025-07-18T18:05:35.203921" elapsed="0.000384"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.204536" elapsed="0.000200"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2025-07-18T18:05:35.204428" elapsed="0.000368"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.205013" elapsed="0.000205"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2025-07-18T18:05:35.204900" elapsed="0.000376"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.205500" elapsed="0.000200"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2025-07-18T18:05:35.205380" elapsed="0.000388"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.205983" elapsed="0.000198"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2025-07-18T18:05:35.205876" elapsed="0.000362"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.206451" elapsed="0.000203"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2025-07-18T18:05:35.206345" elapsed="0.000369"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.206936" elapsed="0.000184"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2025-07-18T18:05:35.206825" elapsed="0.000352"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>10</value>
+<status status="PASS" start="2025-07-18T18:05:35.201765" elapsed="0.005479"/>
+</for>
+<status status="PASS" start="2025-07-18T18:05:35.201442" elapsed="0.005949"/>
+</test>
+<test id="s1-s8-t2" name="For_Loop for List" line="16">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.208229" elapsed="0.000207"/>
+</kw>
+<var name="${element}">1 2 3 4 5 6 7 8 9</var>
+<status status="PASS" start="2025-07-18T18:05:35.208116" elapsed="0.000381"/>
+</iter>
+<var>${element}</var>
+<value>@{nums}</value>
+<status status="PASS" start="2025-07-18T18:05:35.207940" elapsed="0.000617"/>
+</for>
+<status status="PASS" start="2025-07-18T18:05:35.207672" elapsed="0.001022"/>
+</test>
+<test id="s1-s8-t3" name="For_loop with Strings" line="20">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${string}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.209586" elapsed="0.000180"/>
+</kw>
+<var name="${string}">mahi</var>
+<status status="PASS" start="2025-07-18T18:05:35.209478" elapsed="0.000347"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${string}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.210037" elapsed="0.000180"/>
+</kw>
+<var name="${string}">mahesh</var>
+<status status="PASS" start="2025-07-18T18:05:35.209929" elapsed="0.000346"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${string}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.210539" elapsed="0.000266"/>
+</kw>
+<var name="${string}">mahendra</var>
+<status status="PASS" start="2025-07-18T18:05:35.210404" elapsed="0.000489"/>
+</iter>
+<var>${string}</var>
+<value>@{str}</value>
+<status status="PASS" start="2025-07-18T18:05:35.209305" elapsed="0.001680"/>
+</for>
+<status status="PASS" start="2025-07-18T18:05:35.209082" elapsed="0.002054"/>
+</test>
+<test id="s1-s8-t4" name="For_Loop with Condition" line="24">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.213041" elapsed="0.000270"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==7</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.213433" elapsed="0.000260"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-07-18T18:05:35.212863" elapsed="0.000891"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.213984" elapsed="0.000188"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==7</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.214283" elapsed="0.000237"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-07-18T18:05:35.213867" elapsed="0.000711"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.214809" elapsed="0.000174"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==7</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.215102" elapsed="0.000212"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2025-07-18T18:05:35.214698" elapsed="0.000683"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.215598" elapsed="0.000476"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==7</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.216196" elapsed="0.000227"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2025-07-18T18:05:35.215492" elapsed="0.001007"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.216712" elapsed="0.000186"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==7</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.217004" elapsed="0.000232"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2025-07-18T18:05:35.216607" elapsed="0.000804"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.217651" elapsed="0.000174"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==7</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.217943" elapsed="0.000218"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2025-07-18T18:05:35.217540" elapsed="0.000688"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.218455" elapsed="0.000186"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2025-07-18T18:05:35.218974" level="INFO">Exiting for loop altogether.</msg>
+<arg>${i}==7</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.218752" elapsed="0.000434"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2025-07-18T18:05:35.218335" elapsed="0.000932"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>10</value>
+<status status="PASS" start="2025-07-18T18:05:35.212202" elapsed="0.007129"/>
+</for>
+<status status="PASS" start="2025-07-18T18:05:35.211511" elapsed="0.007957"/>
+</test>
+<test id="s1-s8-t5" name="For_Loop With Dictonaries" line="29">
+<kw name="Get Dictionary Keys" owner="Collections">
+<msg time="2025-07-18T18:05:35.220195" level="INFO">@{dict_keys} = [ age | mob_no | name ]</msg>
+<var>@{dict_keys}</var>
+<arg>${var}</arg>
+<doc>Returns keys of the given ``dictionary`` as a list.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.219963" elapsed="0.000269"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${dict_keys}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.220345" elapsed="0.000192"/>
+</kw>
+<kw name="Get Dictionary Values" owner="Collections">
+<msg time="2025-07-18T18:05:35.220859" level="INFO">@{values} = [ 23 | 9100 | mahi ]</msg>
+<var>@{values}</var>
+<arg>${var}</arg>
+<doc>Returns values of the given ``dictionary`` as a list.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.220643" elapsed="0.000248"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${values}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.220995" elapsed="0.000174"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${key}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.221515" elapsed="0.000170"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-07-18T18:05:35.221983" level="INFO">${value} = 23</msg>
+<var>${value}</var>
+<arg>${var}</arg>
+<arg>${key}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.221792" elapsed="0.000221"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.222118" elapsed="0.000183"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${key}=${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.222407" elapsed="0.000236"/>
+</kw>
+<var name="${key}">age</var>
+<status status="PASS" start="2025-07-18T18:05:35.221409" elapsed="0.001290"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${key}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.222935" elapsed="0.000172"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-07-18T18:05:35.223417" level="INFO">${value} = 9100</msg>
+<var>${value}</var>
+<arg>${var}</arg>
+<arg>${key}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.223223" elapsed="0.000228"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.223569" elapsed="0.000174"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${key}=${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.223848" elapsed="0.000243"/>
+</kw>
+<var name="${key}">mob_no</var>
+<status status="PASS" start="2025-07-18T18:05:35.222820" elapsed="0.001328"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${key}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.224379" elapsed="0.000176"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-07-18T18:05:35.224877" level="INFO">${value} = mahi</msg>
+<var>${value}</var>
+<arg>${var}</arg>
+<arg>${key}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.224675" elapsed="0.000233"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.225029" elapsed="0.000173"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${key}=${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:35.225318" elapsed="0.000230"/>
+</kw>
+<var name="${key}">name</var>
+<status status="PASS" start="2025-07-18T18:05:35.224272" elapsed="0.001343"/>
+</iter>
+<var>${key}</var>
+<value>@{dict_keys}</value>
+<status status="PASS" start="2025-07-18T18:05:35.221242" elapsed="0.004431"/>
+</for>
+<status status="PASS" start="2025-07-18T18:05:35.219671" elapsed="0.006120"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:34.881476" elapsed="0.344664"/>
+</suite>
+<suite id="s1-s9" name="Headless" source="D:\Automation practice\Robot Training\Tests\Headless.robot">
+<test id="s1-s9-t1" name="Run Tests under Headless Browser" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:36.654234" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.google.com/'.</msg>
+<arg>${URL}</arg>
+<arg>headlesschrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:36.653575" elapsed="2.584043"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:05:39.238092" elapsed="0.070429"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:41.309535" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:39.308921" elapsed="2.000798"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:41.310570" level="INFO">Typing text 'Automation Step by step' into text field 'class=gLFyf'.</msg>
+<arg>class=gLFyf</arg>
+<arg>Automation Step by step</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:41.309980" elapsed="0.201688"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:43.513114" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:41.512030" elapsed="2.001904"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:43.516209" level="INFO">Clicking button 'class=gNO89b'.</msg>
+<arg>class=gNO89b</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:43.515093" elapsed="0.376095"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:45.901489" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:43.891439" elapsed="2.012756"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:05:50.906268" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:45.904949" elapsed="5.001485"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:05:50.906702" elapsed="2.260674"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:36.651898" elapsed="16.515980"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:36.176470" elapsed="16.992306"/>
+</suite>
+<suite id="s1-s10" name="Iframes" source="D:\Automation practice\Robot Training\Tests\Iframes.robot">
+<test id="s1-s10-t1" name="Handling iframes" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:54.367513" level="INFO">Opening browser 'chrome' to base url 'https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst'.</msg>
+<arg>https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:54.367169" elapsed="4.720621"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:05:59.088422" elapsed="0.090922"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:59.182513" level="INFO">Selecting frame 'id=iframeResult'.</msg>
+<arg>id=iframeResult</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-07-18T18:05:59.180799" elapsed="0.117406"/>
+</kw>
+<kw name="Current Frame Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:59.334233" level="INFO">Current frame contains text 'My First JavaScript'.</msg>
+<arg>My First JavaScript</arg>
+<doc>Verifies that the current frame contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:05:59.298691" elapsed="0.035810"/>
+</kw>
+<kw name="Current Frame Should Not Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:59.365394" level="INFO">Current frame did not contain text 'text'.</msg>
+<arg>text</arg>
+<doc>Verifies that the current frame does not contain ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:05:59.334947" elapsed="0.030717"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:59.366783" level="INFO">Clicking button 'css=button[type='button']'.</msg>
+<arg>css=button[type='button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:05:59.366137" elapsed="0.407692"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:06:02.775631" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:05:59.774278" elapsed="3.001714"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-07-18T18:06:02.776409" elapsed="0.067630"/>
+</kw>
+<kw name="Frame Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:02.913314" level="INFO">Searching for text from frame 'id=iframeResult'.</msg>
+<msg time="2025-07-18T18:06:02.929401" level="INFO">Frame 'id=iframeResult' contains text 'My First JavaScript'.</msg>
+<arg>id=iframeResult</arg>
+<arg>My First JavaScript</arg>
+<doc>Verifies that frame identified by ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:06:02.844420" elapsed="0.085207"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:54.366121" elapsed="8.563939"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:54.057233" elapsed="8.873967"/>
+</suite>
+<suite id="s1-s11" name="LoginTest" source="D:\Automation practice\Robot Training\Tests\LoginTest.robot">
+<test id="s1-s11-t1" name="Valid Login Test" line="11">
+<kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:05:56.848088" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:05:56.847646" elapsed="2.923740"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:05:59.771941" elapsed="2.647112"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:06:05.420551" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:06:02.419468" elapsed="3.001320"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:56.846518" elapsed="8.574564"/>
+</kw>
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:05.425416" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.424344" elapsed="0.280747"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:06:05.423414" elapsed="0.282093"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:05.707364" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.706757" elapsed="0.234173"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:06:05.705936" elapsed="0.235279"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:05.943183" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.942620" elapsed="1.257673"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:05.941787" elapsed="1.258814"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:06:09.202794" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:06:07.201948" elapsed="2.001094"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:09.244624" level="INFO">Current page contains text 'Dashboard'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:06:09.203479" elapsed="0.041387"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:06:07.201068" elapsed="2.044256"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin123</arg>
+<arg>Dashboard</arg>
+<status status="PASS" start="2025-07-18T18:06:05.421655" elapsed="3.824041"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:06:09.246548" elapsed="2.210594"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:56.845468" elapsed="14.611954"/>
+</test>
+<test id="s1-s11-t2" name="Invalid Login Test" line="14">
+<kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:11.460720" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:06:11.460125" elapsed="4.133752"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:06:15.594140" elapsed="0.025416"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:06:18.620270" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:06:15.619733" elapsed="3.000684"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:11.459351" elapsed="7.161212"/>
+</kw>
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:18.622574" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:18.622042" elapsed="0.086783"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:06:18.621630" elapsed="0.087489"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:18.710807" level="INFO">Typing text 'Admin' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:18.710328" elapsed="0.097836"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:06:18.709671" elapsed="0.098726"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:18.809639" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:18.809249" elapsed="0.070415"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:18.808699" elapsed="0.071176"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:06:20.881143" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:06:18.880632" elapsed="2.000698"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:20.899534" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:06:20.881586" elapsed="0.018076"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:06:18.880096" elapsed="2.019702"/>
+</kw>
+<arg>Admin</arg>
+<arg>Admin</arg>
+<arg>Invalid credentials</arg>
+<status status="PASS" start="2025-07-18T18:06:18.620905" elapsed="2.278993"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:06:20.900176" elapsed="2.208804"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:11.458333" elapsed="11.651195"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:56.423162" elapsed="26.689682"/>
+</suite>
+<suite id="s1-s12" name="Practice" source="D:\Automation practice\Robot Training\Tests\Practice.robot">
+<test id="s1-s12-t1" name="Practicing" line="6">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Hello</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:59.249968" elapsed="0.000940"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>message</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:59.251492" elapsed="0.000673"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:59.246516" elapsed="0.006095"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:56.884386" elapsed="2.369745"/>
+</suite>
+<suite id="s1-s13" name="RestApi" source="D:\Automation practice\Robot Training\Tests\RestApi">
+<suite id="s1-s13-s1" name="FirstApi" source="D:\Automation practice\Robot Training\Tests\RestApi\FirstApi.robot">
+<test id="s1-s13-s1-t1" name="First test On Rest API" line="10">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-07-18T18:06:03.755483" level="INFO">Creating Session using : alias=ses, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-07-18T18:06:03.756412" level="INFO">${Session} = &lt;requests.sessions.Session object at 0x0000023FFC032120&gt;</msg>
+<var>${Session}</var>
+<arg>ses</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-07-18T18:06:03.755003" elapsed="0.001562"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Created Session:${Session}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.757078" elapsed="0.000769"/>
+</kw>
+<kw name="Session Exists" owner="RequestsLibrary">
+<msg time="2025-07-18T18:06:03.759336" level="INFO">${is_exist} = True</msg>
+<var>${is_exist}</var>
+<arg>ses</arg>
+<doc>Return True if the session has been already created</doc>
+<status status="PASS" start="2025-07-18T18:06:03.758232" elapsed="0.001204"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${is_exist}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.759787" elapsed="0.000443"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${is_exist}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.760518" elapsed="0.000509"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:03.752898" elapsed="0.008472"/>
+</test>
+<status status="PASS" start="2025-07-18T18:06:01.783909" elapsed="1.978651"/>
+</suite>
+<suite id="s1-s13-s2" name="GET Request" source="D:\Automation practice\Robot Training\Tests\RestApi\GET_Request.robot">
+<test id="s1-s13-s2-t1" name="Get Information" line="11">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-07-18T18:06:03.851223" level="INFO">Creating Session using : alias=MySession, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>MySession</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-07-18T18:06:03.850586" elapsed="0.001714"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2025-07-18T18:06:03.985720" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/1 
+ path_url=/users/1 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-07-18T18:06:03.985943" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/1 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 18 Jul 2025 12:36:03 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Etag': 'W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"', 'Expires': '-1', 'Nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'Pragma': 'no-cache', 'Report-To': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=lmbAjTdMdsn42BHhDys61EW0ttCUi43RcdgTCU4Mn8o%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1752058228"}],"max_age":3600}', 'Reporting-Endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=lmbAjTdMdsn42BHhDys61EW0ttCUi43RcdgTCU4Mn8o%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1752058228"', 'Server': 'cloudflare', 'Vary': 'Origin, Accept-Encoding', 'Via': '2.0 heroku-router', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1752058236', 'Age': '28233', 'Cf-Cache-Status': 'HIT', 'Content-Encoding': 'gzip', 'CF-RAY': '961205c178c6b540-MAA', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+} 
+ </msg>
+<msg time="2025-07-18T18:06:03.986086" level="INFO">C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-07-18T18:06:03.986402" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>MySession</arg>
+<arg>${endpoint}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.852743" elapsed="0.133717"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Getting Json formatted Response :${response.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.986730" elapsed="0.001499"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Final Url: ${response.url}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.988468" elapsed="0.001065"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.ok}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.989748" elapsed="0.001035"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-07-18T18:06:03.991984" level="INFO">${status_code} = 200</msg>
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.990991" elapsed="0.001050"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Status Code: ${status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.992282" elapsed="0.000426"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-07-18T18:06:03.993836" level="INFO">${body} = {
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipco...</msg>
+<var>${body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.992913" elapsed="0.001013"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response Body: ${body}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.994127" elapsed="0.000475"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-07-18T18:06:03.995762" level="INFO">${headers} = application/json; charset=utf-8</msg>
+<var>${headers}</var>
+<arg>${response.headers}</arg>
+<arg>Content-Type</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.994798" elapsed="0.001020"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Content-Type Header: ${headers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.996077" elapsed="0.000403"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-18T18:06:03.997219" level="INFO">${res_body} = {'id': 1, 'name': 'Leanne Graham', 'username': 'Bret', 'email': 'Sincere@april.biz', 'address': {'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {'...</msg>
+<var>${res_body}</var>
+<arg>${body}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.996664" elapsed="0.000613"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${res_body}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.997480" elapsed="0.000468"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-07-18T18:06:03.998636" level="INFO">${name} = Leanne Graham</msg>
+<var>${name}</var>
+<arg>${res_body}</arg>
+<arg>name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.998155" elapsed="0.000562"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.999005" elapsed="0.000445"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${res_body}[email]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:03.999743" elapsed="0.000534"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${res_body}[address]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:04.000486" elapsed="0.000675"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${res_body}[address][zipcode]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:04.001452" elapsed="0.000531"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${res_body}[company]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:04.002272" elapsed="0.000491"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${res_body}[company][bs]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:04.003031" elapsed="0.000501"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-07-18T18:06:04.003832" elapsed="0.000612"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-07-18T18:06:04.004738" elapsed="0.000485"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${body}</arg>
+<arg>Bret</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-07-18T18:06:04.005500" elapsed="0.000423"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${headers}</arg>
+<arg>application/json; charset=utf-8</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-07-18T18:06:04.006250" elapsed="0.000524"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${res_body}[name]</arg>
+<arg>Leanne Graham</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-07-18T18:06:04.007043" elapsed="0.000484"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${response.json()}</arg>
+<arg>id</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2025-07-18T18:06:04.007779" elapsed="0.001288"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:03.848626" elapsed="0.160768"/>
+</test>
+<status status="PASS" start="2025-07-18T18:06:02.722935" elapsed="1.287470"/>
+</suite>
+<suite id="s1-s13-s3" name="POST Request" source="D:\Automation practice\Robot Training\Tests\RestApi\POST_Request.robot">
+<test id="s1-s13-s3-t1" name="Create New Post" line="10">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-07-18T18:06:05.661980" level="INFO">Creating Session using : alias=MySession, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>MySession</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-07-18T18:06:05.661412" elapsed="0.001010"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-07-18T18:06:06.408042" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/posts 
+ path_url=/posts 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '107', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=userId=5&amp;id=101&amp;title=Checking+Post+Requests&amp;body=This+is+for+Checking+the+functionality+of+the+Post+method 
+ </msg>
+<msg time="2025-07-18T18:06:06.408323" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/posts 
+ status=201, reason=Created 
+ headers={'Date': 'Fri, 18 Jul 2025 12:36:05 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '140', 'Connection': 'keep-alive', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Expose-Headers': 'Location', 'Cache-Control': 'no-cache', 'Etag': 'W/"8c-tMi9cORye6Wep6D5jCv4hU4A2s8"', 'Expires': '-1', 'Location': 'https://jsonplaceholder.typicode.com/posts/101', 'Nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'Pragma': 'no-cache', 'Report-To': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=g9RzfodirXLozv8h14p4U5yj1D7%2B14Py8NDERqhk2WY%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1752842165"}],"max_age":3600}', 'Reporting-Endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=g9RzfodirXLozv8h14p4U5yj1D7%2B14Py8NDERqhk2WY%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1752842165"', 'Server': 'cloudflare', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Via': '2.0 heroku-router', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1752842226', 'Cf-Cache-Status': 'DYNAMIC', 'CF-RAY': '961205cccdeb7f2b-MAA', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={
+  "userId": "5",
+  "id": 101,
+  "title": "Checking Post Requests",
+  "body": "This is for Checking the functionality of the Post method"
+} 
+ </msg>
+<msg time="2025-07-18T18:06:06.408652" level="INFO">C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-07-18T18:06:06.409097" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>MySession</arg>
+<arg>${endpoint}</arg>
+<arg>data=${Dic_values}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.662812" elapsed="0.746403"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response :${response}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.409625" elapsed="0.000675"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>201</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.410621" elapsed="0.000673"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-07-18T18:06:06.412487" level="INFO">${status_code} = 201</msg>
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.411538" elapsed="0.001009"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Status Code :${status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.412740" elapsed="0.000433"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>201</arg>
+<arg>${status_code}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.413371" elapsed="0.000353"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-07-18T18:06:06.414908" level="INFO">${body} = {
+  "userId": "5",
+  "id": 101,
+  "title": "Checking Post Requests",
+  "body": "This is for Checking the functionality of the Post method"
+}</msg>
+<var>${body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.413907" elapsed="0.001110"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${body}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.415389" elapsed="0.000926"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-18T18:06:06.417411" level="INFO">${res_body} = {'userId': '5', 'id': 101, 'title': 'Checking Post Requests', 'body': 'This is for Checking the functionality of the Post method'}</msg>
+<var>${res_body}</var>
+<arg>${body}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.416689" elapsed="0.000821"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${res_body}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.417816" elapsed="0.000507"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Title is ${res_body}[title]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.418568" elapsed="0.000446"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>id: ${res_body}[id]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.419319" elapsed="0.000449"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2025-07-18T18:06:06.420295" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${res_body}[id]</arg>
+<arg>101</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2025-07-18T18:06:06.420000" elapsed="0.000416"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:05.659577" elapsed="0.761108"/>
+</test>
+<status status="PASS" start="2025-07-18T18:06:04.592892" elapsed="1.828603"/>
+</suite>
+<status status="PASS" start="2025-07-18T18:06:01.779000" elapsed="4.643000"/>
+</suite>
+<suite id="s1-s14" name="SetupOrTeardown" source="D:\Automation practice\Robot Training\Tests\SetupOrTeardown.robot">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>IM INSIDE SUITE SETUP</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.809849" elapsed="0.000776"/>
+</kw>
+<test id="s1-s14-t1" name="Checking Setup ad Teardown" line="12">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>IM INSIDE TEST SETUP</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.812117" elapsed="0.000581"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Inside Test Case 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.813080" elapsed="0.000440"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>IM INSIDE TEST TEARDOWN</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.814008" elapsed="0.000415"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:05.811058" elapsed="0.003540"/>
+</test>
+<test id="s1-s14-t2" name="Checking Setup ad Teardown 1" line="15">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>IM INSIDE TEST SETUP</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.816208" elapsed="0.000516"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Inside Test Case 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.817043" elapsed="0.000396"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>IM INSIDE TEST TEARDOWN</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.817875" elapsed="0.000443"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:05.815161" elapsed="0.003332"/>
+</test>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>IM INSIDE SUITE TEARDOWN</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.819687" elapsed="0.000461"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:05.086449" elapsed="0.733858"/>
+</suite>
+<suite id="s1-s15" name="Tags" source="D:\Automation practice\Robot Training\Tests\Tags.robot">
+<test id="s1-s15-t1" name="checking Tags keyword" line="7">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Inside Smoke ${TEST_TAGS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.944192" elapsed="0.000819"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2025-07-18T18:06:05.941451" elapsed="0.003985"/>
+</test>
+<test id="s1-s15-t2" name="checking default Tags" line="12">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Inside Default ${TEST_TAGS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.947306" elapsed="0.000673"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2025-07-18T18:06:05.946237" elapsed="0.002116"/>
+</test>
+<test id="s1-s15-t3" name="checking set Tags" line="16">
+<kw name="Set Tags" owner="BuiltIn">
+<msg time="2025-07-18T18:06:05.950305" level="INFO">Set tag 'regression'.</msg>
+<arg>regression</arg>
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.949828" elapsed="0.000629"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Inside Set tag ${TEST_TAGS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:05.950777" elapsed="0.000521"/>
+</kw>
+<tag>regression</tag>
+<tag>sanity</tag>
+<status status="PASS" start="2025-07-18T18:06:05.949224" elapsed="0.002286"/>
+</test>
+<status status="PASS" start="2025-07-18T18:06:05.201671" elapsed="0.750511"/>
+</suite>
+<suite id="s1-s16" name="Templates" source="D:\Automation practice\Robot Training\Tests\Templates.robot">
+<test id="s1-s16-t1" name="Valid Login" line="25">
+<kw name="LoginTestCase">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:07.578029" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:06:07.577311" elapsed="4.236529"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:06:11.814150" elapsed="0.034983"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:06:16.849982" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:06:11.849357" elapsed="5.000898"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:16.851748" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:16.850696" elapsed="0.114328"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:16.965582" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:16.965229" elapsed="0.076348"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:17.042067" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:17.041779" elapsed="0.083043"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:06:22.126071" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:06:17.125099" elapsed="5.001559"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:22.198053" level="INFO">Current page contains text 'Dashboard'.</msg>
+<arg>${expected_message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:06:22.127436" elapsed="0.071006"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:06:22.199185" elapsed="2.242074"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin123</arg>
+<arg>Dashboard</arg>
+<status status="PASS" start="2025-07-18T18:06:07.575125" elapsed="16.866427"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:07.573233" elapsed="16.868693"/>
+</test>
+<test id="s1-s16-t2" name="Invalid Login" line="28">
+<kw name="LoginTestCase">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:24.444430" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:06:24.444066" elapsed="4.268489"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:06:28.712811" elapsed="0.027244"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:06:33.741507" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:06:28.740460" elapsed="5.001269"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:33.742696" level="INFO">Typing text 'admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:33.742085" elapsed="0.082985"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:33.825630" level="INFO">Typing text 'wrongpassword' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:33.825237" elapsed="0.097302"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:33.922934" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:33.922696" elapsed="0.077764"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:06:39.001433" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:06:34.000631" elapsed="5.001175"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:39.058226" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${expected_message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:06:39.002371" elapsed="0.056092"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:06:39.058864" elapsed="2.235690"/>
+</kw>
+<arg>admin</arg>
+<arg>wrongpassword</arg>
+<arg>Invalid credentials</arg>
+<status status="PASS" start="2025-07-18T18:06:24.443497" elapsed="16.851574"/>
+</kw>
+<kw name="LoginTestCase">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:41.298636" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:06:41.297584" elapsed="4.552271"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:06:45.850154" elapsed="0.042156"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:06:50.893552" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:06:45.892466" elapsed="5.001493"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:50.895872" level="INFO">Typing text 'user' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:50.894643" elapsed="0.153201"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:51.048511" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:51.048144" elapsed="0.083376"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:51.132151" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:06:51.131755" elapsed="0.076064"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:06:56.208736" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:06:51.207992" elapsed="5.000994"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:06:56.233266" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${expected_message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:06:56.209403" elapsed="0.023988"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:06:56.233580" elapsed="2.187608"/>
+</kw>
+<arg>user</arg>
+<arg>admin123</arg>
+<arg>Invalid credentials</arg>
+<status status="PASS" start="2025-07-18T18:06:41.296004" elapsed="17.125779"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:24.442651" elapsed="33.979847"/>
+</test>
+<status status="PASS" start="2025-07-18T18:06:06.990898" elapsed="51.434543"/>
+</suite>
+<suite id="s1-s17" name="Variables" source="D:\Automation practice\Robot Training\Tests\Variables.robot">
+<test id="s1-s17-t1" name="Accesing Variables" line="18">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Scalar}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:07.686210" elapsed="0.000593"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${lists}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:07.687094" elapsed="0.000427"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${dict}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:07.687746" elapsed="0.000382"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${env_var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:07.688324" elapsed="0.000532"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${env_var1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:06:07.689156" elapsed="0.000548"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:06:07.684694" elapsed="0.005246"/>
+</test>
+<status status="PASS" start="2025-07-18T18:06:07.127569" elapsed="0.563184"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 19 executions.</doc>
+<status status="PASS" start="2025-07-18T18:05:15.682000" elapsed="102.746000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="32" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="2" fail="0" skip="0">sanity</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="32" fail="0" skip="0">Tests</stat>
+<stat name="Add To cart" id="s1-s1" pass="1" fail="0" skip="0">Tests.Add To cart</stat>
+<stat name="Assertions" id="s1-s2" pass="1" fail="0" skip="0">Tests.Assertions</stat>
+<stat name="CustomLib" id="s1-s3" pass="1" fail="0" skip="0">Tests.CustomLib</stat>
+<stat name="DataFromCsv" id="s1-s4" pass="3" fail="0" skip="0">Tests.DataFromCsv</stat>
+<stat name="DataFromExcel" id="s1-s5" pass="3" fail="0" skip="0">Tests.DataFromExcel</stat>
+<stat name="DataFromJson" id="s1-s6" pass="1" fail="0" skip="0">Tests.DataFromJson</stat>
+<stat name="FirstTest" id="s1-s7" pass="1" fail="0" skip="0">Tests.FirstTest</stat>
+<stat name="ForLoop" id="s1-s8" pass="5" fail="0" skip="0">Tests.ForLoop</stat>
+<stat name="Headless" id="s1-s9" pass="1" fail="0" skip="0">Tests.Headless</stat>
+<stat name="Iframes" id="s1-s10" pass="1" fail="0" skip="0">Tests.Iframes</stat>
+<stat name="LoginTest" id="s1-s11" pass="2" fail="0" skip="0">Tests.LoginTest</stat>
+<stat name="Practice" id="s1-s12" pass="1" fail="0" skip="0">Tests.Practice</stat>
+<stat name="RestApi" id="s1-s13" pass="3" fail="0" skip="0">Tests.RestApi</stat>
+<stat name="FirstApi" id="s1-s13-s1" pass="1" fail="0" skip="0">Tests.RestApi.FirstApi</stat>
+<stat name="GET Request" id="s1-s13-s2" pass="1" fail="0" skip="0">Tests.RestApi.GET Request</stat>
+<stat name="POST Request" id="s1-s13-s3" pass="1" fail="0" skip="0">Tests.RestApi.POST Request</stat>
+<stat name="SetupOrTeardown" id="s1-s14" pass="2" fail="0" skip="0">Tests.SetupOrTeardown</stat>
+<stat name="Tags" id="s1-s15" pass="3" fail="0" skip="0">Tests.Tags</stat>
+<stat name="Templates" id="s1-s16" pass="2" fail="0" skip="0">Tests.Templates</stat>
+<stat name="Variables" id="s1-s17" pass="1" fail="0" skip="0">Tests.Variables</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
