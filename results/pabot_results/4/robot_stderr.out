@@ -1,6 +1,0 @@
-[ ERROR ] [ DataDriver ] Error in robot file:
-  File "D:\Automation practice\Robot Training\tests\DataFromExcel.robot", line 0
-[ ERROR ] In source file:
-  File "D:\Automation practice\Robot Training\tests\..\Test Data\ExcelData.xlsx", line 0
-[ ERROR ] Calling method '_start_suite' of listener 'DataDriver' failed: ImportError: Requirements (pandas, openpyxl) for XLSX support are not installed.
-    Use 'pip install -U robotframework-datadriver[XLS]' to install XLSX support.

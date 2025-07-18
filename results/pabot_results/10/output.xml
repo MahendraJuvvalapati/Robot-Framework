@@ -1,68 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T11:01:53.339371" rpa="false" schemaversion="5">
-<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\tests">
-<suite id="s1-s1" name="LoginTest" source="D:\Automation practice\Robot Training\tests\LoginTest.robot">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:30:31.966826" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
+<suite id="s1-s1" name="LoginTest" source="D:\Automation practice\Robot Training\Tests\LoginTest.robot">
 <test id="s1-s1-t1" name="Valid Login Test" line="11">
 <kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-07-18T11:01:53.836195" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<msg time="2025-07-18T11:02:03.793428" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796BC4550&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2d62d50441ca05016942805a5c9e3107/screenshot</msg>
-<msg time="2025-07-18T11:02:07.828948" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796BC42D0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2d62d50441ca05016942805a5c9e3107/screenshot</msg>
-<msg time="2025-07-18T11:02:11.881596" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796B9E060&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2d62d50441ca05016942805a5c9e3107/screenshot</msg>
-<msg time="2025-07-18T11:02:15.920484" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=49873): Max retries exceeded with url: /session/2d62d50441ca05016942805a5c9e3107/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796B9E520&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<msg time="2025-07-18T18:30:34.476779" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2025-07-18T11:01:53.835764" elapsed="22.085401">Execution terminated by signal</status>
+<status status="PASS" start="2025-07-18T18:30:34.475941" elapsed="5.276955"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2025-07-18T11:02:15.921747" elapsed="0.000114"/>
+<status status="PASS" start="2025-07-18T18:30:39.753617" elapsed="0.189965"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:30:42.944978" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-07-18T11:02:15.922036" elapsed="0.000091"/>
+<status status="PASS" start="2025-07-18T18:30:39.944061" elapsed="3.001150"/>
 </kw>
-<status status="FAIL" start="2025-07-18T11:01:53.834641" elapsed="22.087672">Execution terminated by signal</status>
+<status status="PASS" start="2025-07-18T18:30:34.473059" elapsed="8.472427"/>
+</kw>
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:42.948361" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:42.947557" elapsed="0.149826"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:30:42.946868" elapsed="0.150808"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:43.099480" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:43.098884" elapsed="0.247880"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:30:43.098090" elapsed="0.248923"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:43.348562" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:43.348029" elapsed="1.345995"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:30:43.347394" elapsed="1.346897"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:30:46.696445" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:30:44.695477" elapsed="2.001186"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:46.721584" level="INFO">Current page contains text 'Dashboard'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:30:46.697002" elapsed="0.024723"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:30:44.694685" elapsed="2.027304"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin123</arg>
+<arg>Dashboard</arg>
+<status status="PASS" start="2025-07-18T18:30:42.945980" elapsed="3.776205"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<msg time="2025-07-18T11:02:19.992170" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796BD4050&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2d62d50441ca05016942805a5c9e3107</msg>
-<msg time="2025-07-18T11:02:24.046932" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796BE06B0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2d62d50441ca05016942805a5c9e3107</msg>
-<msg time="2025-07-18T11:02:28.104042" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796BE09E0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2d62d50441ca05016942805a5c9e3107</msg>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-07-18T11:02:15.922687" elapsed="16.230473"/>
+<status status="PASS" start="2025-07-18T18:30:46.722763" elapsed="2.354314"/>
 </kw>
-<status status="FAIL" start="2025-07-18T11:01:53.833624" elapsed="38.319789">Setup failed:
-Execution terminated by signal</status>
+<status status="PASS" start="2025-07-18T18:30:34.468094" elapsed="14.609230"/>
 </test>
 <test id="s1-s1-t2" name="Invalid Login Test" line="14">
-<tag>robot:exit</tag>
-<status status="FAIL" start="2025-07-18T11:02:32.154561" elapsed="0.000692">Test execution stopped due to a fatal error.</status>
+<kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:49.097246" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:30:49.094497" elapsed="8.002433"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:30:57.097203" elapsed="0.029097"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:31:00.127646" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:30:57.126564" elapsed="3.001366"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:30:49.087439" elapsed="11.040755"/>
+</kw>
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:31:00.130157" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:31:00.129779" elapsed="0.091913"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:31:00.129127" elapsed="0.092793"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:31:00.223387" level="INFO">Typing text 'Admin' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:31:00.222904" elapsed="0.105325"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:31:00.222342" elapsed="0.106082"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:31:00.329598" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:31:00.329204" elapsed="0.094222"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:31:00.328691" elapsed="0.094898"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:31:02.425165" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:31:00.424388" elapsed="2.001019"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:31:02.458068" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:31:02.425869" elapsed="0.032505"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:31:00.423881" elapsed="2.034776"/>
+</kw>
+<arg>Admin</arg>
+<arg>Admin</arg>
+<arg>Invalid credentials</arg>
+<status status="PASS" start="2025-07-18T18:31:00.128543" elapsed="2.330393"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:31:02.460656" elapsed="2.403323"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:30:49.078331" elapsed="15.786282"/>
 </test>
-<status status="FAIL" start="2025-07-18T11:01:53.388041" elapsed="38.768128"/>
+<status status="PASS" start="2025-07-18T18:30:32.129043" elapsed="32.738437"/>
 </suite>
-<status status="FAIL" start="2025-07-18T11:01:53.366887" elapsed="38.791204"/>
+<status status="PASS" start="2025-07-18T18:30:32.051865" elapsed="32.818348"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="2" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat info="combined" combined="NOT robot:exit" pass="0" fail="1" skip="0">NOT robot:exit</stat>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="0" fail="2" skip="0">Tests</stat>
-<stat name="LoginTest" id="s1-s1" pass="0" fail="2" skip="0">Tests.LoginTest</stat>
+<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
+<stat name="LoginTest" id="s1-s1" pass="2" fail="0" skip="0">Tests.LoginTest</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-07-18T11:02:03.793428" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796BC4550&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2d62d50441ca05016942805a5c9e3107/screenshot</msg>
-<msg time="2025-07-18T11:02:07.828948" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796BC42D0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2d62d50441ca05016942805a5c9e3107/screenshot</msg>
-<msg time="2025-07-18T11:02:11.881596" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796B9E060&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2d62d50441ca05016942805a5c9e3107/screenshot</msg>
-<msg time="2025-07-18T11:02:15.920484" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=49873): Max retries exceeded with url: /session/2d62d50441ca05016942805a5c9e3107/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796B9E520&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
-<msg time="2025-07-18T11:02:19.992170" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796BD4050&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2d62d50441ca05016942805a5c9e3107</msg>
-<msg time="2025-07-18T11:02:24.046932" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796BE06B0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2d62d50441ca05016942805a5c9e3107</msg>
-<msg time="2025-07-18T11:02:28.104042" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000025796BE09E0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2d62d50441ca05016942805a5c9e3107</msg>
 </errors>
 </robot>

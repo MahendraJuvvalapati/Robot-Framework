@@ -3,13 +3,22 @@ Tests
 ==============================================================================
 Tests.RestApi                                                                 
 ==============================================================================
-Tests.RestApi.FirstApi                                                        
+Tests.RestApi.POST Request                                                    
 ==============================================================================
-First test On Rest API                                                Created Session:<requests.sessions.Session object at 0x000002775B0C2120>
-True
+Create New Post                                                       Response :<Response [201]>
+Status Code :201
+{
+  "userId": "5",
+  "id": 101,
+  "title": "Checking Post Requests",
+  "body": "This is for Checking the functionality of the Post method"
+}
+{'userId': '5', 'id': 101, 'title': 'Checking Post Requests', 'body': 'This is for Checking the functionality of the Post method'}
+Title is Checking Post Requests
+id: 101
 | PASS |
 ------------------------------------------------------------------------------
-Tests.RestApi.FirstApi                                                | PASS |
+Tests.RestApi.POST Request                                            | PASS |
 1 test, 1 passed, 0 failed
 ==============================================================================
 Tests.RestApi                                                         | PASS |
@@ -18,4 +27,4 @@ Tests.RestApi                                                         | PASS |
 Tests                                                                 | PASS |
 1 test, 1 passed, 0 failed
 ==============================================================================
-Output:  D:\Automation practice\Robot Training\results\pabot_results\12\output.xml
+Output:  D:\Automation practice\Robot Training\results\pabot_results\14\output.xml

@@ -1,18 +1,24 @@
 ==============================================================================
 Tests                                                                         
 ==============================================================================
-Tests.DataFromExcel                                                           
+Tests.SetupOrTeardown                                                         
 ==============================================================================
-Login Test Using Excel Data Admin and admin123                        | PASS |
+IM INSIDE SUITE SETUP
+Checking Setup ad Teardown                                            IM INSIDE TEST SETUP
+Inside Test Case 1
+IM INSIDE TEST TEARDOWN
+| PASS |
 ------------------------------------------------------------------------------
-Login Test Using Excel Data AdminUser and admin123                    | PASS |
+Checking Setup ad Teardown 1                                          IM INSIDE TEST SETUP
+Inside Test Case 2
+IM INSIDE TEST TEARDOWN
+| PASS |
 ------------------------------------------------------------------------------
-Login Test Using Excel Data Admin123 and Admin123                     | PASS |
-------------------------------------------------------------------------------
-Tests.DataFromExcel                                                   | PASS |
-3 tests, 3 passed, 0 failed
+IM INSIDE SUITE TEARDOWN
+Tests.SetupOrTeardown                                                 | PASS |
+2 tests, 2 passed, 0 failed
 ==============================================================================
 Tests                                                                 | PASS |
-3 tests, 3 passed, 0 failed
+2 tests, 2 passed, 0 failed
 ==============================================================================
-Output:  D:\Automation practice\Robot Training\results\pabot_results\4\output.xml
+Output:  D:\Automation practice\Robot Training\results\pabot_results\15\output.xml

@@ -1,212 +1,288 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T11:01:30.117034" rpa="false" schemaversion="5">
-<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\tests">
-<suite id="s1-s1" name="DataFromJson" source="D:\Automation practice\Robot Training\tests\DataFromJson.robot">
-<test id="s1-s1-t1" name="Login Test with JSON Data" line="12">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:29:52.457082" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
+<suite id="s1-s1" name="DataFromJson" source="D:\Automation practice\Robot Training\Tests\DataFromJson.robot">
+<test id="s1-s1-t1" name="Login Test with JSON Data" line="10">
 <kw name="Load Json From File" owner="JSONLibrary">
-<msg time="2025-07-18T11:01:33.963089" level="INFO">${data} = {'testdata': [{'userName': 'Admin', 'Password': 'admin123', 'Message': 'Dashboard'}, {'userName': 'User1', 'Password': 'Pass123', 'Message': 'Invalid credentials'}, {'userName': 'Adminn', 'Password': ...</msg>
+<msg time="2025-07-18T18:29:53.754161" level="INFO">${data} = {'testdata': [{'userName': 'Admin', 'Password': 'admin123', 'Message': 'Dashboard'}, {'userName': 'User1', 'Password': 'Pass123', 'Message': 'Invalid credentials'}, {'userName': 'Adminn', 'Password': ...</msg>
 <var>${data}</var>
 <arg>${JSON_FILE}</arg>
 <doc>Load JSON from file.</doc>
-<status status="PASS" start="2025-07-18T11:01:33.959799" elapsed="0.003427"/>
+<status status="PASS" start="2025-07-18T18:29:53.753167" elapsed="0.001101"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${data}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T11:01:33.964224" elapsed="0.001929"/>
+<status status="PASS" start="2025-07-18T18:29:53.754485" elapsed="0.000609"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${data['testdata'][2]}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T11:01:33.966782" elapsed="0.002002"/>
+<status status="PASS" start="2025-07-18T18:29:53.755309" elapsed="0.000751"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Open Login Page" owner="LoginPageKw">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-07-18T11:01:33.972341" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<msg time="2025-07-18T11:01:40.578505" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-07-18T11:01:40.579561" level="FAIL">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff709828909]
-	(No symbol) [0x0x7ff7098229e5]
-	(No symbol) [0x0x7ff7098762ce]
-	(No symbol) [0x0x7ff709875a60]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</msg>
+<msg time="2025-07-18T18:29:53.758752" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2025-07-18T11:01:33.971893" elapsed="6.632538">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff709828909]
-	(No symbol) [0x0x7ff7098229e5]
-	(No symbol) [0x0x7ff7098762ce]
-	(No symbol) [0x0x7ff709875a60]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:29:53.758217" elapsed="2.128707"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2025-07-18T11:01:40.605668" elapsed="0.000346"/>
+<status status="PASS" start="2025-07-18T18:29:55.887263" elapsed="3.596633"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:30:02.484540" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-07-18T11:01:40.606706" elapsed="0.000269"/>
+<status status="PASS" start="2025-07-18T18:29:59.484105" elapsed="3.000578"/>
 </kw>
-<status status="FAIL" start="2025-07-18T11:01:33.971289" elapsed="6.636450">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff709828909]
-	(No symbol) [0x0x7ff7098229e5]
-	(No symbol) [0x0x7ff7098762ce]
-	(No symbol) [0x0x7ff709875a60]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:29:53.757707" elapsed="8.727097"/>
 </kw>
 <kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:02.486825" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:02.486487" elapsed="0.096580"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:30:02.486226" elapsed="0.097045"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:02.584483" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:02.584060" elapsed="0.114485"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:30:02.583533" elapsed="0.115224"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:02.700048" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:02.699618" elapsed="0.137240"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:30:02.699056" elapsed="0.138035"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:30:04.838449" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:30:02.837829" elapsed="2.000893"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:04.884435" level="INFO">Current page contains text 'Dashboard'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:30:04.839144" elapsed="0.045495"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:30:02.837397" elapsed="2.047459"/>
+</kw>
 <arg>${case['userName']}</arg>
 <arg>${case['Password']}</arg>
 <arg>${case['Message']}</arg>
-<status status="NOT RUN" start="2025-07-18T11:01:40.608691" elapsed="0.000449"/>
+<status status="PASS" start="2025-07-18T18:30:02.484998" elapsed="2.400022"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-07-18T11:01:40.609761" elapsed="0.000261"/>
+<status status="PASS" start="2025-07-18T18:30:04.885312" elapsed="2.247317"/>
 </kw>
 <var name="${case}">{'userName': 'Admin', 'Password': 'admin123', 'Message': 'Dashboard'}</var>
-<status status="FAIL" start="2025-07-18T11:01:33.970855" elapsed="6.639581">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff709828909]
-	(No symbol) [0x0x7ff7098229e5]
-	(No symbol) [0x0x7ff7098762ce]
-	(No symbol) [0x0x7ff709875a60]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:29:53.757347" elapsed="13.375369"/>
+</iter>
+<iter>
+<kw name="Open Login Page" owner="LoginPageKw">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:07.133619" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:30:07.133405" elapsed="4.853704"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:30:11.987374" elapsed="0.046518"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:30:15.035432" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:30:12.034315" elapsed="3.001375"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:30:07.133102" elapsed="7.902983"/>
+</kw>
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:15.045069" level="INFO">Typing text 'User1' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:15.044047" elapsed="0.138738"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:30:15.043002" elapsed="0.140061"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:15.184891" level="INFO">Typing text 'Pass123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:15.184328" elapsed="0.178245"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:30:15.183555" elapsed="0.179298"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:15.364163" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:15.363744" elapsed="0.961700"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:30:15.363163" elapsed="0.962519"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:30:18.329309" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:30:16.326685" elapsed="2.002807"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:18.486163" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:30:18.329809" elapsed="0.156550"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:30:16.326015" elapsed="2.160549"/>
+</kw>
+<arg>${case['userName']}</arg>
+<arg>${case['Password']}</arg>
+<arg>${case['Message']}</arg>
+<status status="PASS" start="2025-07-18T18:30:15.036667" elapsed="3.450055"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:30:18.487017" elapsed="2.615875"/>
+</kw>
+<var name="${case}">{'userName': 'User1', 'Password': 'Pass123', 'Message': 'Invalid credentials'}</var>
+<status status="PASS" start="2025-07-18T18:30:07.132910" elapsed="13.970253"/>
+</iter>
+<iter>
+<kw name="Open Login Page" owner="LoginPageKw">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:21.108779" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-18T18:30:21.108033" elapsed="5.910146"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-18T18:30:27.018609" elapsed="0.049310"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:30:30.069236" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:30:27.068273" elapsed="3.001212"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:30:21.104610" elapsed="8.965202"/>
+</kw>
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:30.073968" level="INFO">Typing text 'Adminn' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:30.073546" elapsed="0.097355"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:30:30.072982" elapsed="0.098148"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:30.172119" level="INFO">Typing text 'Pass123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:30.171736" elapsed="0.174593"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:30:30.171357" elapsed="0.175211"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:30.347791" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:30.347372" elapsed="0.111870"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:30:30.346853" elapsed="0.112558"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:30:32.460739" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:30:30.460234" elapsed="2.000734"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:32.600909" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:30:32.461399" elapsed="0.139720"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:30:30.459717" elapsed="2.141633"/>
+</kw>
+<arg>${case['userName']}</arg>
+<arg>${case['Password']}</arg>
+<arg>${case['Message']}</arg>
+<status status="PASS" start="2025-07-18T18:30:30.070167" elapsed="2.531400"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-18T18:30:32.601903" elapsed="5.826127"/>
+</kw>
+<var name="${case}">{'userName': 'Adminn', 'Password': 'Pass123', 'Message': 'Invalid credentials'}</var>
+<status status="PASS" start="2025-07-18T18:30:21.103648" elapsed="17.324614"/>
 </iter>
 <var>${case}</var>
 <value>@{data['testdata']}</value>
-<status status="FAIL" start="2025-07-18T11:01:33.969074" elapsed="6.641920">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff709828909]
-	(No symbol) [0x0x7ff7098229e5]
-	(No symbol) [0x0x7ff7098762ce]
-	(No symbol) [0x0x7ff709875a60]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:29:53.756176" elapsed="44.672278"/>
 </for>
-<status status="FAIL" start="2025-07-18T11:01:33.955648" elapsed="6.657016">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff709828909]
-	(No symbol) [0x0x7ff7098229e5]
-	(No symbol) [0x0x7ff7098762ce]
-	(No symbol) [0x0x7ff709875a60]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:29:53.751815" elapsed="44.677112"/>
 </test>
-<status status="FAIL" start="2025-07-18T11:01:30.161581" elapsed="10.452684"/>
+<status status="PASS" start="2025-07-18T18:29:52.487408" elapsed="45.942664"/>
 </suite>
-<status status="FAIL" start="2025-07-18T11:01:30.139370" elapsed="10.476650"/>
+<status status="PASS" start="2025-07-18T18:29:52.473966" elapsed="45.957829"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
-<stat name="DataFromJson" id="s1-s1" pass="0" fail="1" skip="0">Tests.DataFromJson</stat>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="DataFromJson" id="s1-s1" pass="1" fail="0" skip="0">Tests.DataFromJson</stat>
 </suite>
 </statistics>
 <errors>
