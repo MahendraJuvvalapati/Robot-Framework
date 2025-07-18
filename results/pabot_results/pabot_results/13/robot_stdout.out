@@ -1,0 +1,54 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.RestApi                                                                 
+==============================================================================
+Tests.RestApi.GET Request                                                     
+==============================================================================
+Get Information                                                       Getting Json formatted Response :{'id': 1, 'name': 'Leanne Graham', 'username': 'Bret', 'email': 'Sincere@april.biz', 'address': {'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {'lat': '-37.3159', 'lng': '81.1496'}}, 'phone': '1-770-736-8031 x56442', 'website': 'hildegard.org', 'company': {'name': 'Romaguera-Crona', 'catchPhrase': 'Multi-layered client-server neural-net', 'bs': 'harness real-time e-markets'}}
+Final Url: https://jsonplaceholder.typicode.com/users/1
+True
+Status Code: 200
+Response Body: {
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+Content-Type Header: application/json; charset=utf-8
+{'id': 1, 'name': 'Leanne Graham', 'username': 'Bret', 'email': 'Sincere@april.biz', 'address': {'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {'lat': '-37.3159', 'lng': '81.1496'}}, 'phone': '1-770-736-8031 x56442', 'website': 'hildegard.org', 'company': {'name': 'Romaguera-Crona', 'catchPhrase': 'Multi-layered client-server neural-net', 'bs': 'harness real-time e-markets'}}
+Leanne Graham
+Sincere@april.biz
+{'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {'lat': '-37.3159', 'lng': '81.1496'}}
+92998-3874
+{'name': 'Romaguera-Crona', 'catchPhrase': 'Multi-layered client-server neural-net', 'bs': 'harness real-time e-markets'}
+harness real-time e-markets
+| PASS |
+------------------------------------------------------------------------------
+Tests.RestApi.GET Request                                             | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Tests.RestApi                                                         | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  D:\Automation practice\Robot Training\results\pabot_results\pabot_results\13\output.xml

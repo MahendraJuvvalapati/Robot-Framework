@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:05:15.675846" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
+<suite id="s1-s1" name="Assertions" source="D:\Automation practice\Robot Training\Tests\Assertions.robot">
+<test id="s1-s1-t1" name="Checking Assertions" line="5">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-07-18T18:05:16.000788" level="INFO">${isValid} = True</msg>
+<var>${isValid}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.000444" elapsed="0.000393"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${isValid}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.001015" elapsed="0.000216"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${isValid}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.001376" elapsed="0.000244"/>
+</kw>
+<kw name="Set Variable If" owner="BuiltIn">
+<msg time="2025-07-18T18:05:16.001996" level="INFO">${isValid} = False</msg>
+<var>${isValid}</var>
+<arg>${isValid}</arg>
+<arg>${False}</arg>
+<doc>Sets variable based on the given condition.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.001763" elapsed="0.000271"/>
+</kw>
+<kw name="Should Not Be True" owner="BuiltIn">
+<arg>${isValid}</arg>
+<doc>Fails if the given condition is true.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.002163" elapsed="0.000191"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${isValid}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:16.002480" elapsed="0.000223"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:15.999356" elapsed="0.003505"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:15.723394" elapsed="0.279949"/>
+</suite>
+<status status="PASS" start="2025-07-18T18:05:15.700532" elapsed="0.303702"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Assertions" id="s1-s1" pass="1" fail="0" skip="0">Tests.Assertions</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

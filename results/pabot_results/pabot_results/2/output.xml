@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:05:15.659422" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
+<suite id="s1-s1" name="CustomLib" source="D:\Automation practice\Robot Training\Tests\CustomLib.robot">
+<test id="s1-s1-t1" name="Adding two Nums" line="5">
+<kw name="Add Two Nums" owner="CustomLibrary">
+<msg time="2025-07-18T18:05:15.705709" level="INFO">${output} = 1020</msg>
+<var>${output}</var>
+<arg>10</arg>
+<arg>20</arg>
+<status status="PASS" start="2025-07-18T18:05:15.705343" elapsed="0.000429"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${output}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:15.706023" elapsed="0.000335"/>
+</kw>
+<kw name="Add Nums" owner="CustomLibrary">
+<msg time="2025-07-18T18:05:15.706804" level="INFO">${output} = 60</msg>
+<var>${output}</var>
+<arg>10</arg>
+<arg>20</arg>
+<arg>30</arg>
+<status status="PASS" start="2025-07-18T18:05:15.706538" elapsed="0.000317"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${output}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-18T18:05:15.707029" elapsed="0.000312"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:05:15.704251" elapsed="0.003308"/>
+</test>
+<status status="PASS" start="2025-07-18T18:05:15.700144" elapsed="0.008086"/>
+</suite>
+<status status="PASS" start="2025-07-18T18:05:15.682166" elapsed="0.027170"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="CustomLib" id="s1-s1" pass="1" fail="0" skip="0">Tests.CustomLib</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
