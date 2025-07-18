@@ -3,30 +3,14 @@ Tests
 ==============================================================================
 Tests.LoginTest                                                               
 ==============================================================================
-Valid Login Test                                                        
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Automation practice\Robot Training\tests\LoginTest.robot:11
-    T:  Valid Login Test    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Automation practice\Robot Training\tests\LoginTest.robot:4
-      Open Login Page    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Automation practice\Robot Training\Resource\Keywords\LoginPageKw.robot:8
-      Open Browser    ${URL}    chrome
-      |  ${URL} = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login (str)
-______________________________________________________________________________
-| FAIL |
-Setup failed:
-Execution terminated by signal
+Valid Login Test                                                      | PASS |
 ------------------------------------------------------------------------------
-Invalid Login Test                                                    | FAIL |
-Test execution stopped due to a fatal error.
+Invalid Login Test                                                    | PASS |
 ------------------------------------------------------------------------------
-Tests.LoginTest                                                       | FAIL |
-2 tests, 0 passed, 2 failed
+Tests.LoginTest                                                       | PASS |
+2 tests, 2 passed, 0 failed
 ==============================================================================
-Tests                                                                 | FAIL |
-2 tests, 0 passed, 2 failed
+Tests                                                                 | PASS |
+2 tests, 2 passed, 0 failed
 ==============================================================================
 Output:  D:\Automation practice\Robot Training\results\pabot_results\10\output.xml

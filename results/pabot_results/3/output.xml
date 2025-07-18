@@ -1,571 +1,280 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T11:01:29.149575" rpa="false" schemaversion="5">
-<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\tests">
-<suite id="s1-s1" name="DataFromCsv" source="D:\Automation practice\Robot Training\tests\DataFromCsv.robot">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:29:51.571252" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
+<suite id="s1-s1" name="DataFromCsv" source="D:\Automation practice\Robot Training\Tests\DataFromCsv.robot">
 <test id="s1-s1-t1" name="Login Tests Using CSV Admin and admin123" line="19">
 <kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-07-18T11:01:29.542384" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-07-18T18:29:51.949600" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-07-18T11:01:29.541832" elapsed="5.227091"/>
+<status status="PASS" start="2025-07-18T18:29:51.949235" elapsed="2.350595"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-07-18T11:01:34.769387" elapsed="0.168450"/>
+<status status="PASS" start="2025-07-18T18:29:54.300291" elapsed="2.085031"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-18T11:01:37.939570" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-07-18T18:29:59.386060" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-18T11:01:34.938383" elapsed="3.001431"/>
+<status status="PASS" start="2025-07-18T18:29:56.385574" elapsed="3.000666"/>
 </kw>
-<status status="PASS" start="2025-07-18T11:01:29.539959" elapsed="8.401065"/>
+<status status="PASS" start="2025-07-18T18:29:51.947957" elapsed="7.438541"/>
 </kw>
 <kw name="Test Data">
 <kw name="Login" owner="LoginPageKw">
 <kw name="Input User" owner="LoginPageKw">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-18T11:01:37.947448" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<msg time="2025-07-18T18:29:59.390425" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
 <arg>${USERNAME_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-18T11:01:37.945685" elapsed="0.342186"/>
+<status status="PASS" start="2025-07-18T18:29:59.389590" elapsed="0.164643"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2025-07-18T11:01:37.944789" elapsed="0.343435"/>
+<status status="PASS" start="2025-07-18T18:29:59.388840" elapsed="0.165576"/>
 </kw>
 <kw name="Input Pass" owner="LoginPageKw">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-18T11:01:38.291343" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<msg time="2025-07-18T18:29:59.555449" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
 <arg>${PASSWORD_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-18T11:01:38.289665" elapsed="0.296424"/>
+<status status="PASS" start="2025-07-18T18:29:59.555104" elapsed="0.101329"/>
 </kw>
 <arg>${pass}</arg>
-<status status="PASS" start="2025-07-18T11:01:38.288686" elapsed="0.297911"/>
+<status status="PASS" start="2025-07-18T18:29:59.554653" elapsed="0.102013"/>
 </kw>
 <kw name="Click Login Button" owner="LoginPageKw">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-07-18T11:01:38.589239" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<msg time="2025-07-18T18:29:59.657592" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-18T11:01:38.588227" elapsed="0.159913"/>
+<status status="PASS" start="2025-07-18T18:29:59.657201" elapsed="1.276470"/>
 </kw>
-<status status="PASS" start="2025-07-18T11:01:38.587242" elapsed="0.161194"/>
+<status status="PASS" start="2025-07-18T18:29:59.656852" elapsed="1.277034"/>
 </kw>
 <kw name="Page Should Contain text" owner="LoginPageKw">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-18T11:01:40.750460" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-07-18T18:30:02.935468" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-18T11:01:38.749762" elapsed="2.000909"/>
+<status status="PASS" start="2025-07-18T18:30:00.934731" elapsed="2.000847"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-07-18T11:01:40.823634" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9b0c]
-	(No symbol) [0x0x7ff7098308bf]
-	(No symbol) [0x0x7ff709868792]
-	(No symbol) [0x0x7ff709863293]
-	(No symbol) [0x0x7ff709862359]
-	(No symbol) [0x0x7ff7097b4b05]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	(No symbol) [0x0x7ff7097b3b00]
-	GetHandleVerifier [0x0x7ff709e2bd88+4260984]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</msg>
-<msg time="2025-07-18T11:01:40.824265" level="FAIL">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff7097d5f35]
-	(No symbol) [0x0x7ff7097faabe]
-	(No symbol) [0x0x7ff70986feb5]
-	(No symbol) [0x0x7ff709890432]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</msg>
+<msg time="2025-07-18T18:30:02.952585" level="INFO">Current page contains text 'Dashboard'.</msg>
 <arg>${message}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2025-07-18T11:01:40.751014" elapsed="0.077452">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff7097d5f35]
-	(No symbol) [0x0x7ff7097faabe]
-	(No symbol) [0x0x7ff70986feb5]
-	(No symbol) [0x0x7ff709890432]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:30:02.935763" elapsed="0.016941"/>
 </kw>
 <arg>${message}</arg>
-<status status="FAIL" start="2025-07-18T11:01:38.748863" elapsed="2.081664">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff7097d5f35]
-	(No symbol) [0x0x7ff7097faabe]
-	(No symbol) [0x0x7ff70986feb5]
-	(No symbol) [0x0x7ff709890432]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:30:00.934182" elapsed="2.018648"/>
 </kw>
 <arg>${userName}</arg>
 <arg>${Password}</arg>
 <arg>${Message}</arg>
-<status status="FAIL" start="2025-07-18T11:01:37.943672" elapsed="2.887208">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff7097d5f35]
-	(No symbol) [0x0x7ff7097faabe]
-	(No symbol) [0x0x7ff70986feb5]
-	(No symbol) [0x0x7ff709890432]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:29:59.387844" elapsed="3.565074"/>
 </kw>
 <arg>userName=Admin</arg>
 <arg>Password=admin123</arg>
 <arg>Message=Dashboard</arg>
-<status status="FAIL" start="2025-07-18T11:01:37.941607" elapsed="2.889453">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff7097d5f35]
-	(No symbol) [0x0x7ff7097faabe]
-	(No symbol) [0x0x7ff70986feb5]
-	(No symbol) [0x0x7ff709890432]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:29:59.386929" elapsed="3.566066"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-07-18T11:01:40.831446" elapsed="2.051121"/>
+<status status="PASS" start="2025-07-18T18:30:02.953300" elapsed="2.189402"/>
 </kw>
-<status status="FAIL" start="2025-07-18T11:01:29.538376" elapsed="13.344435">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff7097d5f35]
-	(No symbol) [0x0x7ff7097faabe]
-	(No symbol) [0x0x7ff70986feb5]
-	(No symbol) [0x0x7ff709890432]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:29:51.946509" elapsed="13.196500"/>
 </test>
 <test id="s1-s1-t2" name="Login Tests Using CSV admin123 and admin123" line="19">
 <kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-07-18T11:01:42.888272" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-07-18T18:30:05.148848" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-07-18T11:01:42.887662" elapsed="2.765213"/>
+<status status="PASS" start="2025-07-18T18:30:05.148082" elapsed="4.437119"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-07-18T11:01:45.653415" elapsed="2.931180"/>
+<status status="PASS" start="2025-07-18T18:30:09.585505" elapsed="0.042234"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-18T11:01:51.585885" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-07-18T18:30:12.629395" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-18T11:01:48.585076" elapsed="3.001091"/>
+<status status="PASS" start="2025-07-18T18:30:09.628039" elapsed="3.001697"/>
 </kw>
-<status status="PASS" start="2025-07-18T11:01:42.886800" elapsed="8.699684"/>
+<status status="PASS" start="2025-07-18T18:30:05.146794" elapsed="7.483848"/>
 </kw>
 <kw name="Test Data">
 <kw name="Login" owner="LoginPageKw">
 <kw name="Input User" owner="LoginPageKw">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-18T11:01:51.592117" level="INFO">Typing text 'admin123' into text field 'name=username'.</msg>
-<msg time="2025-07-18T11:01:51.688691" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9b0c]
-	(No symbol) [0x0x7ff7098308bf]
-	(No symbol) [0x0x7ff709868792]
-	(No symbol) [0x0x7ff709863293]
-	(No symbol) [0x0x7ff709862359]
-	(No symbol) [0x0x7ff7097b4b05]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	(No symbol) [0x0x7ff7097b3b00]
-	GetHandleVerifier [0x0x7ff709e2bd88+4260984]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</msg>
-<msg time="2025-07-18T11:01:51.689428" level="FAIL">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff7097d5f35]
-	(No symbol) [0x0x7ff7097faabe]
-	(No symbol) [0x0x7ff70986feb5]
-	(No symbol) [0x0x7ff709890432]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</msg>
+<msg time="2025-07-18T18:30:12.641923" level="INFO">Typing text 'admin123' into text field 'name=username'.</msg>
 <arg>${USERNAME_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2025-07-18T11:01:51.591237" elapsed="0.105979">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff7097d5f35]
-	(No symbol) [0x0x7ff7097faabe]
-	(No symbol) [0x0x7ff70986feb5]
-	(No symbol) [0x0x7ff709890432]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:30:12.637495" elapsed="0.229123"/>
 </kw>
 <arg>${user}</arg>
-<status status="FAIL" start="2025-07-18T11:01:51.590040" elapsed="0.111837">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff7097d5f35]
-	(No symbol) [0x0x7ff7097faabe]
-	(No symbol) [0x0x7ff70986feb5]
-	(No symbol) [0x0x7ff709890432]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:30:12.636542" elapsed="0.230543"/>
 </kw>
 <kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:12.869187" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:12.868444" elapsed="0.183724"/>
+</kw>
 <arg>${pass}</arg>
-<status status="NOT RUN" start="2025-07-18T11:01:51.702353" elapsed="0.000219"/>
+<status status="PASS" start="2025-07-18T18:30:12.867516" elapsed="0.184967"/>
 </kw>
 <kw name="Click Login Button" owner="LoginPageKw">
-<status status="NOT RUN" start="2025-07-18T11:01:51.702908" elapsed="0.000242"/>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:13.054227" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:13.053671" elapsed="0.162468"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:30:13.052909" elapsed="0.163565"/>
 </kw>
 <kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:30:15.218684" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:30:13.217700" elapsed="2.001172"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:15.239119" level="INFO">Current page contains text 'Invalid credentials'.</msg>
 <arg>${message}</arg>
-<status status="NOT RUN" start="2025-07-18T11:01:51.703576" elapsed="0.000220"/>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:30:15.219124" elapsed="0.020245"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:30:13.216898" elapsed="2.022998"/>
 </kw>
 <arg>${userName}</arg>
 <arg>${Password}</arg>
 <arg>${Message}</arg>
-<status status="FAIL" start="2025-07-18T11:01:51.588416" elapsed="0.115765">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff7097d5f35]
-	(No symbol) [0x0x7ff7097faabe]
-	(No symbol) [0x0x7ff70986feb5]
-	(No symbol) [0x0x7ff709890432]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:30:12.634877" elapsed="2.605277"/>
 </kw>
 <arg>userName=admin123</arg>
 <arg>Password=admin123</arg>
 <arg>Message=Invalid credentials</arg>
-<status status="FAIL" start="2025-07-18T11:01:51.586989" elapsed="0.117652">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff7097d5f35]
-	(No symbol) [0x0x7ff7097faabe]
-	(No symbol) [0x0x7ff70986feb5]
-	(No symbol) [0x0x7ff709890432]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:30:12.632528" elapsed="2.607840"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-07-18T11:01:51.705526" elapsed="2.021528"/>
+<status status="PASS" start="2025-07-18T18:30:15.241216" elapsed="2.276781"/>
 </kw>
-<status status="FAIL" start="2025-07-18T11:01:42.884024" elapsed="10.843258">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=138.0.7204.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9cda]
-	(No symbol) [0x0x7ff7097d5f35]
-	(No symbol) [0x0x7ff7097faabe]
-	(No symbol) [0x0x7ff70986feb5]
-	(No symbol) [0x0x7ff709890432]
-	(No symbol) [0x0x7ff7098686a3]
-	(No symbol) [0x0x7ff709831791]
-	(No symbol) [0x0x7ff709832523]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	GetHandleVerifier [0x0x7ff709a372d4+113092]
-	GetHandleVerifier [0x0x7ff709a37489+113529]
-	GetHandleVerifier [0x0x7ff709a1e288+10616]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</status>
+<status status="PASS" start="2025-07-18T18:30:05.143987" elapsed="12.374163"/>
 </test>
 <test id="s1-s1-t3" name="Login Tests Using CSV admin12 and admin123" line="19">
 <kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-07-18T11:01:53.731176" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-07-18T18:30:17.522491" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-07-18T11:01:53.730688" elapsed="3.243228"/>
+<status status="PASS" start="2025-07-18T18:30:17.521956" elapsed="4.831469"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-07-18T11:01:56.974438" elapsed="1.684431"/>
+<status status="PASS" start="2025-07-18T18:30:22.354621" elapsed="0.657091"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:30:26.013638" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="FAIL" start="2025-07-18T11:01:58.660053" elapsed="1.088100">Execution terminated by signal</status>
+<status status="PASS" start="2025-07-18T18:30:23.012512" elapsed="3.001459"/>
 </kw>
-<status status="FAIL" start="2025-07-18T11:01:53.730183" elapsed="6.018523">Execution terminated by signal</status>
+<status status="PASS" start="2025-07-18T18:30:17.521095" elapsed="8.493230"/>
+</kw>
+<kw name="Test Data">
+<kw name="Login" owner="LoginPageKw">
+<kw name="Input User" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:26.018863" level="INFO">Typing text 'admin12' into text field 'name=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:26.018057" elapsed="0.175646"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-07-18T18:30:26.016681" elapsed="0.177274"/>
+</kw>
+<kw name="Input Pass" owner="LoginPageKw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:26.195445" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:26.194818" elapsed="0.130651"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2025-07-18T18:30:26.194233" elapsed="0.131495"/>
+</kw>
+<kw name="Click Login Button" owner="LoginPageKw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:26.327370" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T18:30:26.326857" elapsed="0.120298"/>
+</kw>
+<status status="PASS" start="2025-07-18T18:30:26.326107" elapsed="0.121310"/>
+</kw>
+<kw name="Page Should Contain text" owner="LoginPageKw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-18T18:30:28.449344" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-18T18:30:26.448560" elapsed="2.001094"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-18T18:30:28.489523" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>${message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-18T18:30:28.450167" elapsed="0.039525"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2025-07-18T18:30:26.447851" elapsed="2.042043"/>
+</kw>
+<arg>${userName}</arg>
+<arg>${Password}</arg>
+<arg>${Message}</arg>
+<status status="PASS" start="2025-07-18T18:30:26.015618" elapsed="2.474407"/>
+</kw>
+<arg>userName=admin12</arg>
+<arg>Password=admin123</arg>
+<arg>Message=Invalid credentials</arg>
+<status status="PASS" start="2025-07-18T18:30:26.014727" elapsed="2.475432"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<msg time="2025-07-18T11:01:59.764514" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/ed286ab55c7e36c177a74a6155dad093</msg>
-<msg time="2025-07-18T11:02:03.821379" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001DA08188D60&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ed286ab55c7e36c177a74a6155dad093</msg>
-<msg time="2025-07-18T11:02:07.843572" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001DA08188E90&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ed286ab55c7e36c177a74a6155dad093</msg>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-07-18T11:01:59.749628" elapsed="12.132866"/>
+<status status="PASS" start="2025-07-18T18:30:28.490533" elapsed="2.196876"/>
 </kw>
-<status status="FAIL" start="2025-07-18T11:01:53.728175" elapsed="18.154489">Setup failed:
-Execution terminated by signal</status>
+<status status="PASS" start="2025-07-18T18:30:17.519152" elapsed="13.168829"/>
 </test>
-<status status="FAIL" start="2025-07-18T11:01:29.199085" elapsed="42.684323"/>
+<status status="PASS" start="2025-07-18T18:29:51.616573" elapsed="39.073841"/>
 </suite>
-<status status="FAIL" start="2025-07-18T11:01:29.177249" elapsed="42.706883"/>
+<status status="PASS" start="2025-07-18T18:29:51.594692" elapsed="39.098711"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="3" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="0" fail="3" skip="0">Tests</stat>
-<stat name="DataFromCsv" id="s1-s1" pass="0" fail="3" skip="0">Tests.DataFromCsv</stat>
+<stat name="Tests" id="s1" pass="3" fail="0" skip="0">Tests</stat>
+<stat name="DataFromCsv" id="s1-s1" pass="3" fail="0" skip="0">Tests.DataFromCsv</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-07-18T11:01:40.823634" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9b0c]
-	(No symbol) [0x0x7ff7098308bf]
-	(No symbol) [0x0x7ff709868792]
-	(No symbol) [0x0x7ff709863293]
-	(No symbol) [0x0x7ff709862359]
-	(No symbol) [0x0x7ff7097b4b05]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	(No symbol) [0x0x7ff7097b3b00]
-	GetHandleVerifier [0x0x7ff709e2bd88+4260984]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</msg>
-<msg time="2025-07-18T11:01:51.688691" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff709a2e925+77845]
-	GetHandleVerifier [0x0x7ff709a2e980+77936]
-	(No symbol) [0x0x7ff7097e9b0c]
-	(No symbol) [0x0x7ff7098308bf]
-	(No symbol) [0x0x7ff709868792]
-	(No symbol) [0x0x7ff709863293]
-	(No symbol) [0x0x7ff709862359]
-	(No symbol) [0x0x7ff7097b4b05]
-	GetHandleVerifier [0x0x7ff709d0683d+3059501]
-	GetHandleVerifier [0x0x7ff709d00bfd+3035885]
-	GetHandleVerifier [0x0x7ff709d203f0+3164896]
-	GetHandleVerifier [0x0x7ff709a48c2e+185118]
-	GetHandleVerifier [0x0x7ff709a5053f+216111]
-	(No symbol) [0x0x7ff7097b3b00]
-	GetHandleVerifier [0x0x7ff709e2bd88+4260984]
-	BaseThreadInitThunk [0x0x7ffb11d8e8d7+23]
-	RtlUserThreadStart [0x0x7ffb13d1c34c+44]
-</msg>
-<msg time="2025-07-18T11:01:59.764514" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/ed286ab55c7e36c177a74a6155dad093</msg>
-<msg time="2025-07-18T11:02:03.821379" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001DA08188D60&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ed286ab55c7e36c177a74a6155dad093</msg>
-<msg time="2025-07-18T11:02:07.843572" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001DA08188E90&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ed286ab55c7e36c177a74a6155dad093</msg>
 </errors>
 </robot>
