@@ -6,3 +6,4 @@ Library    RequestsLibrary
 Practicing
     Log To Console     Hello
     Log To Console    message
+    
