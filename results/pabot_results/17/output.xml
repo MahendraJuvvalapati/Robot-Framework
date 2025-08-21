@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T17:28:38.990943" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T17:43:16.094757" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="Tags" source="D:\Automation practice\Robot Training\Tests\Tags.robot">
 <test id="s1-s1-t1" name="checking Tags keyword" line="7">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Inside Smoke ${TEST_TAGS}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T17:28:40.314495" elapsed="0.001115"/>
+<status status="PASS" start="2025-08-21T17:43:17.121195" elapsed="0.000842"/>
 </kw>
 <tag>smoke</tag>
-<status status="PASS" start="2025-08-21T17:28:40.309658" elapsed="0.006398"/>
+<status status="PASS" start="2025-08-21T17:43:17.118452" elapsed="0.004034"/>
 </test>
 <test id="s1-s1-t2" name="checking default Tags" line="12">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Inside Default ${TEST_TAGS}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T17:28:40.318940" elapsed="0.000775"/>
+<status status="PASS" start="2025-08-21T17:43:17.124120" elapsed="0.000723"/>
 </kw>
 <tag>sanity</tag>
-<status status="PASS" start="2025-08-21T17:28:40.317054" elapsed="0.003160"/>
+<status status="PASS" start="2025-08-21T17:43:17.123209" elapsed="0.002000"/>
 </test>
 <test id="s1-s1-t3" name="checking set Tags" line="16">
 <kw name="Set Tags" owner="BuiltIn">
-<msg time="2025-08-21T17:28:40.323466" level="INFO">Set tag 'regression'.</msg>
+<msg time="2025-08-21T17:43:17.127638" level="INFO">Set tag 'regression'.</msg>
 <arg>regression</arg>
 <doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
-<status status="PASS" start="2025-08-21T17:28:40.322736" elapsed="0.000917"/>
+<status status="PASS" start="2025-08-21T17:43:17.127092" elapsed="0.000724"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Inside Set tag ${TEST_TAGS}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T17:28:40.324301" elapsed="0.000633"/>
+<status status="PASS" start="2025-08-21T17:43:17.128127" elapsed="0.000621"/>
 </kw>
 <tag>regression</tag>
 <tag>sanity</tag>
-<status status="PASS" start="2025-08-21T17:28:40.321221" elapsed="0.004072"/>
+<status status="PASS" start="2025-08-21T17:43:17.126340" elapsed="0.002765"/>
 </test>
-<status status="PASS" start="2025-08-21T17:28:39.144615" elapsed="1.181690"/>
+<status status="PASS" start="2025-08-21T17:43:16.365897" elapsed="0.764233"/>
 </suite>
-<status status="PASS" start="2025-08-21T17:28:39.044702" elapsed="1.283258"/>
+<status status="PASS" start="2025-08-21T17:43:16.314983" elapsed="0.816788"/>
 </suite>
 <statistics>
 <total>
