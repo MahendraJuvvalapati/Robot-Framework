@@ -6,8 +6,6 @@ Tests.Variables
 Accesing Variables                                                    Mahendra 10 c
 ['Admin', 'admin123']
 {'username': 'Admin', 'password': 'admin123'}
-LENOVO
-Windows_NT
 | PASS |
 ------------------------------------------------------------------------------
 Tests.Variables                                                       | PASS |

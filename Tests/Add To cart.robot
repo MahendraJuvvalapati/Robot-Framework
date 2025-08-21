@@ -1,13 +1,13 @@
-****** Settings ***
-Library     SeleniumLibrary
-
+*** Settings ***
+Library    SeleniumLibrary
+Resource   ../Resource/Variables/LoginPageVar.robot
 *** Variables ***
 ${url}    https://dineshvelhal.github.io/testautomation-playground/login.html
 
 *** Test Cases ***
 Adding Items to cart
     [Documentation]    Addding items to cart...
-    Open Browser    ${url}    headlesschrome
+    Open Browser    ${url}    ${BROWSER}
     Input Text    xpath=//input[@id='user']    admin
     Input Text   xpath=//input[@id='password']    admin
     Click Button    xpath=//button[@id='login']

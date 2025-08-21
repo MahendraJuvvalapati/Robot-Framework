@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T17:17:11.084574" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T17:28:19.753557" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="Practice" source="D:\Automation practice\Robot Training\Tests\Practice.robot">
 <test id="s1-s1-t1" name="Practicing" line="6">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Hello</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T17:17:16.882731" elapsed="0.000759"/>
+<status status="PASS" start="2025-08-21T17:28:24.534699" elapsed="0.000544"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>message</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T17:17:16.883939" elapsed="0.000511"/>
+<status status="PASS" start="2025-08-21T17:28:24.536418" elapsed="0.000475"/>
 </kw>
-<status status="PASS" start="2025-08-21T17:17:16.879792" elapsed="0.005048"/>
+<status status="PASS" start="2025-08-21T17:28:24.532543" elapsed="0.004626"/>
 </test>
-<status status="PASS" start="2025-08-21T17:17:11.363859" elapsed="5.522231"/>
+<status status="PASS" start="2025-08-21T17:28:20.818234" elapsed="3.719713"/>
 </suite>
-<status status="PASS" start="2025-08-21T17:17:11.316889" elapsed="5.572396"/>
+<status status="PASS" start="2025-08-21T17:28:20.629350" elapsed="3.910067"/>
 </suite>
 <statistics>
 <total>
