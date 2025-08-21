@@ -2,7 +2,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Test Template    LoginTestCase
-
+Resource   ../Resource/Variables/LoginPageVar.robot
 *** Variables ***
 ${URL}          https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
@@ -10,7 +10,7 @@ ${URL}          https://opensource-demo.orangehrmlive.com/web/index.php/auth/log
 *** Keywords ***
 LoginTestCase
     [Arguments]    ${username}    ${password}    ${expected_message}
-    Open Browser    ${URL}    headlesschrome
+    Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
     Sleep    5s
     Input Text      name=username      ${username}

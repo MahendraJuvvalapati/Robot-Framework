@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T17:17:07.678737" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T17:28:18.043832" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="Iframes" source="D:\Automation practice\Robot Training\Tests\Iframes.robot">
 <test id="s1-s1-t1" name="Handling iframes" line="6">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-21T17:17:08.329809" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst'.</msg>
+<msg time="2025-08-21T17:28:18.680242" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst'.</msg>
 <arg>https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst</arg>
-<arg>headlesschrome</arg>
+<arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-21T17:17:08.329291" elapsed="35.770271"/>
+<status status="PASS" start="2025-08-21T17:28:18.679603" elapsed="21.257014"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-08-21T17:17:44.100124" elapsed="0.095097"/>
+<status status="PASS" start="2025-08-21T17:28:39.937174" elapsed="0.057209"/>
 </kw>
 <kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2025-08-21T17:17:44.196885" level="INFO">Selecting frame 'id=iframeResult'.</msg>
+<msg time="2025-08-21T17:28:39.995730" level="INFO">Selecting frame 'id=iframeResult'.</msg>
 <arg>id=iframeResult</arg>
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2025-08-21T17:17:44.195834" elapsed="0.868481"/>
+<status status="PASS" start="2025-08-21T17:28:39.994830" elapsed="0.098170"/>
 </kw>
 <kw name="Current Frame Should Contain" owner="SeleniumLibrary">
-<msg time="2025-08-21T17:17:45.103449" level="INFO">Current frame contains text 'My First JavaScript'.</msg>
+<msg time="2025-08-21T17:28:40.118115" level="INFO">Current frame contains text 'My First JavaScript'.</msg>
 <arg>My First JavaScript</arg>
 <doc>Verifies that the current frame contains ``text``.</doc>
-<status status="PASS" start="2025-08-21T17:17:45.064810" elapsed="0.038894"/>
+<status status="PASS" start="2025-08-21T17:28:40.093436" elapsed="0.024904"/>
 </kw>
 <kw name="Current Frame Should Not Contain" owner="SeleniumLibrary">
-<msg time="2025-08-21T17:17:45.190407" level="INFO">Current frame did not contain text 'text'.</msg>
+<msg time="2025-08-21T17:28:40.142552" level="INFO">Current frame did not contain text 'text'.</msg>
 <arg>text</arg>
 <doc>Verifies that the current frame does not contain ``text``.</doc>
-<status status="PASS" start="2025-08-21T17:17:45.104256" elapsed="0.086399"/>
+<status status="PASS" start="2025-08-21T17:28:40.118774" elapsed="0.023996"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-21T17:17:45.191647" level="INFO">Clicking button 'css=button[type='button']'.</msg>
+<msg time="2025-08-21T17:28:40.143666" level="INFO">Clicking button 'css=button[type='button']'.</msg>
 <arg>css=button[type='button']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-21T17:17:45.191081" elapsed="1.035686"/>
+<status status="PASS" start="2025-08-21T17:28:40.143138" elapsed="0.550431"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T17:17:49.230734" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-08-21T17:28:43.695165" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T17:17:46.227570" elapsed="3.003575"/>
+<status status="PASS" start="2025-08-21T17:28:40.693983" elapsed="3.001391"/>
 </kw>
 <kw name="Unselect Frame" owner="SeleniumLibrary">
 <doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" start="2025-08-21T17:17:49.231639" elapsed="0.009385"/>
+<status status="PASS" start="2025-08-21T17:28:43.695711" elapsed="0.018938"/>
 </kw>
 <kw name="Frame Should Contain" owner="SeleniumLibrary">
-<msg time="2025-08-21T17:17:49.594381" level="INFO">Searching for text from frame 'id=iframeResult'.</msg>
-<msg time="2025-08-21T17:17:49.755865" level="INFO">Frame 'id=iframeResult' contains text 'My First JavaScript'.</msg>
+<msg time="2025-08-21T17:28:43.774090" level="INFO">Searching for text from frame 'id=iframeResult'.</msg>
+<msg time="2025-08-21T17:28:43.791918" level="INFO">Frame 'id=iframeResult' contains text 'My First JavaScript'.</msg>
 <arg>id=iframeResult</arg>
 <arg>My First JavaScript</arg>
 <doc>Verifies that frame identified by ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2025-08-21T17:17:49.241478" elapsed="0.514630"/>
+<status status="PASS" start="2025-08-21T17:28:43.715023" elapsed="0.077129"/>
 </kw>
-<status status="PASS" start="2025-08-21T17:17:08.326265" elapsed="41.430248"/>
+<status status="PASS" start="2025-08-21T17:28:18.677841" elapsed="25.114727"/>
 </test>
-<status status="PASS" start="2025-08-21T17:17:07.765636" elapsed="41.992103"/>
+<status status="PASS" start="2025-08-21T17:28:18.114072" elapsed="25.679621"/>
 </suite>
-<status status="PASS" start="2025-08-21T17:17:07.725253" elapsed="42.067273"/>
+<status status="PASS" start="2025-08-21T17:28:18.083570" elapsed="25.711950"/>
 </suite>
 <statistics>
 <total>

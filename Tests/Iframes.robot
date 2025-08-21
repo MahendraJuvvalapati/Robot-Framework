@@ -1,10 +1,10 @@
 *** Settings ***
 Library    SeleniumLibrary
-
+Resource   ../Resource/Variables/LoginPageVar.robot
 
 *** Test Cases ***
 Handling iframes
-    Open Browser    https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst    headlesschrome
+    Open Browser    https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst    ${BROWSER}
     Maximize Browser Window
 
     Select Frame    id=iframeResult
