@@ -1,16 +1,21 @@
 ==============================================================================
 Tests                                                                         
 ==============================================================================
-Tests.Templates                                                               
+Tests.Tags                                                                    
 ==============================================================================
-Valid Login                                                           | PASS |
+checking Tags keyword                                                 Inside Smoke ['smoke']
+| PASS |
 ------------------------------------------------------------------------------
-Invalid Login                                                         | PASS |
+checking default Tags                                                 Inside Default ['sanity']
+| PASS |
 ------------------------------------------------------------------------------
-Tests.Templates                                                       | PASS |
-2 tests, 2 passed, 0 failed
+checking set Tags                                                     Inside Set tag ['regression', 'sanity']
+| PASS |
+------------------------------------------------------------------------------
+Tests.Tags                                                            | PASS |
+3 tests, 3 passed, 0 failed
 ==============================================================================
 Tests                                                                 | PASS |
-2 tests, 2 passed, 0 failed
+3 tests, 3 passed, 0 failed
 ==============================================================================
 Output:  D:\Automation practice\Robot Training\results\pabot_results\17\output.xml

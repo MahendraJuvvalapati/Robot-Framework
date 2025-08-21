@@ -1,57 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:30:46.467992" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T12:50:29.839053" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
-<suite id="s1-s1" name="Tags" source="D:\Automation practice\Robot Training\Tests\Tags.robot">
-<test id="s1-s1-t1" name="checking Tags keyword" line="7">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Inside Smoke ${TEST_TAGS}</arg>
+<suite id="s1-s1" name="SetupOrTeardown" source="D:\Automation practice\Robot Training\Tests\SetupOrTeardown.robot">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>IM INSIDE SUITE SETUP</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:47.227721" elapsed="0.000782"/>
+<status status="PASS" start="2025-08-21T12:50:31.101080" elapsed="0.003475"/>
 </kw>
-<tag>smoke</tag>
-<status status="PASS" start="2025-07-18T18:30:47.225333" elapsed="0.003566"/>
-</test>
-<test id="s1-s1-t2" name="checking default Tags" line="12">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Inside Default ${TEST_TAGS}</arg>
+<test id="s1-s1-t1" name="Checking Setup ad Teardown" line="12">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>IM INSIDE TEST SETUP</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:47.230401" elapsed="0.000621"/>
-</kw>
-<tag>sanity</tag>
-<status status="PASS" start="2025-07-18T18:30:47.229571" elapsed="0.001787"/>
-</test>
-<test id="s1-s1-t3" name="checking set Tags" line="16">
-<kw name="Set Tags" owner="BuiltIn">
-<msg time="2025-07-18T18:30:47.233406" level="INFO">Set tag 'regression'.</msg>
-<arg>regression</arg>
-<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
-<status status="PASS" start="2025-07-18T18:30:47.232875" elapsed="0.000697"/>
+<status status="PASS" start="2025-08-21T12:50:31.108652" elapsed="0.000974"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Inside Set tag ${TEST_TAGS}</arg>
+<arg>Inside Test Case 1</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:47.233948" elapsed="0.000598"/>
+<status status="PASS" start="2025-08-21T12:50:31.110470" elapsed="0.001418"/>
 </kw>
-<tag>regression</tag>
-<tag>sanity</tag>
-<status status="PASS" start="2025-07-18T18:30:47.232194" elapsed="0.002684"/>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>IM INSIDE TEST TEARDOWN</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T12:50:31.113172" elapsed="0.011675"/>
+</kw>
+<status status="PASS" start="2025-08-21T12:50:31.105527" elapsed="0.019731"/>
 </test>
-<status status="PASS" start="2025-07-18T18:30:46.554025" elapsed="0.681855"/>
+<test id="s1-s1-t2" name="Checking Setup ad Teardown 1" line="15">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>IM INSIDE TEST SETUP</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T12:50:31.128346" elapsed="0.000917"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Inside Test Case 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T12:50:31.129843" elapsed="0.000668"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>IM INSIDE TEST TEARDOWN</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T12:50:31.133449" elapsed="0.001011"/>
+</kw>
+<status status="PASS" start="2025-08-21T12:50:31.126541" elapsed="0.008312"/>
+</test>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>IM INSIDE SUITE TEARDOWN</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T12:50:31.136665" elapsed="0.000905"/>
+</kw>
+<status status="PASS" start="2025-08-21T12:50:30.013531" elapsed="1.124354"/>
 </suite>
-<status status="PASS" start="2025-07-18T18:30:46.520471" elapsed="0.717083"/>
+<status status="PASS" start="2025-08-21T12:50:29.950515" elapsed="1.190208"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">regression</stat>
-<stat pass="2" fail="0" skip="0">sanity</stat>
-<stat pass="1" fail="0" skip="0">smoke</stat>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="3" fail="0" skip="0">Tests</stat>
-<stat name="Tags" id="s1-s1" pass="3" fail="0" skip="0">Tests.Tags</stat>
+<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
+<stat name="SetupOrTeardown" id="s1-s1" pass="2" fail="0" skip="0">Tests.SetupOrTeardown</stat>
 </suite>
 </statistics>
 <errors>

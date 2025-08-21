@@ -1,16 +1,19 @@
 ==============================================================================
 Tests                                                                         
 ==============================================================================
-Tests.Templates                                                               
+Tests.Variables                                                               
 ==============================================================================
-Valid Login                                                           | PASS |
+Accesing Variables                                                    Mahendra 10 c
+['Admin', 'admin123']
+{'username': 'Admin', 'password': 'admin123'}
+LENOVO
+Windows_NT
+| PASS |
 ------------------------------------------------------------------------------
-Invalid Login                                                         | PASS |
-------------------------------------------------------------------------------
-Tests.Templates                                                       | PASS |
-2 tests, 2 passed, 0 failed
+Tests.Variables                                                       | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
 Tests                                                                 | PASS |
-2 tests, 2 passed, 0 failed
+1 test, 1 passed, 0 failed
 ==============================================================================
-Output:  D:\Automation practice\Robot Training\results\pabot_results\18\output.xml
+Output:  D:\Automation practice\Robot Training\results\pabot_results\19\output.xml

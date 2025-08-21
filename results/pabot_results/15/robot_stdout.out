@@ -1,24 +1,30 @@
 ==============================================================================
 Tests                                                                         
 ==============================================================================
-Tests.SetupOrTeardown                                                         
+Tests.RestApi                                                                 
 ==============================================================================
-IM INSIDE SUITE SETUP
-Checking Setup ad Teardown                                            IM INSIDE TEST SETUP
-Inside Test Case 1
-IM INSIDE TEST TEARDOWN
+Tests.RestApi.POST Request                                                    
+==============================================================================
+Create New Post                                                       Response :<Response [201]>
+Status Code :201
+{
+  "userId": "5",
+  "id": 101,
+  "title": "Checking Post Requests",
+  "body": "This is for Checking the functionality of the Post method"
+}
+{'userId': '5', 'id': 101, 'title': 'Checking Post Requests', 'body': 'This is for Checking the functionality of the Post method'}
+Title is Checking Post Requests
+id: 101
 | PASS |
 ------------------------------------------------------------------------------
-Checking Setup ad Teardown 1                                          IM INSIDE TEST SETUP
-Inside Test Case 2
-IM INSIDE TEST TEARDOWN
-| PASS |
-------------------------------------------------------------------------------
-IM INSIDE SUITE TEARDOWN
-Tests.SetupOrTeardown                                                 | PASS |
-2 tests, 2 passed, 0 failed
+Tests.RestApi.POST Request                                            | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Tests.RestApi                                                         | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
 Tests                                                                 | PASS |
-2 tests, 2 passed, 0 failed
+1 test, 1 passed, 0 failed
 ==============================================================================
 Output:  D:\Automation practice\Robot Training\results\pabot_results\15\output.xml

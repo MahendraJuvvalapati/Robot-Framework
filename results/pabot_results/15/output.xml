@@ -1,66 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:30:44.816246" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T12:50:29.759015" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
-<suite id="s1-s1" name="SetupOrTeardown" source="D:\Automation practice\Robot Training\Tests\SetupOrTeardown.robot">
-<kw name="Log To Console" owner="BuiltIn" type="SETUP">
-<arg>IM INSIDE SUITE SETUP</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:45.453483" elapsed="0.000815"/>
+<suite id="s1-s1" name="RestApi" source="D:\Automation practice\Robot Training\Tests\RestApi">
+<suite id="s1-s1-s1" name="POST Request" source="D:\Automation practice\Robot Training\Tests\RestApi\POST_Request.robot">
+<test id="s1-s1-s1-t1" name="Create New Post" line="10">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-08-21T12:50:31.896627" level="INFO">Creating Session using : alias=MySession, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>MySession</arg>
+<arg>${url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-08-21T12:50:31.895710" elapsed="0.001992"/>
 </kw>
-<test id="s1-s1-t1" name="Checking Setup ad Teardown" line="12">
-<kw name="Log To Console" owner="BuiltIn" type="SETUP">
-<arg>IM INSIDE TEST SETUP</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:45.455957" elapsed="0.000658"/>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-08-21T12:50:32.746622" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/posts 
+ path_url=/posts 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '107', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=userId=5&amp;id=101&amp;title=Checking+Post+Requests&amp;body=This+is+for+Checking+the+functionality+of+the+Post+method 
+ </msg>
+<msg time="2025-08-21T12:50:32.747263" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/posts 
+ status=201, reason=Created 
+ headers={'Date': 'Thu, 21 Aug 2025 07:20:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '140', 'Connection': 'keep-alive', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Expose-Headers': 'Location', 'Cache-Control': 'no-cache', 'Etag': 'W/"8c-tMi9cORye6Wep6D5jCv4hU4A2s8"', 'Expires': '-1', 'Location': 'https://jsonplaceholder.typicode.com/posts/101', 'Nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'Pragma': 'no-cache', 'Report-To': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=yto7PnUXLZnkNnqFKZ4BzQ3%2FpMVIgnfJdVy30AKeZeI%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1755760832"}],"max_age":3600}', 'Reporting-Endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=yto7PnUXLZnkNnqFKZ4BzQ3%2FpMVIgnfJdVy30AKeZeI%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1755760832"', 'Server': 'cloudflare', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Via': '2.0 heroku-router', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '998', 'X-Ratelimit-Reset': '1755760837', 'Cf-Cache-Status': 'DYNAMIC', 'CF-RAY': '97285e50eafb179e-MAA', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={
+  "userId": "5",
+  "id": 101,
+  "title": "Checking Post Requests",
+  "body": "This is for Checking the functionality of the Post method"
+} 
+ </msg>
+<msg time="2025-08-21T12:50:32.747734" level="INFO">C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-08-21T12:50:32.748363" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>MySession</arg>
+<arg>${endpoint}</arg>
+<arg>data=${Dic_values}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-08-21T12:50:31.898420" elapsed="0.850067"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Inside Test Case 1</arg>
+<arg>Response :${response}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:45.457096" elapsed="0.002117"/>
+<status status="PASS" start="2025-08-21T12:50:32.748949" elapsed="0.000869"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
-<arg>IM INSIDE TEST TEARDOWN</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:45.460337" elapsed="0.001126"/>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>201</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-08-21T12:50:32.750253" elapsed="0.000884"/>
 </kw>
-<status status="PASS" start="2025-07-18T18:30:45.454763" elapsed="0.007140"/>
-</test>
-<test id="s1-s1-t2" name="Checking Setup ad Teardown 1" line="15">
-<kw name="Log To Console" owner="BuiltIn" type="SETUP">
-<arg>IM INSIDE TEST SETUP</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:45.464630" elapsed="0.000484"/>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-21T12:50:32.753892" level="INFO">${status_code} = 201</msg>
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2025-08-21T12:50:32.752228" elapsed="0.001777"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Inside Test Case 2</arg>
+<arg>Status Code :${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:45.465390" elapsed="0.000325"/>
+<status status="PASS" start="2025-08-21T12:50:32.754383" elapsed="0.001299"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
-<arg>IM INSIDE TEST TEARDOWN</arg>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>201</arg>
+<arg>${status_code}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-08-21T12:50:32.756112" elapsed="0.000590"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-21T12:50:32.758521" level="INFO">${body} = {
+  "userId": "5",
+  "id": 101,
+  "title": "Checking Post Requests",
+  "body": "This is for Checking the functionality of the Post method"
+}</msg>
+<var>${body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2025-08-21T12:50:32.757010" elapsed="0.001642"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${body}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:45.466153" elapsed="0.000322"/>
+<status status="PASS" start="2025-08-21T12:50:32.758992" elapsed="0.000968"/>
 </kw>
-<status status="PASS" start="2025-07-18T18:30:45.463395" elapsed="0.003207"/>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-21T12:50:32.761254" level="INFO">${res_body} = {'userId': '5', 'id': 101, 'title': 'Checking Post Requests', 'body': 'This is for Checking the functionality of the Post method'}</msg>
+<var>${res_body}</var>
+<arg>${body}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-21T12:50:32.760384" elapsed="0.000969"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${res_body}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T12:50:32.761780" elapsed="0.000676"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Title is ${res_body}[title]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T12:50:32.762784" elapsed="0.001788"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>id: ${res_body}[id]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T12:50:32.764993" elapsed="0.000699"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2025-08-21T12:50:32.766723" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${res_body}[id]</arg>
+<arg>101</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2025-08-21T12:50:32.766053" elapsed="0.000855"/>
+</kw>
+<status status="PASS" start="2025-08-21T12:50:31.893129" elapsed="0.874312"/>
 </test>
-<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
-<arg>IM INSIDE SUITE TEARDOWN</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:45.468106" elapsed="0.000604"/>
-</kw>
-<status status="PASS" start="2025-07-18T18:30:44.882462" elapsed="0.586479"/>
+<status status="PASS" start="2025-08-21T12:50:29.994482" elapsed="2.774817"/>
 </suite>
-<status status="PASS" start="2025-07-18T18:30:44.852254" elapsed="0.618486"/>
+<status status="PASS" start="2025-08-21T12:50:29.988745" elapsed="2.782520"/>
+</suite>
+<status status="PASS" start="2025-08-21T12:50:29.934172" elapsed="2.838751"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
-<stat name="SetupOrTeardown" id="s1-s1" pass="2" fail="0" skip="0">Tests.SetupOrTeardown</stat>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="RestApi" id="s1-s1" pass="1" fail="0" skip="0">Tests.RestApi</stat>
+<stat name="POST Request" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.RestApi.POST Request</stat>
 </suite>
 </statistics>
 <errors>

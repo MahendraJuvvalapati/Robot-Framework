@@ -1,47 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:30:41.680629" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T12:50:16.878271" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="RestApi" source="D:\Automation practice\Robot Training\Tests\RestApi">
-<suite id="s1-s1-s1" name="FirstApi" source="D:\Automation practice\Robot Training\Tests\RestApi\FirstApi.robot">
-<test id="s1-s1-s1-t1" name="First test On Rest API" line="10">
+<suite id="s1-s1-s1" name="DELETE Request" source="D:\Automation practice\Robot Training\Tests\RestApi\DELETE_Request.robot">
+<test id="s1-s1-s1-t1" name="Delete Post" line="10">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-07-18T18:30:43.551488" level="INFO">Creating Session using : alias=ses, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<msg time="2025-07-18T18:30:43.553018" level="INFO">${Session} = &lt;requests.sessions.Session object at 0x000002775B0C2120&gt;</msg>
-<var>${Session}</var>
-<arg>ses</arg>
+<msg time="2025-08-21T12:50:19.781382" level="INFO">Creating Session using : alias=MySession, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>MySession</arg>
 <arg>${url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-07-18T18:30:43.550875" elapsed="0.002253"/>
+<status status="PASS" start="2025-08-21T12:50:19.780649" elapsed="0.001321"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-08-21T12:50:19.783326" level="INFO">${delete_endpoint} = /posts/101</msg>
+<var>${delete_endpoint}</var>
+<arg>${endpoint}/101</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-08-21T12:50:19.782548" elapsed="0.000895"/>
+</kw>
+<kw name="DELETE On Session" owner="RequestsLibrary">
+<msg time="2025-08-21T12:50:21.242305" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/posts/101 
+ path_url=/posts/101 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-08-21T12:50:21.242695" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/posts/101 
+ status=200, reason=OK 
+ headers={'Date': 'Thu, 21 Aug 2025 07:20:21 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Expires': '-1', 'Nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'Pragma': 'no-cache', 'Report-To': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=XZm9KJ9Oo5810iNT7C0Br3ZN3Pgv5RcA8isWn0Mjn6Q%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1755760821"}],"max_age":3600}', 'Reporting-Endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=XZm9KJ9Oo5810iNT7C0Br3ZN3Pgv5RcA8isWn0Mjn6Q%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1755760821"', 'Server': 'cloudflare', 'Vary': 'Origin, Accept-Encoding', 'Via': '2.0 heroku-router', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1755760837', 'Cf-Cache-Status': 'DYNAMIC', 'Content-Encoding': 'gzip', 'CF-RAY': '97285e08fbcf7ea4-MAA', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={} 
+ </msg>
+<msg time="2025-08-21T12:50:21.242961" level="INFO">C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-08-21T12:50:21.243373" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>MySession</arg>
+<arg>${delete_endpoint}</arg>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-08-21T12:50:19.783857" elapsed="1.459601"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Created Session:${Session}</arg>
+<arg>Response : ${response}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.553615" elapsed="0.000684"/>
+<status status="PASS" start="2025-08-21T12:50:21.243830" elapsed="0.000648"/>
 </kw>
-<kw name="Session Exists" owner="RequestsLibrary">
-<msg time="2025-07-18T18:30:43.555888" level="INFO">${is_exist} = True</msg>
-<var>${is_exist}</var>
-<arg>ses</arg>
-<doc>Return True if the session has been already created</doc>
-<status status="PASS" start="2025-07-18T18:30:43.555030" elapsed="0.000942"/>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-08-21T12:50:21.244798" elapsed="0.000615"/>
 </kw>
-<kw name="Should Be True" owner="BuiltIn">
-<arg>${is_exist}</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.556282" elapsed="0.000391"/>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-21T12:50:21.247116" level="INFO">${status_code} = 200</msg>
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2025-08-21T12:50:21.245687" elapsed="0.001535"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${is_exist}</arg>
+<arg>Status Code : ${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.556951" elapsed="0.000471"/>
+<status status="PASS" start="2025-08-21T12:50:21.247563" elapsed="0.000594"/>
 </kw>
-<status status="PASS" start="2025-07-18T18:30:43.548277" elapsed="0.009432"/>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>200</arg>
+<arg>${status_code}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-08-21T12:50:21.248463" elapsed="0.000745"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-08-21T12:50:21.251057" level="INFO">${body} = {}</msg>
+<var>${body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2025-08-21T12:50:21.249555" elapsed="0.001593"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response Body: ${body}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T12:50:21.251671" elapsed="0.000667"/>
+</kw>
+<status status="PASS" start="2025-08-21T12:50:19.778397" elapsed="1.474310"/>
 </test>
-<status status="PASS" start="2025-07-18T18:30:41.804574" elapsed="1.754374"/>
+<status status="PASS" start="2025-08-21T12:50:17.103022" elapsed="4.151498"/>
 </suite>
-<status status="PASS" start="2025-07-18T18:30:41.799741" elapsed="1.760581"/>
+<status status="PASS" start="2025-08-21T12:50:17.096116" elapsed="4.160251"/>
 </suite>
-<status status="PASS" start="2025-07-18T18:30:41.745609" elapsed="1.815793"/>
+<status status="PASS" start="2025-08-21T12:50:17.006910" elapsed="4.250809"/>
 </suite>
 <statistics>
 <total>
@@ -52,7 +96,7 @@
 <suite>
 <stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
 <stat name="RestApi" id="s1-s1" pass="1" fail="0" skip="0">Tests.RestApi</stat>
-<stat name="FirstApi" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.RestApi.FirstApi</stat>
+<stat name="DELETE Request" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.RestApi.DELETE Request</stat>
 </suite>
 </statistics>
 <errors>
