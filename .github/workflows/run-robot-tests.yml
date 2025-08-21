@@ -39,3 +39,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./results
+          keep_files: true          # keeps previous reports if any
+          allow_empty_commit: true  # avoids failure if nothing new
