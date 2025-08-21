@@ -2,16 +2,15 @@ name: Run Robot Framework Tests
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [main]
   pull_request:
-    branches: [ "main" ]
 
 jobs:
   robot-tests:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -21,15 +20,17 @@ jobs:
 
       - name: Install dependencies
         run: |
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install robotframework-datadriver
+          pip install robotframework-datadriver[XLS]
 
       - name: Run Robot Framework Tests
         env:
           username: Admin
-          os: ubuntu
+          os: ubuntu-latest
         run: |
           robot \
-            --variable URL:https://opensource-demo.orangehrmlive.com/web/index.php/auth/login \
-            --variable BROWSER_OPTIONS:"--headless --disable-dev-shm-usage --no-sandbox --disable-gpu --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-$(date +%s)" \
-            Tests
+            --variable BROWSER:chrome \
+            --variable OPTIONS:"add_argument(--headless); add_argument(--no-sandbox); add_argument(--disable-dev-shm-usage)" \
+            --outputdir results \
+            Tests/
