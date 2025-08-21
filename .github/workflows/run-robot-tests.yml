@@ -26,18 +26,3 @@ jobs:
       - name: Run Robot Framework tests
         run: |
           pabot --outputdir results Tests/
-
-      - name: Upload Robot Logs and Reports as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: robot-results
-          path: results/*
-
-      - name: Deploy reports to GitHub Pages
-        if: ${{ github.ref == 'refs/heads/main' }}
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./results
-          keep_files: true          # keeps previous reports if any
-          allow_empty_commit: true  # avoids failure if nothing new
