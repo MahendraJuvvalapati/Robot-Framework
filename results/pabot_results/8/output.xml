@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T16:12:47.899606" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T16:47:28.778375" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="Headless" source="D:\Automation practice\Robot Training\Tests\Headless.robot">
 <test id="s1-s1-t1" name="Run Tests under Headless Browser" line="7">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:12:48.561256" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.google.com/'.</msg>
+<msg time="2025-08-21T16:47:29.385513" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.google.com/'.</msg>
 <arg>${URL}</arg>
 <arg>headlesschrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-21T16:12:48.560694" elapsed="6.162610"/>
+<status status="PASS" start="2025-08-21T16:47:29.384896" elapsed="4.161941"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-08-21T16:12:54.723970" elapsed="0.245459"/>
+<status status="PASS" start="2025-08-21T16:47:33.547387" elapsed="0.367166"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T16:12:56.970831" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-08-21T16:47:35.915376" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T16:12:54.969810" elapsed="2.001228"/>
+<status status="PASS" start="2025-08-21T16:47:33.914840" elapsed="2.000743"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:12:56.971986" level="INFO">Typing text 'Automation Step by step' into text field 'class=gLFyf'.</msg>
+<msg time="2025-08-21T16:47:35.916715" level="INFO">Typing text 'Automation Step by step' into text field 'class=gLFyf'.</msg>
 <arg>class=gLFyf</arg>
 <arg>Automation Step by step</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-21T16:12:56.971320" elapsed="5.532962"/>
+<status status="PASS" start="2025-08-21T16:47:35.915884" elapsed="1.242415"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T16:13:04.521676" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-08-21T16:47:39.159691" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T16:13:02.504697" elapsed="2.020579"/>
+<status status="PASS" start="2025-08-21T16:47:37.158631" elapsed="2.001269"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:04.566625" level="INFO">Clicking button 'class=gNO89b'.</msg>
+<msg time="2025-08-21T16:47:39.161352" level="INFO">Clicking button 'class=gNO89b'.</msg>
 <arg>class=gNO89b</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-21T16:13:04.525878" elapsed="8.487592"/>
+<status status="PASS" start="2025-08-21T16:47:39.160230" elapsed="3.047777"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T16:13:15.018067" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-08-21T16:47:44.209719" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T16:13:13.013907" elapsed="2.004419"/>
+<status status="PASS" start="2025-08-21T16:47:42.208447" elapsed="2.001965"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T16:13:20.028267" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-08-21T16:47:49.211838" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T16:13:15.018822" elapsed="5.009687"/>
+<status status="PASS" start="2025-08-21T16:47:44.210872" elapsed="5.001112"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-08-21T16:13:20.028948" elapsed="6.947846"/>
+<status status="PASS" start="2025-08-21T16:47:49.212175" elapsed="2.141698"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:12:48.558899" elapsed="38.418211"/>
+<status status="PASS" start="2025-08-21T16:47:29.383020" elapsed="21.971126"/>
 </test>
-<status status="PASS" start="2025-08-21T16:12:47.995182" elapsed="38.982783"/>
+<status status="PASS" start="2025-08-21T16:47:28.860737" elapsed="22.494081"/>
 </suite>
-<status status="PASS" start="2025-08-21T16:12:47.963300" elapsed="39.016059"/>
+<status status="PASS" start="2025-08-21T16:47:28.829094" elapsed="22.539481"/>
 </suite>
 <statistics>
 <total>

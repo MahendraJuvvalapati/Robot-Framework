@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T16:13:16.796823" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T16:47:37.616798" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="SetupOrTeardown" source="D:\Automation practice\Robot Training\Tests\SetupOrTeardown.robot">
 <kw name="Log To Console" owner="BuiltIn" type="SETUP">
 <arg>IM INSIDE SUITE SETUP</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:13:18.489553" elapsed="0.000853"/>
+<status status="PASS" start="2025-08-21T16:47:38.389039" elapsed="0.000623"/>
 </kw>
 <test id="s1-s1-t1" name="Checking Setup ad Teardown" line="12">
 <kw name="Log To Console" owner="BuiltIn" type="SETUP">
 <arg>IM INSIDE TEST SETUP</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:13:18.492117" elapsed="0.000722"/>
+<status status="PASS" start="2025-08-21T16:47:38.390756" elapsed="0.000524"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Inside Test Case 1</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:13:18.493336" elapsed="0.000604"/>
+<status status="PASS" start="2025-08-21T16:47:38.391577" elapsed="0.000371"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
 <arg>IM INSIDE TEST TEARDOWN</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:13:18.494527" elapsed="0.000601"/>
+<status status="PASS" start="2025-08-21T16:47:38.392290" elapsed="0.000358"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:13:18.490889" elapsed="0.004470"/>
+<status status="PASS" start="2025-08-21T16:47:38.389966" elapsed="0.002813"/>
 </test>
 <test id="s1-s1-t2" name="Checking Setup ad Teardown 1" line="15">
 <kw name="Log To Console" owner="BuiltIn" type="SETUP">
 <arg>IM INSIDE TEST SETUP</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:13:18.497595" elapsed="0.000589"/>
+<status status="PASS" start="2025-08-21T16:47:38.394195" elapsed="0.000406"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Inside Test Case 2</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:13:18.498607" elapsed="0.000572"/>
+<status status="PASS" start="2025-08-21T16:47:38.394892" elapsed="0.000335"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
 <arg>IM INSIDE TEST TEARDOWN</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:13:18.499859" elapsed="0.000560"/>
+<status status="PASS" start="2025-08-21T16:47:38.395595" elapsed="0.000371"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:13:18.496222" elapsed="0.004408"/>
+<status status="PASS" start="2025-08-21T16:47:38.393308" elapsed="0.002814"/>
 </test>
 <kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
 <arg>IM INSIDE SUITE TEARDOWN</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:13:18.502076" elapsed="0.002267"/>
+<status status="PASS" start="2025-08-21T16:47:38.397112" elapsed="0.000406"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:13:17.315351" elapsed="1.189683"/>
+<status status="PASS" start="2025-08-21T16:47:37.706848" elapsed="0.690797"/>
 </suite>
-<status status="PASS" start="2025-08-21T16:13:17.243993" elapsed="1.263016"/>
+<status status="PASS" start="2025-08-21T16:47:37.673668" elapsed="0.725205"/>
 </suite>
 <statistics>
 <total>

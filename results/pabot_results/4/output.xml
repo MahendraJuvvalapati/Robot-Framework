@@ -1,278 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T16:12:47.987676" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T16:47:28.655158" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="DataFromExcel" source="D:\Automation practice\Robot Training\Tests\DataFromExcel.robot">
 <test id="s1-s1-t1" name="Login Test Using Excel Data Admin and admin123" line="21">
 <kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:12:49.798017" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-08-21T16:47:35.044352" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-08-21T16:47:35.044840" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-08-21T16:47:35.045359" level="FAIL">ValueError: Unable to parse option: "add_argument(--headless)"</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
+<arg>options=${OPTIONS}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-21T16:12:49.797611" elapsed="6.054010"/>
+<status status="FAIL" start="2025-08-21T16:47:35.042847" elapsed="0.059407">ValueError: Unable to parse option: "add_argument(--headless)"</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-08-21T16:12:55.851991" elapsed="3.903861"/>
+<status status="NOT RUN" start="2025-08-21T16:47:35.102956" elapsed="0.000160"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T16:13:02.757371" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T16:12:59.756614" elapsed="3.001018"/>
+<status status="NOT RUN" start="2025-08-21T16:47:35.103821" elapsed="0.000570"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:12:49.796771" elapsed="12.964928"/>
-</kw>
-<kw name="Test Data">
-<kw name="Login" owner="LoginPageKw">
-<kw name="Input User" owner="LoginPageKw">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:02.897547" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
-<arg>${USERNAME_FIELD}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-21T16:13:02.850631" elapsed="5.183098"/>
-</kw>
-<arg>${user}</arg>
-<status status="PASS" start="2025-08-21T16:13:02.807188" elapsed="5.226856"/>
-</kw>
-<kw name="Input Pass" owner="LoginPageKw">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:08.036080" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
-<arg>${PASSWORD_FIELD}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-21T16:13:08.035424" elapsed="5.291906"/>
-</kw>
-<arg>${pass}</arg>
-<status status="PASS" start="2025-08-21T16:13:08.034489" elapsed="5.293109"/>
-</kw>
-<kw name="Click Login Button" owner="LoginPageKw">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:13.329215" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
-<arg>${LOGIN_BUTTON}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-21T16:13:13.328657" elapsed="1.943307"/>
-</kw>
-<status status="PASS" start="2025-08-21T16:13:13.327979" elapsed="1.944399"/>
-</kw>
-<kw name="Page Should Contain text" owner="LoginPageKw">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T16:13:17.280839" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T16:13:15.275138" elapsed="2.005926"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:17.519010" level="INFO">Current page contains text 'Dashboard'.</msg>
-<arg>${message}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-08-21T16:13:17.281410" elapsed="0.237799"/>
-</kw>
-<arg>${message}</arg>
-<status status="PASS" start="2025-08-21T16:13:15.273367" elapsed="2.246116"/>
-</kw>
-<arg>${userName}</arg>
-<arg>${Password}</arg>
-<arg>${Message}</arg>
-<status status="PASS" start="2025-08-21T16:13:02.763400" elapsed="14.756740"/>
-</kw>
-<arg>userName=Admin</arg>
-<arg>Password=admin123</arg>
-<arg>Message=Dashboard</arg>
-<status status="PASS" start="2025-08-21T16:13:02.762241" elapsed="14.763363"/>
+<status status="FAIL" start="2025-08-21T16:47:35.037909" elapsed="0.066902">ValueError: Unable to parse option: "add_argument(--headless)"</status>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-08-21T16:13:17.526430" elapsed="9.084491"/>
+<status status="PASS" start="2025-08-21T16:47:35.106671" elapsed="0.000413"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:12:49.795277" elapsed="36.815928"/>
+<status status="FAIL" start="2025-08-21T16:47:34.986649" elapsed="0.120618">Setup failed:
+ValueError: Unable to parse option: "add_argument(--headless)"</status>
 </test>
 <test id="s1-s1-t2" name="Login Test Using Excel Data AdminUser and admin123" line="21">
 <kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:26.616509" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-08-21T16:47:35.112415" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-08-21T16:47:35.112748" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-08-21T16:47:35.112940" level="FAIL">ValueError: Unable to parse option: "add_argument(--headless)"</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
+<arg>options=${OPTIONS}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-21T16:13:26.615826" elapsed="7.363442"/>
+<status status="FAIL" start="2025-08-21T16:47:35.111693" elapsed="0.005332">ValueError: Unable to parse option: "add_argument(--headless)"</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-08-21T16:13:33.979667" elapsed="0.645626"/>
+<status status="NOT RUN" start="2025-08-21T16:47:35.117730" elapsed="0.000145"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T16:13:37.627200" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T16:13:34.625714" elapsed="3.001949"/>
+<status status="NOT RUN" start="2025-08-21T16:47:35.118168" elapsed="0.000119"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:13:26.614891" elapsed="11.013113"/>
-</kw>
-<kw name="Test Data">
-<kw name="Login" owner="LoginPageKw">
-<kw name="Input User" owner="LoginPageKw">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:37.640262" level="INFO">Typing text 'AdminUser' into text field 'name=username'.</msg>
-<arg>${USERNAME_FIELD}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-21T16:13:37.638592" elapsed="0.290359"/>
-</kw>
-<arg>${user}</arg>
-<status status="PASS" start="2025-08-21T16:13:37.637585" elapsed="0.291680"/>
-</kw>
-<kw name="Input Pass" owner="LoginPageKw">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:37.931624" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
-<arg>${PASSWORD_FIELD}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-21T16:13:37.930980" elapsed="0.391628"/>
-</kw>
-<arg>${pass}</arg>
-<status status="PASS" start="2025-08-21T16:13:37.930037" elapsed="0.392897"/>
-</kw>
-<kw name="Click Login Button" owner="LoginPageKw">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:38.325078" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
-<arg>${LOGIN_BUTTON}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-21T16:13:38.324254" elapsed="1.572640"/>
-</kw>
-<status status="PASS" start="2025-08-21T16:13:38.323388" elapsed="1.573799"/>
-</kw>
-<kw name="Page Should Contain text" owner="LoginPageKw">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T16:13:41.899249" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T16:13:39.898457" elapsed="2.001008"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:41.926028" level="INFO">Current page contains text 'Invalid credentials'.</msg>
-<arg>${message}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-08-21T16:13:41.900054" elapsed="0.026165"/>
-</kw>
-<arg>${message}</arg>
-<status status="PASS" start="2025-08-21T16:13:39.897595" elapsed="2.028880"/>
-</kw>
-<arg>${userName}</arg>
-<arg>${Password}</arg>
-<arg>${Message}</arg>
-<status status="PASS" start="2025-08-21T16:13:37.631205" elapsed="4.295447"/>
-</kw>
-<arg>userName=AdminUser</arg>
-<arg>Password=admin123</arg>
-<arg>Message=Invalid credentials</arg>
-<status status="PASS" start="2025-08-21T16:13:37.628706" elapsed="4.298128"/>
+<status status="FAIL" start="2025-08-21T16:47:35.110834" elapsed="0.007709">ValueError: Unable to parse option: "add_argument(--headless)"</status>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-08-21T16:13:41.927561" elapsed="2.892372"/>
+<status status="PASS" start="2025-08-21T16:47:35.121611" elapsed="0.000669"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:13:26.612109" elapsed="18.208095"/>
+<status status="FAIL" start="2025-08-21T16:47:35.108270" elapsed="0.014199">Setup failed:
+ValueError: Unable to parse option: "add_argument(--headless)"</status>
 </test>
 <test id="s1-s1-t3" name="Login Test Using Excel Data Admin123 and Admin123" line="21">
 <kw name="Open Login Page" owner="LoginPageKw" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:44.828073" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-08-21T16:47:35.127950" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-08-21T16:47:35.128300" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-08-21T16:47:35.128481" level="FAIL">ValueError: Unable to parse option: "add_argument(--headless)"</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
+<arg>options=${OPTIONS}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-21T16:13:44.826662" elapsed="4.721400"/>
+<status status="FAIL" start="2025-08-21T16:47:35.127124" elapsed="0.092020">ValueError: Unable to parse option: "add_argument(--headless)"</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-08-21T16:13:49.548456" elapsed="0.037495"/>
+<status status="NOT RUN" start="2025-08-21T16:47:35.219710" elapsed="0.000121"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T16:13:52.586960" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T16:13:49.586182" elapsed="3.000943"/>
+<status status="NOT RUN" start="2025-08-21T16:47:35.220066" elapsed="0.000160"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:13:44.825621" elapsed="7.761670"/>
-</kw>
-<kw name="Test Data">
-<kw name="Login" owner="LoginPageKw">
-<kw name="Input User" owner="LoginPageKw">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:52.589579" level="INFO">Typing text 'Admin123' into text field 'name=username'.</msg>
-<arg>${USERNAME_FIELD}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-21T16:13:52.589213" elapsed="0.152080"/>
-</kw>
-<arg>${user}</arg>
-<status status="PASS" start="2025-08-21T16:13:52.588731" elapsed="0.152890"/>
-</kw>
-<kw name="Input Pass" owner="LoginPageKw">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:52.743727" level="INFO">Typing text 'Admin123' into text field 'name=password'.</msg>
-<arg>${PASSWORD_FIELD}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-21T16:13:52.743042" elapsed="0.225012"/>
-</kw>
-<arg>${pass}</arg>
-<status status="PASS" start="2025-08-21T16:13:52.742021" elapsed="0.226313"/>
-</kw>
-<kw name="Click Login Button" owner="LoginPageKw">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:52.969995" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
-<arg>${LOGIN_BUTTON}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-21T16:13:52.969479" elapsed="1.091256"/>
-</kw>
-<status status="PASS" start="2025-08-21T16:13:52.968746" elapsed="1.092661"/>
-</kw>
-<kw name="Page Should Contain text" owner="LoginPageKw">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T16:13:56.063557" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T16:13:54.062588" elapsed="2.001143"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:13:56.082639" level="INFO">Current page contains text 'Invalid credentials'.</msg>
-<arg>${message}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-08-21T16:13:56.063981" elapsed="0.018812"/>
-</kw>
-<arg>${message}</arg>
-<status status="PASS" start="2025-08-21T16:13:54.061852" elapsed="2.021129"/>
-</kw>
-<arg>${userName}</arg>
-<arg>${Password}</arg>
-<arg>${Message}</arg>
-<status status="PASS" start="2025-08-21T16:13:52.588164" elapsed="3.494937"/>
-</kw>
-<arg>userName=Admin123</arg>
-<arg>Password=Admin123</arg>
-<arg>Message=Invalid credentials</arg>
-<status status="PASS" start="2025-08-21T16:13:52.587552" elapsed="3.495647"/>
+<status status="FAIL" start="2025-08-21T16:47:35.126484" elapsed="0.094009">ValueError: Unable to parse option: "add_argument(--headless)"</status>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-08-21T16:13:56.083491" elapsed="2.164822"/>
+<status status="PASS" start="2025-08-21T16:47:35.220970" elapsed="0.000342"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:13:44.821950" elapsed="13.426826"/>
+<status status="FAIL" start="2025-08-21T16:47:35.123632" elapsed="0.097812">Setup failed:
+ValueError: Unable to parse option: "add_argument(--headless)"</status>
 </test>
-<status status="PASS" start="2025-08-21T16:12:48.069053" elapsed="70.181825"/>
+<status status="FAIL" start="2025-08-21T16:47:28.720153" elapsed="6.502196"/>
 </suite>
-<status status="PASS" start="2025-08-21T16:12:48.039465" elapsed="70.215150"/>
+<status status="FAIL" start="2025-08-21T16:47:28.691032" elapsed="6.534354"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="3" fail="0" skip="0">Tests</stat>
-<stat name="DataFromExcel" id="s1-s1" pass="3" fail="0" skip="0">Tests.DataFromExcel</stat>
+<stat name="Tests" id="s1" pass="0" fail="3" skip="0">Tests</stat>
+<stat name="DataFromExcel" id="s1-s1" pass="0" fail="3" skip="0">Tests.DataFromExcel</stat>
 </suite>
 </statistics>
 <errors>

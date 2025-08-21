@@ -62,6 +62,8 @@ pip install robotframework-requests
 ▶️ Run All Tests in a Folder
 robot -d results Tests/
 
+robot --variable BROWSER:chrome --variable OPTIONS:"" Tests/ #for local run
+
 Or run all .robot files in the root directory:
 robot -d results .
 

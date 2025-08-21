@@ -2,12 +2,9 @@
 Library    SeleniumLibrary
 Resource   ../Variables/LoginPageVar.robot
 
-*** Variables ***
-${BROWSER}    chrome
-
 *** Keywords ***
 Open Login Page
-    Open Browser    ${URL}    ${BROWSER}
+    Open Browser    ${URL}    ${BROWSER}    options=${OPTIONS}
     Maximize Browser Window
     Sleep    3s
 

@@ -3,14 +3,48 @@ Tests
 ==============================================================================
 Tests.LoginTest                                                               
 ==============================================================================
-Valid Login Test                                                      | PASS |
+Valid Login Test                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Automation practice\Robot Training\Tests\LoginTest.robot:11
+    T:  Valid Login Test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Automation practice\Robot Training\Tests\LoginTest.robot:4
+      Open Login Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Automation practice\Robot Training\Resource\Keywords\LoginPageKw.robot:11
+      Open Browser    ${URL}    ${BROWSER}    options=${OPTIONS}
+      |  ${URL} = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login (str)
+      |  ${BROWSER} = chrome (str)
+      |  options=${OPTIONS} = options=add_argument(--headless); add_argument(--no-sandbox); add_argument(--disable-dev-shm-usage); add_argument(--disable-gpu); add_argument(--remote-debugging-port=9222); add_argument(--user-data-dir=/tmp/chrome-profile) (str)
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+ValueError: Unable to parse option: "add_argument(--headless)"
 ------------------------------------------------------------------------------
-Invalid Login Test                                                    | PASS |
+Invalid Login Test                                                      
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Automation practice\Robot Training\Tests\LoginTest.robot:14
+    T:  Invalid Login Test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Automation practice\Robot Training\Tests\LoginTest.robot:4
+      Open Login Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Automation practice\Robot Training\Resource\Keywords\LoginPageKw.robot:11
+      Open Browser    ${URL}    ${BROWSER}    options=${OPTIONS}
+      |  ${URL} = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login (str)
+      |  ${BROWSER} = chrome (str)
+      |  options=${OPTIONS} = options=add_argument(--headless); add_argument(--no-sandbox); add_argument(--disable-dev-shm-usage); add_argument(--disable-gpu); add_argument(--remote-debugging-port=9222); add_argument(--user-data-dir=/tmp/chrome-profile) (str)
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+ValueError: Unable to parse option: "add_argument(--headless)"
 ------------------------------------------------------------------------------
-Tests.LoginTest                                                       | PASS |
-2 tests, 2 passed, 0 failed
+Tests.LoginTest                                                       | FAIL |
+2 tests, 0 passed, 2 failed
 ==============================================================================
-Tests                                                                 | PASS |
-2 tests, 2 passed, 0 failed
+Tests                                                                 | FAIL |
+2 tests, 0 passed, 2 failed
 ==============================================================================
 Output:  D:\Automation practice\Robot Training\results\pabot_results\10\output.xml
