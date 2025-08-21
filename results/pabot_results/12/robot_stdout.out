@@ -3,13 +3,14 @@ Tests
 ==============================================================================
 Tests.RestApi                                                                 
 ==============================================================================
-Tests.RestApi.FirstApi                                                        
+Tests.RestApi.DELETE Request                                                  
 ==============================================================================
-First test On Rest API                                                Created Session:<requests.sessions.Session object at 0x000002775B0C2120>
-True
+Delete Post                                                           Response : <Response [200]>
+Status Code : 200
+Response Body: {}
 | PASS |
 ------------------------------------------------------------------------------
-Tests.RestApi.FirstApi                                                | PASS |
+Tests.RestApi.DELETE Request                                          | PASS |
 1 test, 1 passed, 0 failed
 ==============================================================================
 Tests.RestApi                                                         | PASS |

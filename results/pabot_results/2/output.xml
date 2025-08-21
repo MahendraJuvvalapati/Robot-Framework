@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:29:51.583368" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T12:49:22.400951" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="CustomLib" source="D:\Automation practice\Robot Training\Tests\CustomLib.robot">
 <test id="s1-s1-t1" name="Adding two Nums" line="5">
 <kw name="Add Two Nums" owner="CustomLibrary">
-<msg time="2025-07-18T18:29:51.627611" level="INFO">${output} = 1020</msg>
+<msg time="2025-08-21T12:49:22.459609" level="INFO">${output} = 1020</msg>
 <var>${output}</var>
 <arg>10</arg>
 <arg>20</arg>
-<status status="PASS" start="2025-07-18T18:29:51.627225" elapsed="0.000452"/>
+<status status="PASS" start="2025-08-21T12:49:22.458540" elapsed="0.001153"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${output}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:29:51.627955" elapsed="0.000396"/>
+<status status="PASS" start="2025-08-21T12:49:22.460079" elapsed="0.000628"/>
 </kw>
 <kw name="Add Nums" owner="CustomLibrary">
-<msg time="2025-07-18T18:29:51.628811" level="INFO">${output} = 60</msg>
+<msg time="2025-08-21T12:49:22.461554" level="INFO">${output} = 60</msg>
 <var>${output}</var>
 <arg>10</arg>
 <arg>20</arg>
 <arg>30</arg>
-<status status="PASS" start="2025-07-18T18:29:51.628526" elapsed="0.000339"/>
+<status status="PASS" start="2025-08-21T12:49:22.461136" elapsed="0.000527"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${output}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:29:51.629041" elapsed="0.000328"/>
+<status status="PASS" start="2025-08-21T12:49:22.462529" elapsed="0.000814"/>
 </kw>
-<status status="PASS" start="2025-07-18T18:29:51.626005" elapsed="0.003574"/>
+<status status="PASS" start="2025-08-21T12:49:22.456909" elapsed="0.006790"/>
 </test>
-<status status="PASS" start="2025-07-18T18:29:51.622422" elapsed="0.007809"/>
+<status status="PASS" start="2025-08-21T12:49:22.450507" elapsed="0.014166"/>
 </suite>
-<status status="PASS" start="2025-07-18T18:29:51.605518" elapsed="0.025770"/>
+<status status="PASS" start="2025-08-21T12:49:22.430473" elapsed="0.035641"/>
 </suite>
 <statistics>
 <total>

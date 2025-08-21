@@ -1,0 +1,24 @@
+datasources:fde816a9bce29ae05512268e16c7576999a6b9aa
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:fab053e4e0897eb6820887b09d93a5b3fc927078
+--suite Tests.Add To cart
+--suite Tests.Assertions
+--suite Tests.CustomLib
+--suite Tests.DataFromCsv
+--suite Tests.DataFromExcel
+--suite Tests.DataFromJson
+--suite Tests.FirstTest
+--suite Tests.ForLoop
+--suite Tests.Headless
+--suite Tests.Iframes
+--suite Tests.LoginTest
+--suite Tests.Practice
+--suite Tests.RestApi.DELETE Request
+--suite Tests.RestApi.FirstApi
+--suite Tests.RestApi.GET Request
+--suite Tests.RestApi.POST Request
+--suite Tests.SetupOrTeardown
+--suite Tests.Tags
+--suite Tests.Templates
+--suite Tests.Variables

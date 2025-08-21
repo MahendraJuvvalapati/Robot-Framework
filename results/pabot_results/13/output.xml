@@ -1,212 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-18T18:30:42.277444" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T12:50:24.508743" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="RestApi" source="D:\Automation practice\Robot Training\Tests\RestApi">
-<suite id="s1-s1-s1" name="GET Request" source="D:\Automation practice\Robot Training\Tests\RestApi\GET_Request.robot">
-<test id="s1-s1-s1-t1" name="Get Information" line="11">
+<suite id="s1-s1-s1" name="FirstApi" source="D:\Automation practice\Robot Training\Tests\RestApi\FirstApi.robot">
+<test id="s1-s1-s1-t1" name="First test On Rest API" line="10">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-07-18T18:30:43.518091" level="INFO">Creating Session using : alias=MySession, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<arg>MySession</arg>
+<msg time="2025-08-21T12:50:27.748012" level="INFO">Creating Session using : alias=ses, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-08-21T12:50:27.748672" level="INFO">${Session} = &lt;requests.sessions.Session object at 0x000002061E032120&gt;</msg>
+<var>${Session}</var>
+<arg>ses</arg>
 <arg>${url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-07-18T18:30:43.517008" elapsed="0.003484"/>
-</kw>
-<kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2025-07-18T18:30:43.665734" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/1 
- path_url=/users/1 
- headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
- </msg>
-<msg time="2025-07-18T18:30:43.665993" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/1 
- status=200, reason=OK 
- headers={'Date': 'Fri, 18 Jul 2025 13:00:43 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Etag': 'W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"', 'Expires': '-1', 'Nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'Pragma': 'no-cache', 'Report-To': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=lmbAjTdMdsn42BHhDys61EW0ttCUi43RcdgTCU4Mn8o%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1752058228"}],"max_age":3600}', 'Reporting-Endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=lmbAjTdMdsn42BHhDys61EW0ttCUi43RcdgTCU4Mn8o%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1752058228"', 'Server': 'cloudflare', 'Vary': 'Origin, Accept-Encoding', 'Via': '2.0 heroku-router', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1752058236', 'Age': '481', 'Cf-Cache-Status': 'HIT', 'Content-Encoding': 'gzip', 'CF-RAY': '961229e198b67f51-MAA', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={
-  "id": 1,
-  "name": "Leanne Graham",
-  "username": "Bret",
-  "email": "Sincere@april.biz",
-  "address": {
-    "street": "Kulas Light",
-    "suite": "Apt. 556",
-    "city": "Gwenborough",
-    "zipcode": "92998-3874",
-    "geo": {
-      "lat": "-37.3159",
-      "lng": "81.1496"
-    }
-  },
-  "phone": "1-770-736-8031 x56442",
-  "website": "hildegard.org",
-  "company": {
-    "name": "Romaguera-Crona",
-    "catchPhrase": "Multi-layered client-server neural-net",
-    "bs": "harness real-time e-markets"
-  }
-} 
- </msg>
-<msg time="2025-07-18T18:30:43.666122" level="INFO">C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(</msg>
-<msg time="2025-07-18T18:30:43.666457" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<var>${response}</var>
-<arg>MySession</arg>
-<arg>${endpoint}</arg>
-<doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.521268" elapsed="0.145242"/>
+<status status="PASS" start="2025-08-21T12:50:27.747314" elapsed="0.001478"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Getting Json formatted Response :${response.json()}</arg>
+<arg>Created Session:${Session}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.666747" elapsed="0.002769"/>
+<status status="PASS" start="2025-08-21T12:50:27.749268" elapsed="0.000697"/>
+</kw>
+<kw name="Session Exists" owner="RequestsLibrary">
+<msg time="2025-08-21T12:50:27.785482" level="INFO">${is_exist} = True</msg>
+<var>${is_exist}</var>
+<arg>ses</arg>
+<doc>Return True if the session has been already created</doc>
+<status status="PASS" start="2025-08-21T12:50:27.784799" elapsed="0.000796"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${is_exist}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-08-21T12:50:27.785984" elapsed="0.000608"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Final Url: ${response.url}</arg>
+<arg>${is_exist}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.670021" elapsed="0.001363"/>
+<status status="PASS" start="2025-08-21T12:50:27.786984" elapsed="0.000653"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${response.ok}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.671725" elapsed="0.001012"/>
-</kw>
-<kw name="Convert To String" owner="BuiltIn">
-<msg time="2025-07-18T18:30:43.673934" level="INFO">${status_code} = 200</msg>
-<var>${status_code}</var>
-<arg>${response.status_code}</arg>
-<doc>Converts the given item to a Unicode string.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.672975" elapsed="0.001049"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Status Code: ${status_code}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.674290" elapsed="0.000494"/>
-</kw>
-<kw name="Convert To String" owner="BuiltIn">
-<msg time="2025-07-18T18:30:43.676343" level="INFO">${body} = {
-  "id": 1,
-  "name": "Leanne Graham",
-  "username": "Bret",
-  "email": "Sincere@april.biz",
-  "address": {
-    "street": "Kulas Light",
-    "suite": "Apt. 556",
-    "city": "Gwenborough",
-    "zipco...</msg>
-<var>${body}</var>
-<arg>${response.content}</arg>
-<doc>Converts the given item to a Unicode string.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.675095" elapsed="0.001347"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Response Body: ${body}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.676736" elapsed="0.000546"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2025-07-18T18:30:43.678719" level="INFO">${headers} = application/json; charset=utf-8</msg>
-<var>${headers}</var>
-<arg>${response.headers}</arg>
-<arg>Content-Type</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.677543" elapsed="0.001248"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Content-Type Header: ${headers}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.679042" elapsed="0.000466"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-07-18T18:30:43.680552" level="INFO">${res_body} = {'id': 1, 'name': 'Leanne Graham', 'username': 'Bret', 'email': 'Sincere@april.biz', 'address': {'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {'...</msg>
-<var>${res_body}</var>
-<arg>${body}</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.679811" elapsed="0.000822"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${res_body}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.680949" elapsed="0.000533"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2025-07-18T18:30:43.682270" level="INFO">${name} = Leanne Graham</msg>
-<var>${name}</var>
-<arg>${res_body}</arg>
-<arg>name</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.681762" elapsed="0.000575"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.682604" elapsed="0.000429"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${res_body}[email]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.683265" elapsed="0.000472"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${res_body}[address]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.684215" elapsed="0.001313"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${res_body}[address][zipcode]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.686084" elapsed="0.000683"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${res_body}[company]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.687090" elapsed="0.000497"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${res_body}[company][bs]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.687856" elapsed="0.000467"/>
-</kw>
-<kw name="Status Should Be" owner="RequestsLibrary">
-<arg>200</arg>
-<arg>${response}</arg>
-<doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.688626" elapsed="0.000599"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${status_code}</arg>
-<arg>200</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.689488" elapsed="0.000465"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${body}</arg>
-<arg>Bret</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.690235" elapsed="0.000419"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<arg>${headers}</arg>
-<arg>application/json; charset=utf-8</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.690934" elapsed="0.000477"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${res_body}[name]</arg>
-<arg>Leanne Graham</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.691660" elapsed="0.000424"/>
-</kw>
-<kw name="Dictionary Should Contain Key" owner="Collections">
-<arg>${response.json()}</arg>
-<arg>id</arg>
-<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2025-07-18T18:30:43.692334" elapsed="0.001237"/>
-</kw>
-<status status="PASS" start="2025-07-18T18:30:43.515078" elapsed="0.178832"/>
+<status status="PASS" start="2025-08-21T12:50:27.743755" elapsed="0.044272"/>
 </test>
-<status status="PASS" start="2025-07-18T18:30:42.376040" elapsed="1.318830"/>
+<status status="PASS" start="2025-08-21T12:50:24.791413" elapsed="2.998119"/>
 </suite>
-<status status="PASS" start="2025-07-18T18:30:42.372862" elapsed="1.323317"/>
+<status status="PASS" start="2025-08-21T12:50:24.787390" elapsed="3.004822"/>
 </suite>
-<status status="PASS" start="2025-07-18T18:30:42.328024" elapsed="1.369291"/>
+<status status="PASS" start="2025-08-21T12:50:24.721158" elapsed="3.072998"/>
 </suite>
 <statistics>
 <total>
@@ -217,7 +52,7 @@
 <suite>
 <stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
 <stat name="RestApi" id="s1-s1" pass="1" fail="0" skip="0">Tests.RestApi</stat>
-<stat name="GET Request" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.RestApi.GET Request</stat>
+<stat name="FirstApi" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.RestApi.FirstApi</stat>
 </suite>
 </statistics>
 <errors>
