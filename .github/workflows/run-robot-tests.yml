@@ -23,6 +23,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Robot Framework tests (root + Tests/)
+      - name: Run Robot Framework tests
         run: |
-          pabot --outputdir results . Tests/
+          pabot --variable URL:https://opensource-demo.orangehrmlive.com/web/index.php/auth/login \
+                --variable BROWSER:headlesschrome \
+                --outputdir results . Tests/

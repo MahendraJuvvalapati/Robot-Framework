@@ -1,13 +1,16 @@
-
 *** Settings ***
 Library    SeleniumLibrary
 Resource   ../Variables/LoginPageVar.robot
 
+*** Variables ***
+${BROWSER}    chrome
+
 *** Keywords ***
 Open Login Page
-    Open Browser    ${URL}    chrome
+    Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
     Sleep    3s
+
 Input User
     [Arguments]    ${username}
     Input Text    ${USERNAME_FIELD}    ${username}
