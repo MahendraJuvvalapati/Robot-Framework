@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  test:
+  robot-tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,8 +22,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install robotframework
+          pip install robotframework-seleniumlibrary
+          pip install robotframework-jsonlibrary
+          pip install robotframework-excellibrary
+          pip install robotframework-requests
           pip install robotframework-pabot
 
-      - name: Run Robot Framework tests
+      - name: Run all Robot tests (root and Tests/)
         run: |
-          pabot --outputdir results "Tests/"
+          pabot --outputdir results --processes 2 . Tests/
