@@ -4,4 +4,5 @@ robotframework-jsonlibrary
 robotframework-requests
 robotframework-pabot
 robotframework-datadriver
+robotframework-datadriver[XLS]
 rpaframework
