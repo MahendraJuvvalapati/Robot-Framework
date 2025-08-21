@@ -21,13 +21,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install robotframework
-          pip install robotframework-seleniumlibrary
-          pip install robotframework-jsonlibrary
-          pip install robotframework-excellibrary
-          pip install robotframework-requests
-          pip install robotframework-pabot
+          pip install -r requirements.txt
 
-      - name: Run all Robot tests (root and Tests/)
+      - name: Run Robot Framework tests (root + Tests/)
         run: |
-          pabot --outputdir results --processes 2 . Tests/
+          pabot --outputdir results . Tests/
