@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 
 *** Test Cases ***
 Handling iframes
-    Open Browser    https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst    chrome
+    Open Browser    https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst    headlesschrome
     Maximize Browser Window
 
     Select Frame    id=iframeResult

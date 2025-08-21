@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T16:47:33.836047" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T17:17:11.578118" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="RestApi" source="D:\Automation practice\Robot Training\Tests\RestApi">
 <suite id="s1-s1-s1" name="DELETE Request" source="D:\Automation practice\Robot Training\Tests\RestApi\DELETE_Request.robot">
 <test id="s1-s1-s1-t1" name="Delete Post" line="10">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-08-21T16:47:36.564670" level="INFO">Creating Session using : alias=MySession, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-08-21T17:17:14.461907" level="INFO">Creating Session using : alias=MySession, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>MySession</arg>
 <arg>${url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-08-21T16:47:36.564226" elapsed="0.000881"/>
+<status status="PASS" start="2025-08-21T17:17:14.461343" elapsed="0.000986"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-08-21T16:47:36.565888" level="INFO">${delete_endpoint} = /posts/101</msg>
+<msg time="2025-08-21T17:17:14.463169" level="INFO">${delete_endpoint} = /posts/101</msg>
 <var>${delete_endpoint}</var>
 <arg>${endpoint}/101</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-08-21T16:47:36.565453" elapsed="0.000517"/>
+<status status="PASS" start="2025-08-21T17:17:14.462677" elapsed="0.000560"/>
 </kw>
 <kw name="DELETE On Session" owner="RequestsLibrary">
-<msg time="2025-08-21T16:47:36.994954" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/posts/101 
+<msg time="2025-08-21T17:17:15.320314" level="INFO">DELETE Request : url=https://jsonplaceholder.typicode.com/posts/101 
  path_url=/posts/101 
  headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg time="2025-08-21T16:47:36.995197" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/posts/101 
+<msg time="2025-08-21T17:17:15.320589" level="INFO">DELETE Response : url=https://jsonplaceholder.typicode.com/posts/101 
  status=200, reason=OK 
- headers={'Date': 'Thu, 21 Aug 2025 11:17:37 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Expires': '-1', 'Nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'Pragma': 'no-cache', 'Report-To': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=qPh8cnmbhBHfao5mBiewS7ZczPOfyTojgnG948JkBfE%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1755775057"}],"max_age":3600}', 'Reporting-Endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=qPh8cnmbhBHfao5mBiewS7ZczPOfyTojgnG948JkBfE%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1755775057"', 'Server': 'cloudflare', 'Vary': 'Origin, Accept-Encoding', 'Via': '2.0 heroku-router', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1755775117', 'Cf-Cache-Status': 'DYNAMIC', 'Content-Encoding': 'gzip', 'CF-RAY': '9729b9998c0f7f16-MAA', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Thu, 21 Aug 2025 11:47:15 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Expires': '-1', 'Nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'Pragma': 'no-cache', 'Report-To': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=JcUdFjNWfucov6c%2FWU7P2fGmb342IjVM2Nj15h5ikO0%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1755776835"}],"max_age":3600}', 'Reporting-Endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=JcUdFjNWfucov6c%2FWU7P2fGmb342IjVM2Nj15h5ikO0%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1755776835"', 'Server': 'cloudflare', 'Vary': 'Origin, Accept-Encoding', 'Via': '2.0 heroku-router', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1755776842', 'Cf-Cache-Status': 'DYNAMIC', 'Content-Encoding': 'gzip', 'CF-RAY': '9729e501de6b9bf1-MAA', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={} 
  </msg>
-<msg time="2025-08-21T16:47:36.995355" level="INFO">C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2025-08-21T17:17:15.320797" level="INFO">C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2025-08-21T16:47:36.995711" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-08-21T17:17:15.321157" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>MySession</arg>
 <arg>${delete_endpoint}</arg>
 <doc>Sends a DELETE request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2025-08-21T16:47:36.566213" elapsed="0.429555"/>
+<status status="PASS" start="2025-08-21T17:17:14.463553" elapsed="0.857674"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Response : ${response}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:47:36.996006" elapsed="0.000508"/>
+<status status="PASS" start="2025-08-21T17:17:15.321603" elapsed="0.000538"/>
 </kw>
 <kw name="Status Should Be" owner="RequestsLibrary">
 <arg>200</arg>
 <arg>${response}</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" start="2025-08-21T16:47:36.996906" elapsed="0.000527"/>
+<status status="PASS" start="2025-08-21T17:17:15.322389" elapsed="0.000519"/>
 </kw>
 <kw name="Convert To String" owner="BuiltIn">
-<msg time="2025-08-21T16:47:36.999911" level="INFO">${status_code} = 200</msg>
+<msg time="2025-08-21T17:17:15.324352" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<status status="PASS" start="2025-08-21T16:47:36.998477" elapsed="0.001504"/>
+<status status="PASS" start="2025-08-21T17:17:15.323155" elapsed="0.001274"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Status Code : ${status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:47:37.000277" elapsed="0.000641"/>
+<status status="PASS" start="2025-08-21T17:17:15.324703" elapsed="0.000531"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>200</arg>
 <arg>${status_code}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-08-21T16:47:37.001636" elapsed="0.000848"/>
+<status status="PASS" start="2025-08-21T17:17:15.325484" elapsed="0.000461"/>
 </kw>
 <kw name="Convert To String" owner="BuiltIn">
-<msg time="2025-08-21T16:47:37.007048" level="INFO">${body} = {}</msg>
+<msg time="2025-08-21T17:17:15.327359" level="INFO">${body} = {}</msg>
 <var>${body}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<status status="PASS" start="2025-08-21T16:47:37.002801" elapsed="0.004404"/>
+<status status="PASS" start="2025-08-21T17:17:15.326191" elapsed="0.001247"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Response Body: ${body}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:47:37.007734" elapsed="0.000849"/>
+<status status="PASS" start="2025-08-21T17:17:15.327729" elapsed="0.000743"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:47:36.562821" elapsed="0.446090"/>
+<status status="PASS" start="2025-08-21T17:17:14.459827" elapsed="0.869096"/>
 </test>
-<status status="PASS" start="2025-08-21T16:47:34.196310" elapsed="2.813778"/>
+<status status="PASS" start="2025-08-21T17:17:11.803713" elapsed="3.526649"/>
 </suite>
-<status status="PASS" start="2025-08-21T16:47:34.186524" elapsed="2.824925"/>
+<status status="PASS" start="2025-08-21T17:17:11.797469" elapsed="3.534370"/>
 </suite>
-<status status="PASS" start="2025-08-21T16:47:34.121767" elapsed="2.890896"/>
+<status status="PASS" start="2025-08-21T17:17:11.753425" elapsed="3.580233"/>
 </suite>
 <statistics>
 <total>

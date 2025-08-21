@@ -10,7 +10,7 @@ ${URL}          https://opensource-demo.orangehrmlive.com/web/index.php/auth/log
 *** Keywords ***
 LoginTestCase
     [Arguments]    ${username}    ${password}    ${expected_message}
-    Open Browser    ${URL}    chrome
+    Open Browser    ${URL}    headlesschrome
     Maximize Browser Window
     Sleep    5s
     Input Text      name=username      ${username}

@@ -4,7 +4,7 @@ Resource   ../Variables/LoginPageVar.robot
 
 *** Keywords ***
 Open Login Page
-    Open Browser    ${URL}    ${BROWSER}    options=${OPTIONS}
+    Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
     Sleep    3s
 

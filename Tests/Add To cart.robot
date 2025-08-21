@@ -7,7 +7,7 @@ ${url}    https://dineshvelhal.github.io/testautomation-playground/login.html
 *** Test Cases ***
 Adding Items to cart
     [Documentation]    Addding items to cart...
-    Open Browser    ${url}    chrome
+    Open Browser    ${url}    headlesschrome
     Input Text    xpath=//input[@id='user']    admin
     Input Text   xpath=//input[@id='password']    admin
     Click Button    xpath=//button[@id='login']

@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T16:47:28.561003" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T17:17:07.764527" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="FirstTest" source="D:\Automation practice\Robot Training\Tests\FirstTest.robot">
 <test id="s1-s1-t1" name="Verify Example Page Title" line="8">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:47:29.223588" level="INFO">Opening browser 'Chrome' to base url 'https://example.com'.</msg>
+<msg time="2025-08-21T17:17:08.556473" level="INFO">Opening browser 'headlesschrome' to base url 'https://example.com'.</msg>
 <arg>${URL}</arg>
-<arg>Chrome</arg>
+<arg>headlesschrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-21T16:47:29.222975" elapsed="3.818732"/>
+<status status="PASS" start="2025-08-21T17:17:08.555792" elapsed="3.801948"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T16:47:36.042837" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-08-21T17:17:15.358870" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T16:47:33.042116" elapsed="3.000939"/>
+<status status="PASS" start="2025-08-21T17:17:12.358132" elapsed="3.001031"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-08-21T16:47:36.209812" level="INFO">Page title is 'Example Domain'.</msg>
+<msg time="2025-08-21T17:17:16.095934" level="INFO">Page title is 'Example Domain'.</msg>
 <arg>Example Domain</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-08-21T16:47:36.043446" elapsed="0.166515"/>
+<status status="PASS" start="2025-08-21T17:17:15.359520" elapsed="0.736643"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-21T16:47:39.214933" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-08-21T17:17:19.097860" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-21T16:47:36.210224" elapsed="3.004974"/>
+<status status="PASS" start="2025-08-21T17:17:16.096561" elapsed="3.001843"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-08-21T16:47:39.215537" elapsed="5.960235"/>
+<status status="PASS" start="2025-08-21T17:17:19.098849" elapsed="17.004830"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:47:29.221085" elapsed="15.955194"/>
+<status status="PASS" start="2025-08-21T17:17:08.553833" elapsed="27.550251"/>
 </test>
-<status status="PASS" start="2025-08-21T16:47:28.639239" elapsed="16.538640"/>
+<status status="PASS" start="2025-08-21T17:17:07.867005" elapsed="28.238403"/>
 </suite>
-<status status="PASS" start="2025-08-21T16:47:28.594657" elapsed="16.585478"/>
+<status status="PASS" start="2025-08-21T17:17:07.837462" elapsed="28.269986"/>
 </suite>
 <statistics>
 <total>

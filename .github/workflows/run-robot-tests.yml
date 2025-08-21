@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  robot-tests:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,11 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Robot Framework tests (headless in CI)
+      - name: Run Robot Framework tests
         run: |
-         robot \
-          --variable BROWSER:chrome \
-          --variable OPTIONS:"add_argument:--headless;add_argument:--no-sandbox;add_argument:--disable-dev-shm-usage;add_argument:--disable-gpu" \
-          --outputdir results \
-          Tests/
+          pabot --outputdir results "Tests/"
 

@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T16:47:28.629654" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T17:17:07.768119" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="Assertions" source="D:\Automation practice\Robot Training\Tests\Assertions.robot">
 <test id="s1-s1-t1" name="Checking Assertions" line="5">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-08-21T16:47:29.246372" level="INFO">${isValid} = True</msg>
+<msg time="2025-08-21T17:17:08.344648" level="INFO">${isValid} = True</msg>
 <var>${isValid}</var>
 <arg>${True}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-08-21T16:47:29.245841" elapsed="0.000633"/>
+<status status="PASS" start="2025-08-21T17:17:08.344113" elapsed="0.000616"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${isValid}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-08-21T16:47:29.246762" elapsed="0.000377"/>
+<status status="PASS" start="2025-08-21T17:17:08.345054" elapsed="0.000382"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${isValid}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:47:29.247408" elapsed="0.000459"/>
+<status status="PASS" start="2025-08-21T17:17:08.345664" elapsed="0.000404"/>
 </kw>
 <kw name="Set Variable If" owner="BuiltIn">
-<msg time="2025-08-21T16:47:29.248621" level="INFO">${isValid} = False</msg>
+<msg time="2025-08-21T17:17:08.346750" level="INFO">${isValid} = False</msg>
 <var>${isValid}</var>
 <arg>${isValid}</arg>
 <arg>${False}</arg>
 <doc>Sets variable based on the given condition.</doc>
-<status status="PASS" start="2025-08-21T16:47:29.248177" elapsed="0.000514"/>
+<status status="PASS" start="2025-08-21T17:17:08.346326" elapsed="0.000493"/>
 </kw>
 <kw name="Should Not Be True" owner="BuiltIn">
 <arg>${isValid}</arg>
 <doc>Fails if the given condition is true.</doc>
-<status status="PASS" start="2025-08-21T16:47:29.248941" elapsed="0.000348"/>
+<status status="PASS" start="2025-08-21T17:17:08.347058" elapsed="0.000494"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${isValid}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T16:47:29.249514" elapsed="0.000428"/>
+<status status="PASS" start="2025-08-21T17:17:08.347767" elapsed="0.000411"/>
 </kw>
-<status status="PASS" start="2025-08-21T16:47:29.244156" elapsed="0.006082"/>
+<status status="PASS" start="2025-08-21T17:17:08.342309" elapsed="0.006263"/>
 </test>
-<status status="PASS" start="2025-08-21T16:47:28.711172" elapsed="0.540918"/>
+<status status="PASS" start="2025-08-21T17:17:07.834192" elapsed="0.515608"/>
 </suite>
-<status status="PASS" start="2025-08-21T16:47:28.678267" elapsed="0.575145"/>
+<status status="PASS" start="2025-08-21T17:17:07.803971" elapsed="0.547240"/>
 </suite>
 <statistics>
 <total>
