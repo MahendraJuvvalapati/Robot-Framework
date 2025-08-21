@@ -3,4 +3,5 @@ robotframework-seleniumlibrary
 robotframework-jsonlibrary
 robotframework-requests
 robotframework-pabot
+robotframework-datadriver
 rpaframework

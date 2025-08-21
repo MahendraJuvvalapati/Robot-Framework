@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T15:58:03.989024" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-21T16:12:50.852769" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Automation practice\Robot Training\Tests">
 <suite id="s1-s1" name="RestApi" source="D:\Automation practice\Robot Training\Tests\RestApi">
 <suite id="s1-s1-s1" name="FirstApi" source="D:\Automation practice\Robot Training\Tests\RestApi\FirstApi.robot">
 <test id="s1-s1-s1-t1" name="First test On Rest API" line="10">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-08-21T15:58:10.321240" level="INFO">Creating Session using : alias=ses, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<msg time="2025-08-21T15:58:10.322039" level="INFO">${Session} = &lt;requests.sessions.Session object at 0x000001B383CB2120&gt;</msg>
+<msg time="2025-08-21T16:12:56.767414" level="INFO">Creating Session using : alias=ses, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-08-21T16:12:56.768370" level="INFO">${Session} = &lt;requests.sessions.Session object at 0x0000015F86EC2120&gt;</msg>
 <var>${Session}</var>
 <arg>ses</arg>
 <arg>${url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-08-21T15:58:10.320434" elapsed="0.001751"/>
+<status status="PASS" start="2025-08-21T16:12:56.766942" elapsed="0.001591"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Created Session:${Session}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T15:58:10.322707" elapsed="0.000779"/>
+<status status="PASS" start="2025-08-21T16:12:56.769023" elapsed="0.000517"/>
 </kw>
 <kw name="Session Exists" owner="RequestsLibrary">
-<msg time="2025-08-21T15:58:10.324668" level="INFO">${is_exist} = True</msg>
+<msg time="2025-08-21T16:12:56.770224" level="INFO">${is_exist} = True</msg>
 <var>${is_exist}</var>
 <arg>ses</arg>
 <doc>Return True if the session has been already created</doc>
-<status status="PASS" start="2025-08-21T15:58:10.323891" elapsed="0.001189"/>
+<status status="PASS" start="2025-08-21T16:12:56.769843" elapsed="0.000544"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${is_exist}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-08-21T15:58:10.325490" elapsed="0.000572"/>
+<status status="PASS" start="2025-08-21T16:12:56.770742" elapsed="0.000365"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${is_exist}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-08-21T15:58:10.326417" elapsed="0.000607"/>
+<status status="PASS" start="2025-08-21T16:12:56.771355" elapsed="0.000430"/>
 </kw>
-<status status="PASS" start="2025-08-21T15:58:10.314453" elapsed="0.012973"/>
+<status status="PASS" start="2025-08-21T16:12:56.762999" elapsed="0.009387"/>
 </test>
-<status status="PASS" start="2025-08-21T15:58:04.253049" elapsed="6.075967"/>
+<status status="PASS" start="2025-08-21T16:12:50.888264" elapsed="5.888308"/>
 </suite>
-<status status="PASS" start="2025-08-21T15:58:04.247948" elapsed="6.082903"/>
+<status status="PASS" start="2025-08-21T16:12:50.886691" elapsed="5.891690"/>
 </suite>
-<status status="PASS" start="2025-08-21T15:58:04.171369" elapsed="6.166175"/>
+<status status="PASS" start="2025-08-21T16:12:50.872021" elapsed="5.907392"/>
 </suite>
 <statistics>
 <total>
